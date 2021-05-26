@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Red Dead Redemption 2</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matheus Costa - https://github.com/matheusz98">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Lightbox CSS -->
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bc4a93c294.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <!-- Header Section -->
+       <header>
+           <!-- Side Menu -->
+           <div class="toggle" id="side-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+           <a href="#home" class="logo">Red Dead Redemption 2</a>
+
+           <!-- Menu Section -->
+               <ul class="menu">
+                   <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                   <li><a href="#story" onclick="toggleMenu();">The Story</a></li>
+                   <li><a href="#chapters" onclick="toggleMenu();">Chapters</a></li>
+                   <li><a href="#cities" onclick="toggleMenu();">Cities</a></li>
+                   <li><a href="#characters" onclick="toggleMenu();">Characters</a></li>
+                   <li><a href="#gallery" onclick="toggleMenu();">Gallery</a></li>
+                   <li><a href="#reviews" onclick="toggleMenu();">Reviews</a></li>
+                   <li><a href="#platforms" onclick="toggleMenu();">Platforms</a></li>
+               </ul>
+       </header>
+
+       <!-- Banner Section -->
+       <section class="banner" id="home"></section>
+
+       <!-- Story Section -->
+        <section class="story" id="story">
+                <div class="title">
+                    <h2>The Story</h2>
+                </div>
+                    <article class="container">
+                        <div class="image">
+                            <img src="images/story.jpg" alt="Story">
+                        </div>
+
+                        <div class="story-content">
+                            <h2>America, 1899</h2>
+                            <p>The end of the Wild West era has begun. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee.<br><br>
+                                With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive.<br><br>
+                                As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.
+                            </p>
+                        </div>
+                    </article>
+            </section>
+
+            <!-- Chapter Section -->
+            <section class="chapters" id="chapters">
+                <div class="title">
+                    <h2>Chapters</h2>
+                </div>
+                    <article class="chapter-container">
+                        <div class="chapterBox">
+                            <img src="images/chapters/chapter_1.jpg" alt="Chapter one">
+                            <h2>Chapter 1: Colter</h2>
+                            <p>After a failed robbery, the gang have fled from Blackwater into the Grizzly Mountains, but a late spring storm has left them half frozen and starving.
+                                They hole up in an abandoned mining town to lick their wounds and await a break in the weather.
+                            </p>
+                        </div>
+
+                        <div class="chapterBox">
+                            <img src="images/chapters/chapter_2.jpg" alt="Chapter two">
+                            <h2>Chapter 2: Horseshoe Overlook</h2>
+                            <p>After a break in the weather, the gang have headed down from the mountains, and are now hiding at Horseshoe Overlook.
+                            </p>
+                        </div>
+
+                        <div class="chapterBox">
+                            <img src="images/chapters/chapter_3.jpg" alt="Chapter three">
+                            <h2>Chapter 3: Clemens Point</h2>
+                            <p>The gang got run of Valentine after an altercation with the railway magnate, Leviticus Cornwall, who has grown tired of having his trains robbed by gangs of outlaws.
+                                Afraid that the routes westwards were being watched by Pinkerton agents, the gang moved south and east and are now hiding at Clemens Cove, near the town of Rhodes.
+                            </p>
+                        </div>
+
+                        <div class="chapterBox">
+                            <img src="images/chapters/chapter_4.jpg" alt="Chapter four">
+                            <h2>Chapter 4: Saint Denis</h2>
+                            <p>
+                                Things ended poorly in Rhodes. The Pinkertons showed up again, and little Jack Marston is kidnapped.
+                            </p>
+                        </div>
+
+                        <div class="chapterBox">
+                            <img src="images/chapters/chapter_5.jpg" alt="Chapter five">
+                            <h2>Chapter 5: Guarma</h2>
+                            <p>
+                                The bank robbery in Saint Denis was a disaster. The gang has been almost destroyed, several members were killed and arrested. Everything seemed lost.
+                            </p>
+                        </div>
+
+                        <div class="chapterBox">
+                            <img src="images/chapters/chapter_6.jpg" alt="Chapter six">
+                            <h2>Chapter 6: Beaver Hollow</h2>
+                            <p>
+                                The gang, or what is left of it were reunited at Lakay, but was quickly assaulted by a squad of Pinkertons.	
+                            </p>
+                        </div>
+
+                        <div class="chapterBox">
+                            <img src="images/chapters/epilogue_1.jpg" alt="Epilogue one">
+                            <h2>Epilogue, Part 1: Pronghorn Ranch</h2>
+                            <p>
+                                John takes a job at Pronghorn Ranch and tries to escape his past indiscretions, while learning the skills of ranching.
+                            </p>
+                        </div>
+
+                        <div class="chapterBox">
+                            <img src="images/chapters/epilogue_2.jpg" alt="Epilogue two">
+                            <h2>Epilogue, Part 2: Beecher's Hope</h2>
+                            <p>	
+                                In an effort to give Abigail the life she has always wanted, John has bought a farm of his own. He is trying to become a family man and a rancher, with help and hindrance from some old friends.
+                            </p>
+                        </div>
+                    </article>
+            </section>
+
+            <!-- Cities Section -->
+            <section class="cities" id="cities">
+                <div class="title">
+                    <h2>Cities</h2>
+                </div>
+
+                <article class="city-container">
+                    <!-- Mount Hagen -->
+                    <h2>Mount Hagen</h2>
+                    <p>
+                        One of the more well-known peaks in the snowy Grizzlies of Ambarino, Mount Hagen towers above Lake Isabella to the west and Beartooth Beck to the east, which provides the main pass through the western mountain range and joins up with the Dakota River further south.
+                    </p>
+                    <img src="images/world/mthagen.jpg" alt="Mount Hagen">
+                    
+                    <div class="screens">
+                        <img src="images/world/mthagen_2.jpg" alt="Mount Hagen">
+                    </div>
+
+                    <div class="screens">
+                        <img src="images/world/mthagen_3.jpg" alt="Mount Hagen">
+                    </div>
+
+                    <!-- Valentine -->
+
+                    <h2>Valentine</h2>
+                    <p>
+                        A raucous, rough-and-tumble town in the Heartlands, Valentine’s livestock auctions attract traders, ranchers, cowboys, gamblers, outlaws and prostitutes from far and wide, all looking to make some money, raise some hell, and have a good time.
+                    </p>
+                    <img src="images/world/valentine.jpg" alt="Valentine">
+
+                    <div class="screens">
+                        <img src="images/world/valentine_2.jpg" alt="Valentine">
+                    </div>
+
+                    <div class="screens">
+                        <img src="images/world/valentine_3.jpg" alt="Valentine">
+                    </div>
+
+                    <!-- Strawberry -->
+
+                    <h2>Strawberry</h2>
+                    <p>
+                        Strawberry was little more than a small logging town until the arrival of its new mayor, an East Coast eccentric, who is obsessed with transforming it into a cultural beacon for wealthy tourists, much to the bemusement of the locals.
+                    </p>
+                    <img src="images/world/strawberry.jpg" alt="Strawberry">
+
+                    <div class="screens">
+                        <img src="images/world/strawberry_2.jpg" alt="Strawberry">
+                    </div>
+
+                    <div class="screens">
+                        <img src="images/world/strawberry_3.jpg" alt="Strawberry">
+                    </div>
+
+                    <!-- Rhodes -->
+
+                    <h2>Rhodes</h2>
+                    <p>
+                        Prim and proper on the surface, tensions and corruption run deep in the Southern town of Rhodes, which for years has been caught in the crossfire between the Braithwaites and the Grays, two warring plantation families.
+                    </p>
+                    <img src="images/world/rhodes.jpg" alt="Rhodes">
+
+                    <div class="screens">
+                        <img src="images/world/rhodes_2.jpg" alt="Rhodes">
+                    </div>
+
+                    <div class="screens">
+                        <img src="images/world/rhodes_3.jpg" alt="Rhodes">
+                    </div>
+
+                    <!-- Saint Denis -->
+
+                    <h2>Saint Denis</h2>
+                    <p>
+                        A key gateway into North America with a trade route that runs the length of the country, the bustling city of Saint Denis is a melting pot of cultures and people where businessmen, socialites, sailors, laborers, beggars and thieves all live side by side.
+                    </p>
+                    <img src="images/world/stdenis.jpg" alt="Saint Denis">
+
+                    <div class="screens">
+                        <img src="images/world/stdenis_2.jpg" alt="Saint Denis">
+                    </div>
+
+                    <div class="screens">
+                        <img src="images/world/stdenis_3.jpg" alt="Saint Denis">
+                    </div>
+                    
+                    <!-- Lagras -->
+
+                    <h2>Lagras</h2>
+                    <p>
+                        A small, remote settlement out in the swamps of Bayou Nwa, Lemoyne, the people of Lagras live self-sufficiently for the most part, making a little money here and there from fishing and acting as guides for travelers wishing to navigate the region.
+                    </p>
+                    <img src="images/world/lagras.jpg" alt="Lagras">
+
+                    <div class="screens">
+                        <img src="images/world/lagras_2.jpg" alt="Lagras">
+                    </div>
+
+                    <div class="screens">
+                        <img src="images/world/lagras_3.jpg" alt="Lagras">
+                    </div>
+
+                    <!-- Annesburg -->
+
+                    <h2>Annesburg</h2>
+                    <p>
+                        Life isn’t easy for the miners and their families in Annesburg, which has been providing coal up and down the Lannahechee River for almost a century. Working conditions are terrible for little pay, and many men have lost their lives down the pit.
+                    </p>
+                    <img src="images/world/annesburg.jpg" alt="Annesburg">
+
+                    <div class="screens">
+                        <img src="images/world/annesburg_2.jpg" alt="Annesburg">
+                    </div>
+
+                    <div class="screens">
+                        <img src="images/world/annesburg_3.jpg" alt="Annesburg">
+                    </div>
+                    
+                </article>
+            </section>
+
+            <!-- Characters Section -->
+            <section class="characters" id="characters">
+                <div class="title">
+                    <h2>Characters</h2>
+                </div>
+
+                <article class="characters-container">
+                    <!-- Dutch -->
+                    <div class="character-box">
+                        <img src="images/characters/dutch.png" alt="Dutch Van Der Linde">
+                        <h2>Dutch Van Der Linde</h2>
+                        <p>
+                            The leader of a sizeable gang of outlaws and misfits. Idealistic, anarchic, charismatic, well-read, well-lived, but possibly starting to unravel under the pressures of the encroaching modern world.
+                        </p>
+                    </div>
+
+                    <!-- Arthur -->
+                    <div class="character-box">
+                        <img src="images/characters/arthur.png" alt="Arthur Morgan">
+                        <h2>Arthur Morgan</h2>
+                        <p>
+                            Dutch's most dependable and capable enforcer since he was a boy, the outlaw life is all Arthur has ever known. Sharp, cool-headed, and ruthless, but with his own sense of honor. A man who gets the job done.
+                        </p>
+                    </div>
+
+                    <!-- Hosea -->
+                    <div class="character-box">
+                        <img src="images/characters/hosea.png" alt="Hosea Matthews">
+                        <h2>Hosea Matthews</h2>
+                        <p>
+                            A master con artist, gentleman and thief, Hosea has been Dutch's closest friend and right-hand man for over twenty years. Intelligent and quick-witted, he can talk his way into, or out of, just about anything.
+                        </p>
+                    </div>
+
+                    <!-- John -->
+                    <div class="character-box">
+                        <img src="images/characters/john.png" alt="John Marston">
+                        <h2>John Marston</h2>
+                        <p>
+                            Once an orphaned street kid taken under Dutch's wing at the age of twelve, John has always had to live by his wits. Shrewd, fearless and strong-willed, he and Arthur are Dutch’s proudest protégés.
+                        </p>
+                    </div>
+
+                    <!-- Sadie -->
+                    <div class="character-box">
+                        <img src="images/characters/sadie.png" alt="Sadie Adler">
+                        <h2>Sadie Adler</h2>
+                        <p>
+                            A widow who is hellbent on taking revenge upon those who killed her husband. Relentless and afraid of nothing and no one. The wrong woman to cross, but very loyal to those she loves.
+                        </p>
+                    </div>
+
+                    <!-- Charles Smith -->
+                    <div class="character-box">
+                        <img src="images/characters/charles.png" alt="Charles Smith">
+                        <h2>Charles Smith</h2>
+                        <p>
+                            A relatively recent recruit to the gang, Charles is quiet and reserved but extremely competent in everything he does and virtually unbeatable in a fight. A decent, honest man who also happens to be deadly.
+                        </p>
+                    </div>
+
+                    <!-- Javier -->
+                    <div class="character-box">
+                        <img src="images/characters/javier.png" alt="Javier Escuella">
+                        <h2>Javier Escuella</h2>
+                        <p>
+                            A notorious bounty hunter and Mexican revolutionary. Javier immediately had a strong connection to Dutch’s ideals. Very committed, passionate and loyal.
+                        </p>
+                    </div>
+
+                    <!-- Bill -->
+                    <div class="character-box">
+                        <img src="images/characters/bill.png" alt="Bill Williamson">
+                        <h2>Bill Williamson</h2>
+                        <p>
+                            An ex-soldier discharged from the army, possibly dishonorably. Hot headed, he tends to act first and think later but is tough, dedicated and always ready to fight.
+                        </p>
+                    </div>
+
+                    <!-- Sean -->
+                    <div class="character-box">
+                        <img src="images/characters/sean.png" alt="Sean Macguire">
+                        <h2>Sean Macguire</h2>
+                        <p>
+                            A cocky young Irish thief and stick-up man who comes from a long line of criminals and political dissidents. He always wants a piece of the action and believes in himself…perhaps a little too much.
+                        </p>
+                    </div>
+
+                    <!-- Lenny -->
+                    <div class="character-box">
+                        <img src="images/characters/lenny.png" alt="Lenny Summers">
+                        <h2>Lenny Summers</h2>
+                        <p>
+                            Young Lenny has been on the run since he was 15 years old after killing the men who murdered his father. Smart, educated, competent and ambitious, he is always ready to do his part.
+                        </p>
+                    </div>
+
+                    <!-- Pearson -->
+                    <div class="character-box">
+                        <img src="images/characters/pearson.png" alt="Pearson">
+                        <h2>Pearson</h2>
+                        <p>
+                            The camp’s butcher and cook, Pearson served a short stint in the navy that he likes to talk about at length. A loud, jolly degenerate who is somewhat in denial about the turn his life has taken.
+                        </p>
+                    </div>
+
+                    <!-- Trelawny -->
+                    <div class="character-box">
+                        <img src="images/characters/trelawny.png" alt="Josiah Trelawny">
+                        <h2>Josiah Trelawny</h2>
+                        <p>
+                            A flamboyant conjurer, conman and trickster, Trelawny is a very hard man to pin down but he’s always able to bring good leads.
+                        </p>
+                    </div>
+
+                    <!-- Abigail -->
+                    <div class="character-box">
+                        <img src="images/characters/abigail.png" alt="Abigail Roberts">
+                        <h2>Abigail Roberts</h2>
+                        <p>
+                            An orphan who grew up scraping out a living in dive bars and brothels in the West, Abigail is a strong, straight-talking woman who has seen a lot of life and knows what it takes to survive against the odds.
+                        </p>
+                    </div>
+
+                    <!-- Jack -->
+                    <div class="character-box">
+                        <img src="images/characters/jack.png" alt="Jack Marston">
+                        <h2>Jack Marston</h2>
+                        <p>
+                            Young Jack has grown up with the gang, although everyone has done their best to shield him from the more nefarious elements, especially his mother Abigail. He loves everything about nature and the outdoor life, and is carefully watched over by his many aunts and uncles.
+                        </p>
+                    </div>
+
+                    <!-- Susan -->
+                    <div class="character-box">
+                        <img src="images/characters/susan.png" alt="Susan Grimshaw">
+                        <h2>Susan Grimshaw</h2>
+                        <p>
+                            The undisputed boss and arbiter of justice in the camp, everything would have fallen apart years ago without Susan in charge. Tenacious and iron-willed, she stands for no nonsense.
+                        </p>
+                    </div>
+
+                    <!-- Karen -->
+                    <div class="character-box">
+                        <img src="images/characters/karen.png" alt="Karen Jones">
+                        <h2>Karen Jones</h2>
+                        <p>
+                            A consummate scam artist and trigger woman who can drink pretty much anybody under the table. Bold and full of fun, she loves the outlaw life and wouldn’t have it any other way.
+                        </p>
+                    </div>
+
+                    <!-- Mary -->
+                    <div class="character-box">
+                        <img src="images/characters/mary.png" alt="Mary-Beth Gaskill">
+                        <h2>Mary-Beth Gaskill</h2>
+                        <p>
+                            A kind, good-natured young woman, which makes her the perfect criminal. By the time people realize they’ve been duped, Mary-Beth is already on her way home with the money.
+                        </p>
+                    </div>
+
+                    <!-- Tilly -->
+                    <div class="character-box">
+                        <img src="images/characters/tilly.png" alt="Tilly Jackson">
+                        <h2>Tilly Jackson</h2>
+                        <p>
+                            An outlaw from the age of 12, Tilly ran with another gang before joining up with Dutch. Savvy, resilient and dependable, she can more than handle herself and isn’t afraid to speak her mind.
+                        </p>
+                    </div>
+
+                    <!-- Molly -->
+                    <div class="character-box">
+                        <img src="images/characters/molly.png" alt="Molly O'Shea">
+                        <h2>Molly O'Shea</h2>
+                        <p>
+                            A Dublin girl and the object of Dutch’s affection, for now at least, Molly is too high-strung for a life on the run and it’s all starting to take a toll on her.
+                        </p>
+                    </div>
+
+                    <!-- Uncle -->
+                    <div class="character-box">
+                        <img src="images/characters/uncle.png" alt="Uncle">
+                        <h2>Uncle</h2>
+                        <p>
+                            A hanger-on and good-time guy, Uncle is always around when the whiskey is open and never around when there’s any work to be done. If he wasn’t so entertaining, Dutch would have cut him loose years ago.
+                        </p>
+                    </div>
+
+                    <!-- Swanson -->
+                    <div class="character-box">
+                        <img src="images/characters/swanson.png" alt="Reverend Swanson">
+                        <h2>Reverend Swanson</h2>
+                        <p>
+                            An ex clergyman now lost to debauchery, Swanson has fallen a long way from the standards he once set himself. If he hadn’t saved Dutch’s life in the past, it’s unlikely the gang would have kept him around for this long.
+                        </p>
+                    </div>
+
+                    <!-- Strauss -->
+                    <div class="character-box">
+                        <img src="images/characters/strauss.png" alt="Leopold Strauss">
+                        <h2>Leopold Strauss</h2>
+                        <p>
+                            Originally hailing from Austria, Herr Strauss is responsible for keeping the gang’s books and running their money lending operation. A serious, somewhat shifty and unemotional man, he has all the qualities a loan shark needs.
+                        </p>
+                    </div>
+
+                    <!-- Micah -->
+                    <div class="character-box">
+                        <img src="images/characters/micah.png" alt="Micah Bell">
+                        <h2>Micah Bell</h2>
+                        <p>
+                            A career criminal and hitman. Wild and unpredictable but he lives for the action.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Outlaws for Life -->
+            <section class="outlaws">
+                    <img src="images/outlaws_for_life.svg" alt="Outlaws for Life">
+            </section>
+
+            <!-- Gallery Section -->
+            <section class="gallery" id="gallery">
+                <div class="title">
+                    <h2>Gallery</h2>
+                </div>
+                <article class="gallery-container">
+                    <div class="screenshot"><a href="images/gallery/01.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/01.jpg" alt="Image one"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/02.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/02.jpg" alt="Image two"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/03.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/03.jpg" alt="Image three"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/04.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/04.jpg" alt="Image four"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/05.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/05.jpg" alt="Image five"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/06.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/06.jpg" alt="Image six"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/07.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/07.jpg" alt="Image seven"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/08.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/08.jpg" alt="Image eight"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/09.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/09.jpg" alt="Image nine"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/10.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/10.jpg" alt="Image ten"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/11.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/11.jpg" alt="Image eleven"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/12.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/12.jpg" alt="Image twelve"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/13.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/13.jpg" alt="Image thirteen"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/14.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/14.jpg" alt="Image fourteen"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/15.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/15.jpg" alt="Image fifteen"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/16.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/16.jpg" alt="Image sixteen"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/17.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/17.jpg" alt="Image seventeen"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/18.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/18.jpg" alt="Image eighteen"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/19.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/19.jpg" alt="Image nineteen"></a>
+                    </div>
+
+                    <div class="screenshot"><a href="images/gallery/20.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2 © Rockstar Games. All Rights Reserved">
+                        <img src="images/gallery/20.jpg" alt="Image twenty"></a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Reviews Section -->
+            <section class="review" id="reviews">
+                <div class="title">
+                    <h2>Reviews</h2>
+                </div>
+                <article class="review-container">
+                    <div class="texts">
+                        <p>
+                            Over 175<br>
+                            Game of the Year<br>
+                            Awards
+                        </p>
+                    </div>
+
+                    <div class="texts">
+                        <p>
+                            Over 275<br>
+                            Perfect Scores
+                        </p>
+                    </div>
+
+                    <div class="texts">
+                        <p>
+                            The Highest Rated Game<br>
+                            On Playstation 4
+                        </p>
+                    </div>
+                </article>
+
+                <article class="reviews">
+                    <div class="review-text">
+                        <p>
+                            "There can be no doubt that this is a landmark game. It is a new high water-mark for lifelike video game worlds..."
+                        </p>
+                            
+                        <h3>
+                            - 5/5 The Guardian
+                        </h3>
+                    </div>
+                    
+                    <div class="review-text">     
+                        <p>
+                            "This is a game of rare quality; a meticulously polished open world ode to the outlaw era. Looking for one of this generation’s very best single-player action experiences? Here’s your huckleberry."
+                        </p>
+                                
+                        <h3>
+                            - 10/10 IGN
+                        </h3>
+                    </div>
+
+                    <div class="review-text">     
+                        <p>
+                            "You will not find a better facsimile of Los Angeles than GTAV’s Los Santos, but in a sense that world is already defined by artifice. Creating something as natural as Red Dead Redemption 2 is a seismic achievement..."
+                        </p>
+                                
+                        <h3>
+                            - 5/5 The Telegraph
+                        </h3>
+                    </div>
+
+                    <div class="review-text">     
+                        <p>
+                            "The wide expanses of wilderness feel alive thanks to an unrivaled dynamic weather system, ambient sound effects, and the most ambitious ecology of flora and fauna ever seen in games." 
+                        </p>
+                                
+                        <h3>
+                            - 10/10 Game Informer
+                        </h3>
+                    </div>
+
+                    <div class="review-text">     
+                        <p>
+                            "Red Dead Redemption 2 is Rockstar’s best game; a grand, magnificent adventure that’s vast yet intimate. It delivers a story full of drama and tragedy, not to mention levity and love, and it compacts it all into the most inventive and compelling missions and moments in Rockstar’s history... It's a landmark moment for the open world genre, and for the medium as a whole."
+                        </p>
+                                
+                        <h3>
+                            - QG
+                        </h3>
+                    </div>
+
+                    <div class="review-text">     
+                        <p>
+                            "What Rockstar has delivered in Red Dead Redemption 2 is not just the best game of the year, but the best game of the decade. It does not set a new bar, but rather signals a changing of the guard, a new future for video games, as everything that comes after will be launching in a post-Red Dead Redemption 2 world."
+                        </p>
+                                
+                        <h3>
+                            - The Hollywood Reporter
+                        </h3>
+                    </div>
+
+                    <div class="review-text">     
+                        <p>
+                            "Red Dead Redemption 2 has undoubtedly raised the bar for narrative open-world games and will likely have a lasting impact on how they are made in the future. It pushes the envelope of what we understand is possible in a video game. It seems that every time we get something new from Rockstar, things inevitably change."
+                        </p>
+                                
+                        <h3>
+                            - CNET
+                        </h3>
+                    </div>
+
+                    <div class="review-text">     
+                        <p>
+                            “Red Dead Redemption 2 is a watershed moment, an instant classic, it's both another high point for a studio which has constantly delivered them for decades, and yet it's also a culmination of a journey, a journey to not only create a world that's interesting and brimming with content but a world where you can get truly lost. As a result, we have no issue calling Red Dead Redemption 2 exactly what it is, and what it deserves to be - a masterpiece.”
+                        </p>
+                                
+                        <h3>
+                            - 10/10 Gamereactor
+                        </h3>
+                    </div>
+
+                    <div class="review-text">     
+                        <p>
+                            “We’ll get straight to the point : Red Dead Redemption 2 is indeed the most beautiful open-world ever created so far. It buries its competitors...With the amazing experience we had with Red Dead Redemption 2, we can say that the face of the open world genre has changed once and for all.”
+                        </p>
+                                
+                        <h3>
+                            - 21/20 JeuxActu
+                        </h3>
+                    </div>
+
+                    <div class="review-text">     
+                        <p>
+                            "RDR2 can be considered not only a milestone in gaming history, but also a lesson in creativity for the whole industry and, as a whole, a masterpiece."
+                        </p>
+                                
+                        <h3>
+                            - Everyeye.it
+                        </h3>
+                    </div>
+
+                    <div class="review-text">     
+                        <p>
+                            “Not only is Red Dead Redemption 2 a complete and profound achievement, it completes a two-part drama that will remain relevant far longer than any of the other candidates this year has put forward.” 
+                        </p>
+                                
+                        <h3>
+                            - 10/10 Press Start Australia
+                        </h3>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Platforms Section -->
+            <section class="platforms" id="platforms">
+                <div class="title">
+                    <h2>Platforms</h2>
+                </div>
+
+                <article class="platforms-container">
+                    <a href="https://store.playstation.com/pt-br/product/UP1004-CUSA03041_00-REDEMPTION000002" target="blank"><img src="images/platforms/ps4.png" alt="Playstation 4"></a>
+                    <a href="https://www.microsoft.com/pt-br/p/red-dead-redemption-2/bpswgqbw7r3g" target="blank"><img src="images/platforms/xboxone.png" alt="Xbox One"></a>
+                    <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="blank"><img src="images/platforms/pc.png" alt="PC"></a>
+                </article>
+            </section>
+
+            <!-- Footer Section -->
+            <footer>
+                <p class="footer-text">&copy; Rockstar Games. All Rights Reserved</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/rockstargames" target="blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://twitter.com/rockstargames" target="blank"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://instagram.com/rockstargames" target="blank"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="http://youtube.com/rockstargames" target="blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://twitch.tv/rockstargames" target="blank"><i class="fab fa-twitch"></i></a></li>
+                </ul>
+            </footer>
+
+       <!-- Javascript -->
+       <script src="js/menu.js"></script>
+       <script src="js/lightbox-plus-jquery.min.js"></script>
+    </body>
+</html>
