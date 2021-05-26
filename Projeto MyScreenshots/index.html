@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MyScreenshots</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matheus Costa - https://github.com/matheusz98">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bc4a93c294.js" crossorigin="anonymous"></script>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/lightbox.min.css">
+        <!-- Icon -->
+        <link rel="icon" href="images/icon.png">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+        <!-- Mobile Menu Script -->
+        <script>
+           $(document).ready(function(){
+               $('#icon').click(function(){
+                   $('ul').toggleClass('show');
+               });
+           });
+        </script>
+    </head>
+    <body>
+        <!-- Header Area -->
+        <header>
+            <!-- Menu Area -->
+            <nav class="nav">
+                <a href="index.html"><img src="images/icon.png" class="logo"><span class="logo-title">MyScreenshots</span></a>
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=games.html>Games</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+                <i id="icon" class="fas fa-bars"></i>
+            </nav>
+        </header>
+
+        <!-- Banner Area -->
+        <section class="banner">
+            <div class="banner-container">
+                <h1>Hello There!</h1>
+                <p>Welcome to MyScreenshots!</p>
+                <p>
+                    This is a web site where i'll make available my gallery of screenshots i've captured in my gameplays on Playstation 4.
+                </p>
+                <p>Feel free to explore my gallery. Thank you for the visit!</p>
+                <a href="games.html" class="btn">Press start to begin</a>
+            </div>
+        </section>
+
+        <!-- Highlights Title -->
+        <div class="highlights-title">
+            <h2>Highlights</h2>
+        </div>
+
+        <!-- Highlights Area -->
+        <section class="highlights">
+            <div class="screenshot"><a href="images/rdr2/14.jpg" data-lightbox="mygallery" data-title="Red Dead Redemption 2"><img src="images/rdr2/14.jpg" alt="Red Dead Redemption 2"></a></div>
+            <div class="screenshot"><a href="images/tsushima/08.jpg" data-lightbox="mygallery" data-title="Ghost of Tsushima"><img src="images/tsushima/08.jpg" alt="Ghost of Tsushima"></a></div>
+            <div class="screenshot"><a href="images/tlou2/11.jpg" data-lightbox="mygallery" data-title="The Last of Us Part II"><img src="images/tlou2/11.jpg" alt="The Last of Us Part II"></a></div>
+            <div class="screenshot"><a href="images/horizon/05.jpg" data-lightbox="mygallery" data-title="Horizon Zero Dawn"><img src="images/horizon/05.jpg" alt="Horizon Zero Dawn"></a></div>
+            <div class="screenshot"><a href="images/dmc5/05.jpg" data-lightbox="mygallery" data-title="Devil May Cry 5"><img src="images/dmc5/05.jpg" alt="Devil May Cry 5"></a></div>
+            <div class="screenshot"><a href="images/bloodborne/01.jpg" data-lightbox="mygallery" data-title="Bloodborne"><img src="images/bloodborne/01.jpg" alt="Bloodborne"></a></div>
+        </section>
+
+        <!-- Footer Area -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>MyScreenshots</h3>
+                <p>Thank you so much for visiting my website! I hope you enjoyed the content. See you next time!</p>
+                <ul class="socials">
+                    <li><a href=# class="facebook"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="fab fa-youtube-square"></i></a></li>
+                    <li><a href="https://mypst.com.br/rank/Matheus_Bostola/#!perfil" class="mypst" target="blank"><i class="fab fa-playstation"></i></a></li>
+                    <li><a href="https://github.com/matheusz98" class="github" target="blank"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2021 MyScreenshots. Created and designed by <span><a href="https://github.com/matheusz98" target="blank">Matheus Costa</a></span></p>
+            </div>
+        </footer>
+
+
+        <!-- Javascript -->
+        <script src="js/bg.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+    </body>
+</html>
