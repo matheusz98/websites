@@ -1,0 +1,455 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Banner */
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.50;
+}
+
+.banner .content{
+    max-width: 750px;
+    position: relative;
+    text-align: center;
+}
+
+.banner .content h2{
+    color: #ffffff;
+    font-size: 4em;
+}
+
+.banner .content p{
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.banner header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 40px 100px;
+}
+
+.banner header .logo{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner header .toggle{
+    width: 35px;
+    height: 27px;
+    position: relative;
+    background: url(../images/toggle.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* About us */
+.about{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.about .contentBox{
+    width: 50%;
+    background: #e65c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 100px;
+}
+
+.title{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.text{
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.about .imageBox{
+    width: 50%;
+    background: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Services */
+.services{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 100px;
+    text-align: center;
+}
+
+.services .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.services .container .servicesBox{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.services .container .servicesBox img{
+    max-width: 100px;
+}
+
+.services .container .servicesBox h2{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* Technology */
+.technology{
+    width: 100%;
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+}
+
+.technology .contentBox{
+    max-width: 800px;
+}
+
+.technology .imageBox{
+    max-width: 250px;
+}
+
+.technology .imageBox img{
+    max-width: 100%;
+}
+
+/* Clients */
+.clients{
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 100px;
+    text-align: center;
+}
+
+.clients .imageBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.clients .imageBox img{
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.30;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.clients .imageBox img:hover{
+    opacity: 1;
+}
+
+/* Testimonials */
+.testimonials{
+    background: #ff00cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    padding: 100px;
+    text-align: center;
+}
+
+.testimonials .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.testimonials .container .contentBox{
+    width: 550px;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.testimonials .container .contentBox p{
+    font-style: italic;
+}
+
+.testimonials .container .contentBox h3{
+    width: 100%;
+    font-weight: 600;
+    color: #0018f2;
+    text-align: end;
+}
+
+/* Contact us */
+.contact{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 100px;
+    text-align: center;
+}
+
+.imageBox2{
+    width: 50%;
+    background: url(../images/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.blueBg{
+    background: #1e3c72 !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a5298, #1e3c72) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.form .inputBox{
+    margin-bottom: 40px;
+}
+
+.form .inputBox input{
+    width: 100%;
+    background: transparent;
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: 200;
+    border-bottom: 2px solid #ffffff;
+}
+
+.form .inputBox input::placeholder{
+    color: #ffffff;
+}
+
+.form .inputBox textarea{
+    width: 100%;
+    background: transparent;
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 1em;
+    font-weight: 400;
+    min-height: 150px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.form .inputBox textarea::placeholder{
+    color: #ffffff;
+}
+
+.form .inputBox input[type="submit"]{
+    width: 150px;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 300;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li a{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a img{
+    filter: invert(1);
+    max-width: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1300px){
+    .testimonials{
+        padding: 50px;
+    }
+
+    .testimonials .container{
+        justify-content: center;
+    }
+
+    .testimonials .contentBox{
+        max-width: 550px;
+        padding: 60px 40px;
+        margin-bottom: 40px;
+    }
+
+    .testimonials .contentBox:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1250px){
+    .services{
+        padding: 50px;
+    }
+
+    .services .container{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .services .container .servicesBox{
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .technology{
+        padding: 50px;
+        padding-top: 300px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .technology .imageBox{
+        max-width: 250px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1160px){
+    .clients{
+        padding: 50px;
+    }
+
+    .clients .imageBox{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px){
+    .contact{
+        padding: 50px;
+    }
+}
+
+@media (max-width: 990px){
+    .banner{
+        padding: 50px;
+    }
+
+    .banner header{
+        padding: 20px 50px;
+    }
+
+    .banner .content h2{
+        font-size: 35px;
+    }
+
+    .banner .content p{
+        font-size: 15px;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about .contentBox,
+    .about .imageBox{
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 890px){
+    footer{
+        flex-direction: column-reverse;
+        padding: 20px 50px;
+        text-align: center;
+    }
+
+    footer ul{
+        margin-bottom: 20px;
+    }
+}
