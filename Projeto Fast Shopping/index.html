@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fast Shopping</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matheus Costa - https://github.com/matheusz98">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Light slider CSS -->
+        <link rel="stylesheet" href="css/lightslider.css">
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Light slider js -->
+        <script src="js/lightslider.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bc4a93c294.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Nav Section -->
+        <nav>
+            <!-- Social -->
+            <section class="socials">
+                <!-- Social Media -->
+                <div class="social">
+                    <a href="#"><i class="fa fa-facebook fb"></i></a>
+                    <a href="#"><i class="fa fa-twitter tt"></i></a>
+                    <a href="#"><i class="fa fa-instagram ig"></i></a>
+                </div>
+
+                <!-- Phone Number -->
+                <div  class="phone">
+                    <span>Call now! 51 8140-7932</span>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <section class="navigation">
+                <!-- Mobile Menu -->
+                <div class="toggle"></div>
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">Fast <span class="alt-color">Shopping</span></a>
+
+                <!-- Main Menu -->
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+
+                <!-- Right Menu-->
+                <div class="right-menu">
+                    <!-- Search Button -->
+                    <a href="javascript:void(0);" class="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+
+                    <!-- User Button -->
+                    <a href="javascript:void(0);" class="user">
+                        <i class="fas fa-user"></i>
+                    </a>
+
+                    <!-- Cart Button -->
+                    <a href="#">
+                        <i class="fas fa-shopping-cart">
+                        <!-- Number of products -->
+                        <span class="num-cart">0</span></i>
+                    </a>
+                </div>
+            </section>
+        </nav>
+
+        <!-- Search Bar -->
+        <section class="search-bar">
+            <!-- Search Input -->
+            <div class="search-input">
+                <input type="text" placeholder="Search for your Favorite Product">
+                <!-- Cancel Button -->
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Login / Sign-Up Form -->
+        <section class="form">
+            <!-- Login -->
+            <div class="login-form">
+                <!-- Cancel -->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+
+                <strong>Login</strong>
+                <form>
+                    <input type="email" placeholder="email@mail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="submit" value="Login">
+                </form>
+
+                <div class="form-btns">
+                    <a href="#" class="forgot">Forgot your Password?</a>
+                    <a href="javascript:void(0);" class="signup">Create an Account</a>
+                </div>
+            </div>
+
+            <!-- Sign up -->
+            <div class="signup-form">
+                <!-- Cancel -->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+
+                <strong>Sign up</strong>
+                <form>
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="email" placeholder="email@mail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="submit" value="Sign Up">
+                </form>
+
+                <div class="form-btns">
+                    <a href="javascript:void(0);" class="already">Already have an Account?</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider Section -->
+        <ul id="adaptive" class="cs-hidden">
+            <!-- Slide 1 -->
+            <li class="item-a">
+                <section class="slider slide-1">
+                    <article class="slider-container">
+                        <div class="slider-text">
+                            <span>Limited offer</span>
+                            <strong>30% off with <font>promo code</font></strong>
+                            <a href="#" class="slider-btn">Shop Now</a>
+                        </div>
+                    </article>
+                </section>
+            </li>
+
+            <!-- Slide 2 -->
+            <li class="item-a">
+                <section class="slider slide-2">
+                    <article class="slider-container">
+                        <div class="slider-text">
+                            <span>Limited offer</span>
+                            <strong>30% off with <font>promo code</font></strong>
+                            <a href="#" class="slider-btn">Shop Now</a>
+                        </div>
+                    </article>
+                </section>
+            </li>
+
+            <!-- Slide 3 -->
+            <li class="item-a">
+                <section class="slider slide-3">
+                    <article class="slider-container">
+                        <div class="slider-text">
+                            <span>Limited offer</span>
+                            <strong>30% off with <font>promo code</font></strong>
+                            <a href="#" class="slider-btn">Shop Now</a>
+                        </div>
+                    </article>
+                </section>
+            </li>
+          </ul>
+
+          <!-- Featured Title -->
+          <div class="featured-title">
+              <h2>Featured Categories</h2>
+          </div>
+
+          <!-- Feature Box -->
+          <ul id="autoWidth" class="cs-hidden">
+            <!-- First Item -->
+            <li class="item">
+                <article class="feature-box">
+                    <a href="#">
+                        <img src="images/feature_1.jpg" alt="T-Shirt">
+                    </a>
+                </article>
+                <span>T-Shirt</span>
+            </li>
+
+            <!-- Second Item -->
+            <li class="item">
+                <article class="feature-box">
+                    <a href="#">
+                        <img src="images/feature_2.jpg" alt="T-Shirt">
+                    </a>
+                </article>
+                <span>T-Shirt</span>
+            </li>
+
+            <!-- Third Item -->
+            <li class="item">
+                <article class="feature-box">
+                    <a href="#">
+                        <img src="images/feature_3.jpg" alt="T-Shirt">
+                    </a>
+                </article>
+                <span>T-Shirt</span>
+            </li>
+
+            <!-- Fourth Item -->
+            <li class="item">
+                <article class="feature-box">
+                    <a href="#">
+                        <img src="images/feature_4.jpg" alt="Pillow">
+                    </a>
+                </article>
+                <span>Pillow</span>
+            </li>
+
+            <!-- Fifth Item -->
+            <li class="item">
+                <article class="feature-box">
+                    <a href="#">
+                        <img src="images/feature_5.jpg" alt="Phone Case">
+                    </a>
+                </article>
+                <span>Phone Case</span>
+            </li>
+
+            <!-- Sixth Item -->
+            <li class="item">
+                <article class="feature-box">
+                    <a href="#">
+                        <img src="images/feature_6.jpg" alt="Bag">
+                    </a>
+                </article>
+                <span>Bag</span>
+            </li> 
+          </ul>
+
+          <!-- New Arrival -->
+          <section class="new-arrival">
+                <div class="arrival-title">
+                    <strong>New Arrival</strong>
+                    <p>Check out our new items!</p>
+                </div>
+
+                <!-- Product Container -->
+                <section class="product-container">
+                    <!-- Product One -->
+                    <article class="product-box">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <!-- Add to Cart -->
+                            <a href="#" class="add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                                <img src="images/p-1.png" alt="Product One">
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="product-details">
+                            <a href="#" class="product-name">Drawstring T-Shirt</a>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </article>
+
+                    <!-- Product Two -->
+                    <article class="product-box">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <!-- Add to Cart -->
+                            <a href="#" class="add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                                <img src="images/p-2.png" alt="Product Two">
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="product-details">
+                            <a href="#" class="product-name">Drawstring T-Shirt</a>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </article> 
+
+                    <!-- Product Three -->
+                    <article class="product-box">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <!-- Add to Cart -->
+                            <a href="#" class="add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                                <img src="images/p-3.png" alt="Product Three">
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="product-details">
+                            <a href="#" class="product-name">Drawstring T-Shirt</a>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </article> 
+
+                    <!-- Product Four -->
+                    <article class="product-box">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <!-- Add to Cart -->
+                            <a href="#" class="add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                                <img src="images/p-4.png" alt="Product Four">
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="product-details">
+                            <a href="#" class="product-name">Drawstring T-Shirt</a>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </article> 
+
+                    <!-- Product Five -->
+                    <article class="product-box">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <!-- Add to Cart -->
+                            <a href="#" class="add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                                <img src="images/p-5.png" alt="Product Five">
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="product-details">
+                            <a href="#" class="product-name">Drawstring T-Shirt</a>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </article> 
+
+                    <!-- Product Six -->
+                    <article class="product-box">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <!-- Add to Cart -->
+                            <a href="#" class="add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                                <img src="images/p-6.png" alt="Product Six">
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="product-details">
+                            <a href="#" class="product-name">Drawstring T-Shirt</a>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </article> 
+
+                    <!-- Product Seven -->
+                    <article class="product-box">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <!-- Add to Cart -->
+                            <a href="#" class="add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                                <img src="images/p-7.png" alt="Product Seven">
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="product-details">
+                            <a href="#" class="product-name">Drawstring T-Shirt</a>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </article> 
+
+                    <!-- Product Eight -->
+                    <article class="product-box">
+                        <!-- Product Image -->
+                        <div class="product-img">
+                            <!-- Add to Cart -->
+                            <a href="#" class="add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                                <img src="images/p-8.png" alt="Product Eight">
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="product-details">
+                            <a href="#" class="product-name">Drawstring T-Shirt</a>
+                            <span class="price">$22.00</span>
+                        </div>
+                    </article> 
+                </section>            
+          </section>
+
+          <!-- Sale Section -->
+          <section class="sale">
+                <article class="sale-box">
+                    <img src="images/sale-1.jpg" alt="Sale One">
+                    <a href="#">
+                        <div class="sale-text">
+                            <strong>Bag with Rose Pattern</strong>
+                            <span>Sale off 25%</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sale-box">
+                    <img src="images/sale-2.jpg" alt="Sale One">
+                    <a href="#">
+                        <div class="sale-text">
+                            <strong>Bag with Rose Pattern</strong>
+                            <span>Sale off 25%</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sale-box">
+                    <img src="images/sale-3.jpg" alt="Sale One">
+                    <a href="#">
+                        <div class="sale-text">
+                            <strong>Bag with Rose Pattern</strong>
+                            <span>Sale off 25%</span>
+                        </div>
+                    </a>
+                </article>
+          </section>
+          
+          <!-- Feature Items -->
+          <!-- New Arrival -->
+          <section class="new-arrival">
+            <div class="arrival-title">
+                <strong>Feature Items</strong>
+                <p>Check out more of our new items!</p>
+            </div>
+
+            <!-- Product Container -->
+            <section class="product-container">
+                <!-- Product One -->
+                <article class="product-box">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                        <!-- Add to Cart -->
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                            <img src="images/p-1.png" alt="Product One">
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="product-details">
+                        <a href="#" class="product-name">Drawstring T-Shirt</a>
+                        <span class="price">$22.00</span>
+                    </div>
+                </article>
+
+                <!-- Product Two -->
+                <article class="product-box">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                        <!-- Add to Cart -->
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                            <img src="images/p-2.png" alt="Product Two">
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="product-details">
+                        <a href="#" class="product-name">Drawstring T-Shirt</a>
+                        <span class="price">$22.00</span>
+                    </div>
+                </article> 
+
+                <!-- Product Three -->
+                <article class="product-box">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                        <!-- Add to Cart -->
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                            <img src="images/p-3.png" alt="Product Three">
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="product-details">
+                        <a href="#" class="product-name">Drawstring T-Shirt</a>
+                        <span class="price">$22.00</span>
+                    </div>
+                </article> 
+
+                <!-- Product Four -->
+                <article class="product-box">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                        <!-- Add to Cart -->
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                            <img src="images/p-4.png" alt="Product Four">
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="product-details">
+                        <a href="#" class="product-name">Drawstring T-Shirt</a>
+                        <span class="price">$22.00</span>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <!-- Promo Banner -->
+        <section class="banner slide-3">
+            <article class="banner-container">
+                <div class="banner-text">
+                    <span>Limited offer</span>
+                    <strong>30% off with <font>promo code</font></strong>
+                    <a href="#" class="banner-btn">Shop Now</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <article class="services-box">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Free Shipping</span>
+                <p>Free Shipping for all orders</p>
+            </article>
+
+            <article class="services-box">
+                <i class="fas fa-headphones-alt"></i>
+                <span>24/7 Support</span>
+                <p>We provide a 24 hour support</p>
+            </article>
+
+            <article class="services-box">
+                <i class="fas fa-sync"></i>
+                <span>100% of your Money Back</span>
+                <p>You have 30 days to get your money back</p>
+            </article>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <span class="copyright">
+                Fast Shopping &copy; 2021 - Design made by Matheus Costa
+            </span>
+            <div class="subscribe">
+                <input type="email" placeholder="email@email.com" required>
+                <input type="submit" value="Subscribe">
+            </div>
+        </footer>
+
+    <!-- Search Bar Script -->
+    <script type="text/javascript">
+        $(document).on('click', '.search', function(){
+            $('.search-bar').addClass('search-bar-active');
+        });
+
+        $(document).on('click', '.search-cancel', function(){
+            $('.search-bar').removeClass('search-bar-active');
+        });
+
+        // Login & Sign-up Scripts
+        // Login screen
+        $(document).on('click', '.user,.already', function(){
+            $('.form').addClass('login-active').removeClass('sign-up-active');
+        });
+
+        // Sign-up screen
+        $(document).on('click', '.signup', function(){
+            $('.form').addClass('sign-up-active').removeClass('login-active');
+        });
+
+        // Close login & sign-up screen
+        $(document).on('click', '.form-cancel', function(){
+            $('.form').removeClass('login-active').removeClass('sign-up-active');
+        });
+
+        // Script for Slider using jQuery's light slider
+        $(document).ready(function() {
+            $('#adaptive').lightSlider({
+                adaptiveHeight:true,
+                auto:true,
+                item:1,
+                slideMargin:0,
+                loop:true
+            });
+        });
+
+        // Feature Slider Script
+        $(document).ready(function() {
+            $('#autoWidth').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#autoWidth').removeClass('cS-hidden');
+                } 
+            });  
+        });
+
+        /* Scroll Menu Script */
+        $(window).scroll(function(){
+            if($(document).scrollTop() > 0){
+                $('.navigation').addClass('fix-nav');
+            } else {
+                $('.navigation').removeClass('fix-nav');
+            }
+        });
+
+        /* Responsive menu Script */
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active');
+                $('.navigation').toggleClass('active');
+            });
+        });
+    </script>
+    </body>
+</html>
