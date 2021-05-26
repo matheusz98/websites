@@ -1,0 +1,1438 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Fontes customizadas */
+@font-face{
+    src: url(../fontes/PersonifiedUXRegular.ttf);
+    font-family: personified;
+}
+
+@font-face{
+    src: url(../fontes/earwig\ factory\ rg.ttf);
+    font-family: earwig;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    padding: 100px;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track{
+    background: #000000;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    border-radius: 10px;
+    border: 3px solid #000000;
+}
+
+/* Loader */
+.loader{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img{
+    width: 100px;
+}
+
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Header */
+header{
+    width: 100%;
+    background: rgb(222,0,0);
+    background: linear-gradient(90deg, rgba(222,0,0,1) 0%, rgba(212,0,0,1) 100%);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    transition: all 0.3s ease;
+}
+
+header.sticky{
+    padding: 10px 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-family: earwig;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.logo:hover{
+    letter-spacing: 2px;
+}
+
+.logo img{
+    width: 40px;
+}
+
+/* Menu */
+.menu{
+    width: 100%;
+    height: 100%;
+    background: rgb(222,0,0);
+    background: linear-gradient(90deg, rgba(222,0,0,1) 0%, rgba(212,0,0,1) 100%);
+    position: fixed;
+    top: -100%;
+    left: 0;
+    padding: 60px 0px;
+    display: block;
+    text-align: center;
+    z-index: -99;
+    transition: all 0.5s ease;
+}
+
+.menu li{
+    padding: 15px 0px;
+}
+
+.menu li a{
+    font-family: personified;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover{
+    letter-spacing: 2px;
+}
+
+.menu.active{
+    top: 0;
+}
+
+.toggle .bar{
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px auto;
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#top-menu.is-active .bar:nth-child(2){
+    opacity: 0;
+}
+
+#top-menu.is-active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+#top-menu.is-active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Banner */
+.banner{
+    background: url(../imagens/bg/bg_desk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Sobre */
+.titulo{
+    width: 100%;
+    position: relative;
+    background: url(../imagens/bg/bg_titulo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.titulo h2{
+    font-size: 5em;
+    font-family: earwig;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 50px 0px;
+}
+
+.sobre{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url(../imagens/bg/bg_sobre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.conteudo-sobre{
+    background-color: #000000bd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    -webkit-box-shadow: 0px 1px 15px 5px rgba(0,0,0,0.7); 
+    box-shadow: 0px 1px 15px 5px rgba(0,0,0,0.7);
+}
+
+.sobre .container-sobre h2{
+    font-family: personified;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.sobre .container-sobre p {
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px 0px 30px 0px;
+}
+
+.btn{
+    font-family: personified;
+    font-size: 1.2em;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #ff0000;
+    transition: ease-out 0.4s;
+}
+
+.btn:hover{
+    box-shadow: inset 300px 0 0 0 #ff0000;
+    color: #000000;
+}
+
+/* Resumo */
+.resumo{
+    background: url(../imagens/bg/bg_resumo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.conteudo{
+    width: 50%;
+    background-color: #000000bd;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    -webkit-box-shadow: 0px 1px 15px 5px rgba(0,0,0,0.7); 
+    box-shadow: 0px 1px 15px 5px rgba(0,0,0,0.7);
+}
+
+.conteudo p{
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.imagem{
+    width: 50%;
+}
+
+.imagem img{
+    border-radius: 10px;
+}
+
+/* Phantom Thieves */
+.phantom-thieves{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.joker{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/joker.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #ff0000;
+}
+
+.mona{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/mona.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #0bb419;
+}
+
+.skull{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/skull.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #ffe600;
+}
+
+.panther{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/panther.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #ff00ff;
+}
+
+.fox{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/fox.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #0066ff;
+}
+
+.queen{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/queen.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #1100ff;
+}
+
+.oracle{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/oracle.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #09ff00;
+}
+
+.noir{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/noir.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #6200ff;
+}
+
+.crow{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/crow.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #727272;
+}
+
+.black-mask{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/crow_2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 5px solid #474747;
+}
+
+.violet{
+    height: 100vh;
+    background: url(../imagens/phantom_thieves/violet.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.info-box{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    text-align: center;    
+}
+
+.texto{
+    color: #fff;
+	padding: 20px;
+    font-size: 15px;
+	font-style: 25px;
+	letter-spacing: 3px;
+}
+
+.joker .texto{
+    background-color: #ff0000;
+}
+
+.mona .texto{
+    background-color: #0bb419;
+}
+
+.skull .texto{
+    background-color: #ffe600;
+}
+
+.panther .texto{
+    background-color: #ff00ff;
+}
+
+.fox .texto{
+    background-color: #0066ff;
+}
+
+.queen .texto{
+    background-color: #1100ff;
+}
+
+.oracle .texto{
+    background-color: #09ff00;
+}
+
+.noir .texto{
+    background-color: #6200ff;
+}
+
+.crow .texto{
+    background-color: #727272;
+}
+
+.black-mask .texto{
+    background-color: #474747;
+}
+
+.violet .texto{
+    background-color: #ff0037;
+}
+
+/* Vídeos */
+.videos{
+    background: url(../imagens/bg/bg_videos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.iframe-container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+iframe{
+    margin: 5px 0px;
+}
+
+/* Confidants */
+.confidants{
+    background: url(../imagens/bg/bg_confidants.png);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.confidants-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+
+.confidant-box{
+    width: 350px;
+    background: url(../imagens/bg/bg_box7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.confidant-box img{
+    max-width: 100%;
+    border-bottom: 10px solid #000000;
+}
+
+.confidant-box.ryuji{
+    background: url(../imagens/arcanas/chariot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.morgana{
+    background: url(../imagens/arcanas/magician.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.ann{
+    background: url(../imagens/arcanas/lovers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.yusuke{
+    background: url(../imagens/arcanas/emperor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.makoto{
+    background: url(../imagens/arcanas/priestess.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.futaba{
+    background: url(../imagens/arcanas/hermit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.haru{
+    background: url(../imagens/arcanas/empress.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.akechi{
+    background: url(../imagens/arcanas/justice.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.kasumi{
+    background: url(../imagens/arcanas/faith.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.sumire{
+    background: url(../imagens/arcanas/faith_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.sojiro{
+    background: url(../imagens/arcanas/hierophant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.maruki{
+    background: url(../imagens/arcanas/councillor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.sae{
+    background: url(../imagens/arcanas/judgement.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.igor{
+    background: url(../imagens/arcanas/fool.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.twins{
+    background: url(../imagens/arcanas/strenght.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.mishima{
+    background: url(../imagens/arcanas/moon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.kawakami{
+    background: url(../imagens/arcanas/temperance.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.takemi{
+    background: url(../imagens/arcanas/death.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.yoshida{
+    background: url(../imagens/arcanas/sun.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.hifumi{
+    background: url(../imagens/arcanas/star.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.chihaya{
+    background: url(../imagens/arcanas/fortune.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.iwai{
+    background: url(../imagens/arcanas/hanged.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.shinya{
+    background: url(../imagens/arcanas/tower.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.confidant-box.ohya{
+    background: url(../imagens/arcanas/devil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo-box{
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.conteudo-box:hover{
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.confidant-box h2{
+    font-family: earwig;
+    font-weight: 500;
+    font-size: 3em;
+    color: #ffffff;
+    background: #000000c0;
+}
+
+.confidant-box p{
+    font-size: 1em;
+    color: #ffffff;
+    background: #000000c0;
+    font-weight: 500;
+}
+
+/* Galeria */
+.galeria{
+    background: url(../imagens/bg/bg_galeria.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide-1{
+    background-image: url(../imagens/galeria/01.jpg);
+}
+
+.slide-2{
+    background-image: url(../imagens/galeria/02.jpg);
+}
+
+.slide-3{
+    background-image: url(../imagens/galeria/03.jpg);
+}
+
+.slide-4{
+    background-image: url(../imagens/galeria/04.jpg);
+}
+
+.slide-5{
+    background-image: url(../imagens/galeria/05.jpg);
+}
+
+.slide-6{
+    background-image: url(../imagens/galeria/06.jpg);
+}
+
+.slide-7{
+    background-image: url(../imagens/galeria/07.jpg);
+}
+
+.slide-8{
+    background-image: url(../imagens/galeria/08.jpg);
+}
+
+.slide-9{
+    background-image: url(../imagens/galeria/09.jpg);
+}
+
+.slide-10{
+    background-image: url(../imagens/galeria/10.jpg);
+}
+
+.slide-11{
+    background-image: url(../imagens/galeria/11.jpg);
+}
+
+.slide-12{
+    background-image: url(../imagens/galeria/12.jpg);
+}
+
+.slide-13{
+    background-image: url(../imagens/galeria/13.jpg);
+}
+
+.slide-14{
+    background-image: url(../imagens/galeria/14.jpg);
+}
+
+.slide-15{
+    background-image: url(../imagens/galeria/15.jpg);
+}
+
+.slide-16{
+    background-image: url(../imagens/galeria/16.jpg);
+}
+
+.slide-17{
+    background-image: url(../imagens/galeria/17.jpg);
+}
+
+.slide-18{
+    background-image: url(../imagens/galeria/18.jpg);
+}
+
+.slide-19{
+    background-image: url(../imagens/galeria/19.jpg);
+}
+
+.slide-20{
+    background-image: url(../imagens/galeria/20.jpg);
+}
+
+/* Contato */
+.contato{
+    min-height: 130vh;
+    background: url(../imagens/bg/bg_contato.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.contato .contato-conteudo{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contato .contato-conteudo h2{
+    font-family: earwig;
+    font-size: 3em;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contato .contato-conteudo p{
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.contato-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+
+.contato-container .contatoInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.contato-container .contatoInfo .contatoBox{
+    position: relative;
+    display: flex;
+    padding: 20px 20px;
+}
+
+.contato-container .contatoInfo .contatoBox .icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.contato-container .contatoInfo .contatoBox .icone:hover{
+    transform: scale(1.1);
+}
+
+.fb{
+    background-color: #001d9c;
+}
+
+.tw{
+    background-color: #6700dd;
+}
+
+.tt{
+    background-color: #0073b6;
+}
+
+.yt{
+    background-color: #ff0000;
+}
+
+.gh{
+    background-color: #14334d;
+}
+
+.contato-container .contatoInfo .contatoBox .icone a{
+    color: #ffffff;
+}
+
+.contato-form{
+    width: 40%;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.contato-form h2{
+    font-size: 1em;
+    color: #000000;
+    font-weight: 500;
+}
+
+.contato-form .inputBox{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.contato-form .inputBox input,
+.contato-form .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #000000;
+    font-size: 1em;
+    outline: none;
+    resize: none;
+}
+
+.contato-form .inputBox button{
+    width: 100px;
+    padding: 10px;
+    font-size: 18px;
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+#error_message{
+    margin-bottom: 20px;
+    background: #ff3138;
+    padding: 0px;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.popup .overlay{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+}
+   
+.popup .content{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -10px;
+    left: 600px;
+    transform:translate(-50%,-50%) scale(0);
+    background: url(../imagens/bg/bg_box.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width:500px;
+    height:250px;
+    z-index:2;
+    text-align:center;
+    box-sizing:border-box;
+}
+
+.popup .content h2{
+    font-family: earwig;
+    font-weight: 500;
+    font-size: 3em;
+    color: #ffffff;
+    padding: 10px 0px;
+}
+
+.popup .content p{
+    font-family: personified;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+}
+   
+.popup .close-btn{
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#000000;
+    color:#fff;
+    font-size:30px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+}
+   
+.popup.active .overlay{
+    display:block;
+}
+   
+.popup.active .content{
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+/* Footer */
+footer{
+    background: rgb(222,0,0);
+    background: linear-gradient(90deg, rgba(222,0,0,1) 0%, rgba(212,0,0,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-family: personified;
+    color: #ffffff;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+footer ul li a{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a i{
+    color: #ffffff;
+    max-width: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1320px){
+    .iframe-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1260px){
+    .popup .content{
+        left: 500px;
+    }
+}
+
+@media (max-width: 1120px){
+    .popup .content{
+        left: 430px;
+    }
+}
+
+@media (max-width: 1060px){
+    .contato{
+        background: url(../imagens/bg/bg_contato.png);
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+@media (max-width: 991px){
+    section{
+        padding: 100px 50px;
+    }
+
+    .contato{
+        padding: 0px;
+    }
+
+    .contato-container .contatoInfo{
+        margin-bottom: 40px;
+    }
+    
+    .contato-container .contatoInfo,
+    .contato-form{
+        width: 50%;
+    }
+
+    .popup .content{
+        left: 400px;
+    }
+}
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .conteudo p{
+        padding: 0px 10px;
+    }
+
+    .imagem{
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .popup .content{
+        left: 330px;
+    }
+}
+
+@media (max-width: 890px){
+    footer{
+        flex-direction: column-reverse;
+        padding: 20px 50px;
+        text-align: center;
+    }
+
+    footer ul{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 860px){
+    .contato{
+        background: url(../imagens/bg/bg_contato_mobile.png);
+        background-size: cover;
+        background-position: center left;
+    }
+}
+
+@media (max-width: 830px){
+    .joker{
+        background: url(../imagens/phantom_thieves/joker_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .mona{
+        background: url(../imagens/phantom_thieves/mona_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    .skull{
+        background: url(../imagens/phantom_thieves/skull_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .panther{
+        background: url(../imagens/phantom_thieves/panther_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .fox{
+        background: url(../imagens/phantom_thieves/fox_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .queen{
+        background: url(../imagens/phantom_thieves/queen_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    .oracle{
+        background: url(../imagens/phantom_thieves/oracle_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .noir{
+        background: url(../imagens/phantom_thieves/noir_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat; 
+        background-position: center;
+    }
+
+    .crow{
+        background: url(../imagens/phantom_thieves/crow_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    .black-mask{
+        background: url(../imagens/phantom_thieves/crow_2_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .violet{
+        background: url(../imagens/phantom_thieves/violet_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}
+
+@media (max-width: 810px){
+    .confidants-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 780px){
+    .popup .content{
+        left: 300px;
+    }
+}
+
+@media (max-width: 770px){
+    .banner{
+        background: url(../imagens/bg/bg_mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 200vh;
+    }
+}
+
+@media (max-width: 710px){
+    .popup .content{
+        left: 250px;
+    }
+}
+
+@media (max-width: 660px){
+    .banner{
+        height: 150vh;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .popup .content{
+        left: 200px;
+    }
+}
+
+@media (max-width: 600px){
+    section{
+        padding: 100px 20px;
+    }
+
+    .contato-container .contatoInfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contato-container .contatoInfo,
+    .contato-form{
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px){
+    .galeria{
+        background-position: center;
+    }
+
+    .popup .content{
+        width: 300px;
+        height: 250px;
+    }
+
+    .popup .content h2{
+        font-family: earwig;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+    
+    .popup .content p{
+        font-family: personified;
+        font-weight: 300;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 530px){
+    .contato{
+        background: url(../imagens/bg/bg_contato_mobile.png);
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+@media (max-width: 520px){
+    .banner{
+        height: 120vh;
+    }
+
+    .popup .content{
+        left: 150px;
+    }
+}
+
+@media (max-width: 430px){
+    .confidant-box{
+        width: 250px;
+    }
+
+    .titulo h2{
+        font-size: 3em;
+    }
+
+    .banner{
+        height: 100vh;
+    }
+
+    .crow{
+        background: url(../imagens/phantom_thieves/crow_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .popup .content{
+        left: 100px;
+    }
+}
+
+@media (max-width: 380px){
+    .black-mask{
+        background: url(../imagens/phantom_thieves/crow_2_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+@media (max-width: 360px){
+    .confidant-box h2{
+        font-size: 2em;
+    }
+
+    .logo{
+        font-size: 1.5em;
+    }
+
+    .banner{
+        height: 80vh;
+    }
+
+    .sobre{
+        height: 120vh;
+    }
+
+    .skull{
+        background: url(../imagens/phantom_thieves/skull_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .panther{
+        background: url(../imagens/phantom_thieves/panther_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .fox{
+        background: url(../imagens/phantom_thieves/fox_mobile.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .popup .content{
+        left: 80px;
+    }
+}
+
+@media (max-width: 330px){
+    .popup .content{
+        width: 250px;
+        height: 250px;
+    }
+
+    .popup .content{
+        left: 50px;
+    }
+}

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Phan-Blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='keywords' content='persona 5, persona 5 royal, persona, atlus, atlus usa, playstation 3, playstation 4, playstation 5, rpg, jrpg,'>
+    <meta name="author" content="Matheus Costa - https://github.com/matheusz98">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Light Slider CSS -->
+    <link rel="stylesheet" href="css/lightslider.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Light Slider js-->
+    <script src="js/lightslider.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bc4a93c294.js" crossorigin="anonymous"></script>
+    <!-- Ícone -->
+    <link rel="icon" href="imagens/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Loading -->
+    <div class="loader">
+        <img src="imagens/loading.gif" alt="Loading...">
+    </div>
+
+    <!-- Header -->
+    <header>
+        <a href="#home" class="logo"><img src="imagens/logo.png" alt="Logotipo">Phan-Blog</a>
+
+        <!-- Menu Mobile -->
+        <div class="toggle" id="top-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="#home" onclick="topMenu();">Home</a></li>
+            <li><a href="#sobre" onclick="topMenu();">Sobre o blog</a></li>
+            <li><a href="#resumo" onclick="topMenu();">Resumo</a></li>
+            <li><a href="#phantom-thieves" onclick="topMenu();">Phantom Thieves</a></li>
+            <li><a href="#videos" onclick="topMenu();">Videos</a></li>
+            <li><a href="#confidants" onclick="topMenu();">Confidants</a></li>
+            <li><a href="#galeria" onclick="topMenu();">Galeria</a></li>
+            <li><a href="#contato" onclick="topMenu();">Contato</a></li>
+        </ul>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner" id="home"></div>
+
+    <!-- Sobre -->
+    <div class="titulo" id="sobre">
+        <h2 data-aos="fade-in">Sobre o blog</h2>
+    </div>
+
+    <section class="sobre">
+        <article class="container-sobre" data-aos="fade-up">
+            <div class="conteudo-sobre">
+                <h2>Looking cool, Joker!</h2>
+                <p>Olá! Seja bem-vindo ao Phan-Blog. O tema deste blog é completamente voltado ao game Persona 5<br>
+                e sua versão definitiva Persona 5 Royal. Neste blog você irá encontrar diversos conteúdos a respeito do game,<br> 
+                como por exemplo um resumo sobre o enredo, mais sobre os Phantom Thieves, galerias e muito mais!<br>
+                Este website foi projetado e desenvolvido com o maior carinho e amor possível. Um site de um fã, para outros fãs.
+                </p>
+            </div>
+
+            <a href="#resumo" class="btn">Let us Start the Game</a>
+        </article>
+    </section>
+
+    <!-- Resumo -->
+    <div class="titulo" id="resumo">
+        <h2 data-aos="fade-in">Resumo</h2>
+    </div>
+
+    <section class="resumo">
+        <article class="container">
+            <div class="imagem" data-aos="fade-right">
+                <img src="imagens/resumo/01.png" alt="Protagonista">
+            </div>
+
+            <div class="conteudo" data-aos="fade-left">
+                <p>Depois de salvar uma mulher de um ataque de um homem bêbado, o protagonista se vê falsamente acusado de agressão, expulso de sua escola e enviado para Tóquio, Japão, 
+                    para começar a se matricular na Escola Academia Shujin durante seu ano de liberdade condicional. 
+                    Ele se encontra com seu novo guardião, Sojiro Sakura, um amigo da família e dono do Leblanc Café em Yongen-Jaya, e se prepara para sua nova vida. 
+                    No entanto, ao viajar para seu novo lar, ele percebe um aplicativo estranho em seu telefone.
+                </p>
+            </div>
+        </article>
+
+        <article class="container">
+            <div class="conteudo" data-aos="fade-right">
+                <p>
+                    Em sua primeira noite em sua nova casa, o protagonista tem um sonho estranho em que visita a misteriosa Velvet Room e conhece seu dono, Igor, 
+                    e seus guardas, as gêmeas Caroline e Justine. Igor o avisa que ele deve completar a "reabilitação" para evitar certa ruína e vagamente comenta sobre a 
+                    natureza especial do aplicativo misterioso.
+                </p>
+
+                <p>
+                    No dia seguinte, Sojiro leva o protagonista à sua nova escola pela primeira vez. Enquanto eles dirigem, ele o avisa sobre o recente surto de estranhos 
+                    desligamentos mentais e crises psicóticas ocorrendo em Tóquio.
+                </p>
+            </div>
+
+            <div class="imagem" data-aos="fade-left">
+                <img src="imagens/resumo/02.jpg" alt="Protagonista na Velvet Room">
+            </div>
+        </article>
+
+        <article class="container">
+            <div class="imagem" data-aos="fade-right">
+                <img src="imagens/resumo/03.png" alt="Protagonista despertando seu poder">
+            </div>
+
+            <div class="conteudo" data-aos="fade-left">
+                <p>
+                    No dia seguinte, enquanto o protagonista tenta ir para a escola sozinho, ele acidentalmente tropeça em uma realidade sobrenatural chamada Metaverso 
+                    e descobre o "Palácio" &#40;locais que servem como manifestações físicas dos desejos distorcidos de uma pessoa&#41; do professor de educação física e treinador do time de voleibol, Suguru Kamoshida, conhecido pelos seus atos de assédio sexual contra seus alunos. 
+                    Ele acidentalmente traz o delinquente escolar Ryuji Sakamato para dentro com ele, e os dois são logo capturados pelas "sombras" do palácio do mal. No entanto, antes da execução, o protagonista desperta a sua persona, 
+                    ganhando a habilidade de invocar monstros poderosos e derrotar as sombras que tentam matá-lo.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Phantom Thieves -->
+    <div class="titulo" id="phantom-thieves">
+        <h2 data-aos="fade-in">Phantom Thieves</h2>
+    </div>
+
+    <div class="phantom-thieves">
+        <article class="joker">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Joker</h2>
+                    <p>Persona: Arsene</p>
+                    <p>Arcana: Fool</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="mona">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Mona</h2>
+                    <p>Persona: Zorro</p>
+                    <p>Arcana: Magician</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="skull">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Skull</h2>
+                    <p>Persona: Captain Kidd</p>
+                    <p>Arcana: Chariot</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="panther">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Panther</h2>
+                    <p>Persona: Carmen</p>
+                    <p>Arcana: Lovers</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="fox">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Fox</h2>
+                    <p>Persona: Goemon</p>
+                    <p>Arcana: Emperor</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="queen">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Queen</h2>
+                    <p>Persona: Johanna</p>
+                    <p>Arcana: Priestess</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="oracle">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Oracle</h2>
+                    <p>Persona: Necronomicon</p>
+                    <p>Arcana: Hermit</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="noir">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Noir</h2>
+                    <p>Persona: Milady</p>
+                    <p>Arcana: Empress</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="crow">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Crow</h2>
+                    <p>Persona: Robin Hood</p>
+                    <p>Arcana: Justice</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="black-mask">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Crow &#40;Black Mask&#41;</h2>
+                    <p>Persona: Loki</p>
+                    <p>Arcana: Justice</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="violet">
+            <div class="info-box">
+                <div class="texto" data-aos="fade-up">
+                    <h2>Violet</h2>
+                    <p>Persona: Cendrillon</p>
+                    <p>Arcana: Faith</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Vídeos -->
+    <div class="titulo" id="videos">
+        <h2 data-aos="fade-in">Videos</h2>
+    </div>
+
+    <section class="videos">
+        <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vWWy7V9rCrA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="zoom-in"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/o9QjlLdYK5I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="zoom-in"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SKpSpvFCZRw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="zoom-in"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BTt6Svh2bTE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="zoom-in"></iframe>
+        </div>
+    </section>
+    
+    <!-- Confidants -->
+    <div class="titulo" id="confidants">
+        <h2 data-aos="fade-in">Confidants</h2>
+    </div>
+
+    <section class="confidants">
+        <article class="confidants-container">
+            <div class="confidant-box ryuji" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/ryuji.png" alt="Ryuji Sakamoto">
+                    <h2>Ryuji Sakamoto</h2>
+                    <p>
+                        Ryuji é um aluno do segundo ano da Shujin Academy e um dos colegas do Joker. Ele é conhecido por causar tumulto nas aulas. No fundo, Ryuji se preocupa com seus companheiros.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box morgana" data-aos="flip-left">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/morgana.png" alt="Morgana">
+                    <h2>Morgana</h2>
+                    <p>
+                        Morgana parece um gato da cabeça aos pés, mas nada pode convencê-lo a acreditar nisso. De vez em quando, quando os Phantom Thieves se fixam nele, você o ouvirá objetar furiosamente: “Não sou um gato. Eu sou Morgana! " A mascote do grupo tem a capacidade de se transformar em um veículo que pode ajudar os integrantes a cruzar o Metaverso.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box ann" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/ann.png" alt="Ann Takamaki">
+                    <h2>Ann Takamaki</h2>
+                    <p>
+                        Um colega do segundo ano da Academia Shujin. Dada a sua descendência americana, muitas pessoas são atraídas por seus encantos únicos. Dito isso, Ann tem suas dificuldades, já que suas qualidades excepcionais a dificultam para se encaixar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box yusuke" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/yusuke.png" alt="Yusuke Kitagawa">
+                    <h2>Yusuke Kitagawa</h2>
+                    <p>
+                        Um estudante do segundo ano de Kosei, uma escola vizinha de Joker e os outros membros do Phantom Thieves. Feliz por ter uma bolsa integral, Yusuke aspira a tornar-se um pintor de renome. Ele estuda arte sob a tutela do pintor japonês Madarame e mostra uma compreensão exemplar da mesma.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box makoto" data-aos="flip-left">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/makoto.png" alt="Makoto Niijima">
+                    <h2>Makoto Niijima</h2>
+                    <p>
+                        Shujin Academy sênior e presidente do conselho estudantil. Makoto exibe uma mente curiosa e reverencia as obrigações. Ela cumpre o papel como cérebro dos Phantom Thieves. Em contraste com alguns do bando turbulento dos Phantom Thieves, Makoto pode ser severa e encarna uma atitude séria.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box futaba" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/futaba.png" alt="Futaba Sakura">
+                    <h2>Futaba Sakura</h2>
+                    <p>
+                        Futaba é um ano mais nova que o Joker e é uma reclusa, mal frequenta a escola e muitas vezes pode ser encontrada na segurança do seu próprio quarto. Dito isso, Futaba não gosta de andar pelas ruas com os amigos e, em vez disso, dedica seu tempo a resolver problemas de computador e a aprimorar seus conhecimentos como hacker genial. Ela torce para os membros e fornece apoio para os Phantom Thieves como Oracle.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box haru" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/haru.png" alt="Haru Okumura">
+                    <h2>Haru Okumura</h2>
+                    <p>
+                        Uma júnior na Academia Shujin. Haru é conhecida por ser gentil e graciosa. Seu pai é presidente de uma empresa de alimentos bem estabelecida. Há uma boa chance de que, por causa de como ela foi criada, Haru raramente concorra por atenção.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box akechi" data-aos="flip-left">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/akechi.png" alt="Goro Akechi">
+                    <h2>Goro Akechi</h2>
+                    <p>
+                        Goro Akechi é um jovem ás detetive que investiga os misteriosos Phantom Thieves of Hearts. Ele é conhecido por resolver vários casos, ao mesmo tempo que conduz suas investigações sem problemas. Ele também é muito popular entre as mulheres por causa de seus traços bonitos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box akechi" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/akechi_2.png" alt="Goro Akechi">
+                    <h2>Goro Akechi &#40;Terceiro Semestre&#41;</h2>
+                    <p>
+                        Um usuário de persona e ex-inimigo. Depois de encontrar um destino incerto, ele reaparece para resolver novos mistérios.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box kasumi" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/kasumi.png" alt="Kasumi Yoshizawa">
+                    <h2>Kasumi Yoshizawa</h2>
+                    <p>
+                        Assim como o Protagonista, Kasumi Yoshizawa é um estudante transferida para a Academia Shujin. Ela recebeu uma bolsa da academia e é uma promissora ginasta rítmica desde o ensino médio. Apesar do excelente histórico de Kasumi em atividades acadêmicas e extracurriculares, ela compartilha dúvidas e medos ocultos com os outros Phantom Thieves.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box sumire" data-aos="flip-left">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/sumire.png" alt="Sumire Yoshizawa">
+                    <h2>Sumire Yoshizawa</h2>
+                    <p>
+                        Uma usuária Persona do primeiro ano na Shujin. Agora livre de sua ilusão destorcida, ela decidiu permanecer com a equipe.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box sojiro" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/sojiro.png" alt="Sojiro Sakura">
+                    <h2>Sojiro Sakura</h2>
+                    <p>
+                        O dono do tranquilo e antiquado café Leblanc localizado nas ruas de Yongen-Jaya. 
+                        Sojiro não demonstra simpatia pelo protagonista quando está sob seus cuidados. Embora não fale muito, Sojiro tem uma magnanimidade misteriosa e um encanto ao seu redor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box maruki" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/maruki.png" alt="Takuto Maruki">
+                    <h2>Takuto Maruki</h2>
+                    <p>
+                        Ele trabalha como orientador de estudantes em meio período na Shujin Academy. Um grande ouvinte e bom de conselhos, o conselheiro rapidamente se torna bastante popular entre o corpo docente da escola.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box sae" data-aos="flip-left">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/sae.png" alt="Sae Niijima">
+                    <h2>Sae Niijima</h2>
+                    <p>
+                        A rígida e protetora irmã mais velha de Makoto , Sae Niijima, é uma pessoa perspicaz, séria e não tem tempo para bobagens ou drama. Ela trabalha como promotora e cuida da irmã mais nova, muitas vezes pressionando Makoto a se dedicar aos estudos. Ela não mede as palavras, como evidenciado por sua abordagem severa ao Protagonista.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box igor" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/igor.png" alt="Igor">
+                    <h2>Igor</h2>
+                    <p>
+                        Um homem bizarro de nariz comprido que parece estar perdido em seus pensamentos fora das grades da prisão do protagonista. Ele atribui ao protagonista o dever de "reabilitação para a liberdade" e dá-lhe acesso ao Navegador do Metaverso.
+                        ele parece estar observando cuidadosamente o protagonista, esperando que ele se liberte de sua cela de prisão com suas próprias forças.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box twins" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/justine_caroline.png" alt="Justine & Caroline">
+                    <h2>Justine &amp; Caroline</h2>
+                    <p>
+                        Justine e Caroline são as guardiãs gêmeas da Velvet Room que servem Igor. Embora idênticas na aparência, cada uma usa um tapa-olho de aparência sombria sobre o olho oposto. Como guardiões da Velvet Room, eles interagem com o protagonista--também conhecido como o detento--com palavras duras e atitudes opressivas.
+                        Justine e Caroline têm personalidades distintas que são muito diferentes uma da outra. Freqüentemente, discutem sobre a melhor forma de lidar com o preso.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box twins" data-aos="flip-left">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/lavenza.png" alt="Lavenza">
+                    <h2>Lavenza</h2>
+                    <p>
+                        Uma residente do Velvet Room que foi dividida em dois por Yaldabaoth. Ela guia o protagonista como seu convidado.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box mishima" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/mishima.png" alt="Yuuki Mishima">
+                    <h2>Yuuki Mishima</h2>
+                    <p>
+                        Um estudando no segundo ano da Academia Shujin e colega de classe do protagonista. Mishima faz parte da equipe de vôlei e costuma ser visto com lesões.
+                        Uma certa reviravolta faz com que ele se aproxime do protagonista...
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box kawakami" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/kawakami.png" alt="Sadayo Kawakami">
+                    <h2>Sadayo Kawakami</h2>
+                    <p>
+                        Kawakami é professora na Shujin Academy e é a professora do protagonista, Ann, Mishima e dos alunos da classe 2-D.
+                        Sempre cansada, dá aula com os cabelos desgrenhados e dá palestras exaustas. À primeira vista, ela parece uma professora monótona que evita qualquer trabalho extra, mas o que ela poderia estar fazendo que a deixa tão cansada...?
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box kawakami" data-aos="flip-left">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/kawakami_becky.png" alt="Becky">
+                    <h2>Becky</h2>
+                    <p>
+                        Sua professora de sala de aula na Academia Shujin. Ela oferece ajuda se você ficar quieto sobre o trabalho dela como empregada doméstica.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box takemi" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/takemi.png" alt="Tae Takemi">
+                    <h2>Tae Takemi</h2>
+                    <p>
+                        Um doutra geral localizada em Yongen-Jaya. Takemi vende o medicamento ao protagonista que ela mesma formulou em troca de sua participação em seus exames clínicos experimentais.
+                        Rumores cercam Takemi que a pintam como uma médica que não leva seus pacientes a sério, mas como ela realmente se sente...?
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box yoshida" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/yoshida.png" alt="Tosanosuke Yoshida">
+                    <h2>Toranosuke Yoshida</h2>
+                    <p>
+                        Um político que fala ao público em frente à estação Shibuya. Ele está no mundo político há mais de 20 anos, mas não foi eleito sete vezes.
+                        Não são muitos os que param para ouvir o que Yoshida tem a dizer, e seu passado o deixou marcado, mas ele usa sua habilidade de fala para tentar persuadir os cidadãos de Tóquio, lutando incansavelmente para melhorar o futuro do Japão.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box hifumi" data-aos="flip-left">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/hifumi.png" alt="Hifumi Togo">
+                    <h2>Hifumi Togo</h2>
+                    <p>
+                        Aluna da Kosei High, Hifumi possui o título depois de vencer a liga de jogadoras de shogi. Ela é o assunto do mundo shogi, frequentemente chamada de "Vênus de Shogi" por causa de sua bela aparência.
+                        Ela passa as noites treinando e aceita muitos pedidos de entrevista pelo bem de sua mãe e do mundo shogi, mas há uma certa tristeza em seu coração...
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box chihaya" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/chihaya.png" alt="Chihaya Mifune">
+                    <h2>Chihaya Mifune</h2>
+                    <p>
+                        Chihaya usa cartas de tarô para ler a sorte de seus clientes em Shinjuku. Embora ela pareça alegre e fofa, suas previsões são sempre precisas.
+                        Ela se tornou conhecida como a "Donzela do Alívio" e é bem conhecida por sua habilidade, mas ela também incentiva seus clientes a comprar uma "Pedra Sagrada" para evitar o mal...
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box iwai" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/iwai.png" alt="Munehisa Iwai">
+                    <h2>Munehisa Iwai</h2>
+                    <p>
+                        O proprietário de uma loja local de airsoft localizada no beco de Shibuya, Iwai se destaca na personalização de modelos de armas. Ele é o negociante de armas perfeito para os Phantom Thieves of Hearts.
+                        Ele tem uma aparência séria e há rumores de seu envolvimento com a yakuza quando era mais jovem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box shinya" data-aos="flip-left">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/shinya.png" alt="Shinya Oda">
+                    <h2>Shinya Oda</h2>
+                    <p>
+                        Um estudante do ensino fundamental que costuma frequentar o fliperama em Akihabara. Ele é conhecido como "O Rei" no mundo dos jogos por suas incríveis habilidades no jogo de tiro online, Gun About.
+                        Ele quer ser forte como os Phantom Thieves, mas qual é a razão por trás desse desejo...?
+                    </p>
+                </div>
+            </div>
+
+            <div class="confidant-box ohya" data-aos="flip-right">
+                <div class="conteudo-box">
+                    <img src="imagens/confidants/ohya.png" alt="Ichiko Ohya">
+                    <h2>Ichiko Ohya</h2>
+                    <p>
+                        Uma jornalista de revista de fofocas em seus vinte e poucos anos. Ohya escreverá sobre qualquer coisa que venda, e produzir artigos que influenciem a opinião pública é algo fácil para ela.
+                        No passado, Ohya era um jornalista política que cortava os males da sociedade. O que a fez mudar de área...?
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Galeria -->
+    <div class="titulo" id="galeria">
+        <h2 data-aos="fade-in">Galeria</h2>
+    </div>
+
+    <section class="galeria">
+        <ul id="adaptive" class="cs-hidden">
+            <li class="item-a">
+                <div class="slider slide-1"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-2"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-3"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-4"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-5"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-6"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-7"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-8"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-9"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-10"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-11"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-12"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-13"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-14"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-15"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-16"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-17"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-18"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-19"></div>                
+            </li>
+
+            <li class="item-a">
+                <div class="slider slide-20"></div>                
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contato -->
+    <div class="titulo" id="contato">
+        <h2 data-aos="fade-in">Contato</h2>
+    </div>
+
+    <div class="contato">
+        <div class="contato-conteudo">
+            <h2>Entre em contato conosco!</h2>
+            <p>Nesta sessão você irá encontrar nosso contato e redes sociais.</p>
+        </div>
+
+        <article class="contato-container" data-aos="fade-right">
+            <div class="contato-form">
+                <div id="error_message"></div>
+                <form id="myform" onsubmit="return validate();">
+                    <h2>Deixe sua mensagem</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Name" id="nome" placeholder="Nome">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea id="message" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+
+                    <div class="inputBox">
+                        <div class="popup" id="popup-1">
+                            <div class="overlay"></div>
+                            <div class="content">
+                              <div class="close-btn" onclick="togglePopup()">&times;</div>
+                              <h2>Resultado</h2>
+                              <p>Mensagem enviada com sucesso!</p>
+                            </div>
+                          </div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contatoInfo">
+                <div class="contatoBox">
+                    <div class="icone fb"><a href="https://www.facebook.com/AtlusWest" target="blank"><i class="fab fa-facebook-f"></i></a></div>
+                </div>
+
+                <div class="contatoBox">
+                    <div class="icone tw"><a href="https://twitch.tv/atlus_west" target="blank"><i class="fab fa-twitch"></i></a></div>
+                </div>
+
+                <div class="contatoBox">
+                    <div class="icone tt"><a href="https://www.twitter.com/atlus_west" target="blank"><i class="fab fa-twitter"></i></a></div>
+                </div>
+
+                <div class="contatoBox">
+                    <div class="icone yt"><a href="https://www.youtube.com/c/atlus" target="blank"><i class="fab fa-youtube"></i></a></div>  
+                </div>
+
+                <div class="contatoBox">
+                    <div class="icone gh"><a href="https://github.com/matheusz98" target="blank"><i class="fab fa-github"></i></a></div>  
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Phan-Blog 2021. Site desenvolvido por Matheus Costa. Todos direitos reservados a <a href="https://atlus.com/" target="blank">Atlus</a></p>
+        <ul>
+            <li><a href="https://www.facebook.com/AtlusWest" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitch.tv/atlus_west" target="blank"><i class="fab fa-twitch"></i></a></li>
+            <li><a href="https://www.twitter.com/atlus_west" target="blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/c/atlus" target="blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://github.com/matheusz98" target="blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </footer>
+
+     
+    <!-- JavaScript -->
+    <script src="js/loader.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/form.js"></script>
+    <!-- Script jQuery para o slider funcionar -->
+    <script>
+        $(document).ready(function() {
+            $('#adaptive').lightSlider({
+                adaptiveHeight:true,
+                auto: true,
+                pauseOnHover: true,
+                item:1,
+                slideMargin:0,
+                loop:true
+            });
+        });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
