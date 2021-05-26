@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Sunset Gallery</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matheus Costa - https://github.com/matheusz98">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/estilo.css">
+        <!-- Light slider CSS -->
+        <link rel="stylesheet" href="css/lightslider.css">
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Light slider js -->
+        <script src="js/lightslider.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bc4a93c294.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <a href="#home" class="logo"><span class="sunset">Sunset</span> Gallery</a>
+            <!-- Mobile Menu -->
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <!-- Menu -->
+                <ul class="menu">
+                    <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                    <li><a href="#sobre" onclick="toggleMenu();">Sobre nós</a></li>
+                    <li><a href="#trabalhos" onclick="toggleMenu();">Nossos trabalhos</a></li>
+                    <li><a href="#galeria" onclick="toggleMenu();">Galeria</a></li>
+                    <li><a href="#contato" onclick="toggleMenu();">Contato</a></li>
+                </ul>
+        </header>
+
+        <!-- Banner -->
+        <section class="banner" id="home">
+            <article class="banner-content">
+                <h2>Seja bem-vindo ao <span class="sunset">Sunset</span> Gallery!</h2>
+                <p>Este website é dedicado para mostrar o melhor que a natureza tem a oferecer.</p>
+                <a href="#trabalhos" class="banner-btn">Começar aventura</a>
+            </article>
+        </section>
+
+        <!-- Sobre nós -->
+        <section id="sobre">
+            <div class="titulo">
+                <h2>Sobre nós</h2>
+            </div>
+
+            <article class="conteudo">
+                <div class="conteudoBx ">
+                    <h3>Este é um site de galeria para apreciar a natureza</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Voluptatum neque nostrum totam hic, inventore tempore quis omnis fugiat beatae adipisci iure est. 
+                        Consequuntur excepturi obcaecati animi non earum odit vero.<br></br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sit atque optio veniam mollitia aperiam nihil tempora provident quis sint sunt! 
+                        Cumque quam fugit excepturi dignissimos natus ea quasi omnis soluta.
+                    </p>
+                </div>
+
+                <div class="imagemBx">
+                    <img src="imgs/2.jpg" class="imagemBx" alt="Imagem dois">
+                </div>
+            </article>
+        </section>
+
+        <!-- Nossos Trabalhos -->
+        <section id="trabalhos">
+            <div class="titulo">
+                <h2>Nossos Trabalhos</h2>
+                <p>Dê uma conferida em alguns de nossos trabalhos</p>
+            </div>
+
+            <article class="conteudoVd">
+                <h3>The Breathtaking Beauty of Nature</h3>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IUN664s7N-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <h3>Beauty of Nature</h3>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0wCC3aLXdOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
+        <section class="sessaoImg">
+            <div class="titulo">
+                <h3>Caso queira uma música para dar uma animada na navegação</h3>
+                <audio controls>
+                    <!-- Música: Modjo - Lady (Hear me Tonight)-->
+                    <source src="musica.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <article class="conteudoImg">
+                <div class="imagem">
+                    <img src="imgs/3.jpg" alt="Imagem três">
+                </div>
+
+                <div class="imagem">
+                    <img src="imgs/4.jpg" alt="Imagem quatro">
+                </div>
+
+                <div class="imagem">
+                    <img src="imgs/5.jpg" alt="Imagem cinco">
+                </div>
+
+                <div class="imagem">
+                    <img src="imgs/6.jpg" alt="Imagem seis">
+                </div>
+
+                <div class="titulo">
+                    <a href="#galeria" class="btn-img">Mais imagens</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Galeria -->
+        <section id="galeria">
+            <ul id="adaptive" class="cs-hidden">
+                <li class="item-a">
+                    <div class="slider slide-1"></div>
+                </li>
+
+                <li class="item-a">
+                    <div class="slider slide-2"></div>
+                </li>
+
+                <li class="item-a">
+                    <div class="slider slide-3"></div>
+                </li>
+
+                <li class="item-a">
+                    <div class="slider slide-4"></div>
+                </li>
+
+                <li class="item-a">
+                    <div class="slider slide-5"></div>
+                </li>
+
+                <li class="item-a">
+                    <div class="slider slide-6"></div>
+                </li>
+
+                <li class="item-a">
+                    <div class="slider slide-7"></div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contato -->
+        <div class="titulo">
+            <h2>Saiba onde nos encontrar</h2>
+            <p>Fique a vontade para entrar em contato conosco</p>
+        </div>
+
+        <section class="contato" id="contato">
+            <article class="conteudo-contato">
+                <div class="contatoForm">
+                    <div class="inputBx">
+                        <input type="text" placeholder="Nome" name="nome" required>
+                    </div>
+
+                    <div class="inputBx">
+                        <input type="text" placeholder="Endereço de email" name="email" required>
+                    </div>
+
+                    <div class="inputBx">
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                    </div>
+
+                    <div class="inputBx">
+                        <input type="submit" value="Enviar mensagem">
+                    </div>
+                </div>
+
+                <div class="mapa"></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110663.36711909343!2d-51.24783520292349!3d-29.915273648320394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951970087c0ae1e7%3A0xaeee7ae21fb70220!2sCanoas%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1616628833065!5m2!1spt-BR!2sbr" width="500" height="430" style="border: 5px solid #f84d2e;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </article>
+        </section>
+
+        <!-- Rodapé -->
+        <footer>
+            <article class="conteudo-footer">
+                <div class="row">
+                    <div class="col">
+                        <h4>Sobre o site</h4>
+                        <ul>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h4>Mais informações</h4>
+                        <ul>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h4>Nos siga nas redes sociais</h4>
+                        <div class="links">
+                            <a href="https://pt-br.facebook.com" target="blank"><i class="fab fa-facebook fb"></i></a>
+                            <a href="https://twitter.com" target="blank"><i class="fab fa-twitter-square tt"></i></a>
+                            <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram-square ig"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </footer>
+            
+    <!-- Javascript -->
+    <script src="js/menu.js"></script>
+    <script src="js/sticky.js"></script>
+    <!-- Script jQuery para o slider funcionar -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#adaptive').lightSlider({
+                adaptiveHeight:true,
+                item:1,
+                slideMargin:0,
+                loop:true
+            });
+        });
+    </script>
+    </body>
+</html>

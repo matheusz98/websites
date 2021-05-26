@@ -1,0 +1,568 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px;
+}
+
+/* Header */
+header{
+    background: #FF4E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    padding: 30px 30px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    padding: 10px 30px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.logo:hover{
+    color: #ff7b00;
+}
+
+.sunset{
+    color: #ff7b00;
+}
+
+/* Menu */
+header ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header ul li{
+    position: relative;
+}
+
+header ul li a{
+    display: inline-block;
+    margin: 0px 10px;
+    color: #ffffff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover{
+    border-bottom: 2px solid #ff3c00;
+}
+
+/* Banner */
+.banner{
+    width: 100%;
+    height: 80vh;
+    background: url(../imgs/1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content{
+    text-align: center;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.banner-content h2{
+    font-size: 2em;
+}
+
+.banner-content p{
+    margin: 5px 0px 20px;
+}
+.banner-btn{
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.banner-btn:hover{
+    background-color: #ff3c00;
+    letter-spacing: 2px;
+}
+
+/* Sobre nós */
+.titulo{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo h2{
+    font-size: 2em;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudoBx{
+    padding-right: 30px;
+}
+
+.conteudoBx h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.imagemBx{
+    min-width: 50%;
+}
+
+.imagemBx img{
+    border-radius: 10px;
+}
+
+/* Nossos trabalhos - Parte dos vídeos */
+.conteudoVd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.conteudoTb h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.video{
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sessaoImg .conteudoImg{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sessaoImg .conteudoImg .imagem{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.sessaoImg .conteudoImg .imagem img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.btn-img{
+    background: #FF4E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.btn-img:hover{
+    letter-spacing: 2px;
+}
+
+/* Galeria */
+.slider{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide-1{
+    background-image: url(../imgs/7.jpg);
+}
+
+.slide-2{
+    background-image: url(../imgs/8.jpg);
+}
+
+.slide-3{
+    background-image: url(../imgs/9.jpg);
+}
+
+.slide-4{
+    background-image: url(../imgs/10.jpg);
+}
+
+.slide-5{
+    background-image: url(../imgs/11.jpg);
+}
+
+.slide-6{
+    background-image: url(../imgs/12.jpg);
+}
+
+.slide-7{
+    background-image: url(../imgs/13.jpg);
+}
+
+/* Contato */
+.contato{
+    width: 100%;
+    background: url(../imgs/14.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+.conteudo-contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contatoForm{
+    max-width: 480px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 75px 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 15px 50px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.contatoForm h3{
+    color: #ffffff;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.contatoForm .inputBx{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contatoForm .inputBx input,
+.contatoForm .inputBx textarea{
+    width: 100%;
+    padding: 10px;
+    color: #000000;
+    outline: none;
+    border: 1px solid #000000;
+    font-size: 20px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contatoForm .inputBx input:focus,
+.contatoForm .inputBx textarea:focus{
+    border: 2px solid #f84d2e;
+}
+
+.contatoForm .inputBx input[type="submit"]{
+    background-color: #f84d2e;
+    max-width: 300px;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    border: none;
+}
+
+.contatoForm .inputBx input[type="submit"]:hover{
+    background-color: #e43104;
+    letter-spacing: 2px;
+}
+
+.mapa{
+    max-width: 480px;
+}
+
+/* Rodapé */
+footer{
+    width: 100%;
+    background: #C02425;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 70px 0px;
+}
+
+.conteudo-footer{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.col h4{
+    font-size: 1em;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.col h4::before{
+    content: '';
+    height: 3px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #df3400;
+    box-sizing: border-box;
+}
+
+.col ul li{
+    margin-bottom: 10px;
+}
+
+.col ul li a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.col ul li a:hover{
+    color: #4d4d4d;
+    letter-spacing: 2px;
+}
+
+.col .links a{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0px 10px 10px 0px;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.fb:hover{
+    color: #002fff;
+    transition: all 0.3s ease;
+}
+
+.tt:hover{
+    color: #00aeff;
+    transition: all 0.3s ease;
+}
+
+.ig:hover{
+    color: #ff002b;
+    transition: all 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 930px){
+    section{
+        padding: 50px 50px;
+    }
+
+    .banner{
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2{
+        font-size: 1.5em;
+    }
+
+    .banner p{
+        font-size: 1em;
+    }
+
+    .banner-btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .titulo h2{
+        font-size: 25px;
+    }
+
+    .conteudoBx h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .conteudoBx p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .conteudo{
+        flex-direction: column;
+    }
+
+    .imagemBx{
+        margin-bottom: 20px;
+    }
+
+    .sessaoImg .conteudoImg .imagem{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 820px){
+    header,
+    header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu{
+        width: 100%;
+        height: 100vh;
+        background: #FF4E50;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #ffffff;
+        position: fixed;
+        top: 75px;
+        right: -100%;
+        display: block;
+        padding: 80px 50px;
+        text-align: center;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        transition: all 0.5s ease;
+    }
+
+    .menu.active{
+        right: 0;
+    }
+
+    header ul li a{
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 300;
+        margin: 10px;
+    }
+
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(../imgs/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active{
+        background: url(../imgs/close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 767px){
+    .col{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px){
+    .col{
+        width: 100%;
+    }
+}
+
+@media (max-width: 340px){
+    .contatoForm{
+        width: 100%;
+    }
+
+    .mapa iframe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) and (max-height: 568px){
+    header,
+    header.sticky{
+        padding: 20px 50px;
+    }
+    .menu{
+        top: 100px;
+    }
+}
