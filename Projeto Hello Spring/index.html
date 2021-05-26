@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello Spring</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Matheus Costa - https://github.com/matheusz98">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bc4a93c294.js" crossorigin="anonymous"></script>
+        <!-- Icon -->
+        <link rel="icon" href="images/icon.png">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+        <!-- Mobile Menu Script -->
+        <script>
+           $(document).ready(function(){
+               $('#icon').click(function(){
+                   $('ul').toggleClass('show');
+               });
+           });
+        </script>
+    </head>
+        <body>
+            <!-- Header Area -->
+            <header class="header">
+                <a href="index.html" class="logo">Hello <span class="spring">Spring</span></a>
+                <!-- Nav Area -->
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#banner">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <i id="icon" class="fas fa-bars"></i>
+                </nav>
+            </header>
+
+            <!-- Banner Area -->
+            <section class="banner" id="banner">
+                <div class="content">
+                    <h2>The Best of <span class="spring">Spring!</span></h2>
+                    <p>
+                        This is a spring themed website. The images were found on the <a href="https://www.pexels.com/pt-br/collections/hello-spring-8xntbhr/" target="blank" class="link">Pexels</a> website. Hope you like it!
+                    </p>
+                    <a href="#" class="btn">Check our Gallery!</a>
+                </div>
+            </section>
+
+            <!-- About Us Area -->
+            <section class="about" id="about">
+                <div class="row">
+                    <div class="col50">
+                        <h2><span class="spring">About Us</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Laboriosam corporis cupiditate id nostrum sequi cum accusantium! 
+                            Minima laudantium, deleniti perspiciatis nam veniam optio ut consequuntur quod harum soluta ullam modi?<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Incidunt nesciunt quo ad debitis eveniet necessitatibus quos eum, tenetur nobis excepturi fuga iusto, aspernatur possimus maxime ducimus fugiat maiores, voluptate sint.
+                        </p>
+                    </div>
+
+                    <div class="col50">
+                        <div class="imgContent">
+                            <img src="images/img1.jpg" alt="Image one">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Area -->
+            <section class="gallery" id="gallery">
+                <div class="title">
+                    <h2 class="spring">Gallery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/img2.jpg" alt="Image two">
+                        </div>
+                        <div class="text">
+                            <h3>by Dids</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/img3.jpg" alt="Image three">
+                        </div>
+                        <div class="text">
+                            <h3>by Evgeny Tchebotarev</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/img4.jpg" alt="Image four">
+                        </div>
+                        <div class="text">
+                            <h3>by Karolina Grabowska</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/img5.jpg" alt="Image five">
+                        </div>
+                        <div class="text">
+                            <h3>by Markus Spiske</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/img6.jpg" alt="Image six">
+                        </div>
+                        <div class="text">
+                            <h3>by Olya Kobruseva</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/img7.jpg" alt="Image seven">
+                        </div>
+                        <div class="text">
+                            <h3>by Satoshi Hirayama</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/img8.jpg" alt="Image eight">
+                        </div>
+                        <div class="text">
+                            <h3>by Satoshi Hirayama</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <a href="#" class="btn">View All</a>
+                </div>
+            </section>
+
+            <!-- Clients Area -->
+            <section class="clients" id="clients">
+                <div class="title">
+                    <h2 class="spring">Our Clients</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/client1.jpg" alt="Client one">
+                        </div>
+                        <div class="text">
+                            <h3>Jane Doe</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/client2.jpg" alt="Client Two">
+                        </div>
+                        <div class="text">
+                            <h3>Jane Doe</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/client3.jpg" alt="Client three">
+                        </div>
+                        <div class="text">
+                            <h3>Jane Doe</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/client4.jpg" alt="Client four">
+                        </div>
+                        <div class="text">
+                            <h3>John Doe</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Area -->
+            <section class="testimonials" id="testimonials">
+                <div class="title white">
+                    <h2 class="spring">What are they saying about us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/testimonial1.jpg" alt="Testimonial one">
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                               Magni iure ratione itaque officia, dolor, deleniti tenetur consequatur quam voluptas aliquam voluptate non sunt sapiente voluptates obcaecati. Molestiae, explicabo perferendis. A?
+                               Adipisci, quasi deleniti reiciendis optio impedit similique nihil nesciunt delectus aliquam totam! 
+                               Facere saepe minima dolore aut voluptate neque alias. Possimus, quaerat.
+                            </p>
+                            <h3>Someone</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/testimonial2.jpg" alt="Testimonial two">
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                               Magni iure ratione itaque officia, dolor, deleniti tenetur consequatur quam voluptas aliquam voluptate non sunt sapiente voluptates obcaecati. Molestiae, explicabo perferendis. A?
+                               Adipisci, quasi deleniti reiciendis optio impedit similique nihil nesciunt delectus aliquam totam! 
+                               Facere saepe minima dolore aut voluptate neque alias. Possimus, quaerat.
+                            </p>
+                            <h3>Someone</h3>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="imgContent">
+                            <img src="images/testimonial3.jpg" alt="Testimonial three">
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                               Magni iure ratione itaque officia, dolor, deleniti tenetur consequatur quam voluptas aliquam voluptate non sunt sapiente voluptates obcaecati. Molestiae, explicabo perferendis. A?
+                               Adipisci, quasi deleniti reiciendis optio impedit similique nihil nesciunt delectus aliquam totam! 
+                               Facere saepe minima dolore aut voluptate neque alias. Possimus, quaerat.
+                            </p>
+                            <h3>Someone</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Area -->
+            <section class="contact" id="contact">
+                <div class="title">
+                    <h2 class="spring">Contact us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+
+                <div class="contactForm">
+                    <h3>Send Message</h3>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" placeholder="Email Address">
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Area -->
+            <footer class="footer">
+                    <p>Copyright &copy; 2021 Hello <span class="spring">Spring</span>. All Rights Reserved.</p>
+            </footer>
+        </body>
+</html>

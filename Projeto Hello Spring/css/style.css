@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-weight: 300;
+    color: #000000;
+}
+
+img{
+    max-width: 100%;
+}
+
+section{
+    padding: 100px;
+}
+
+/* Header */
+.header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: 0.5s;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+}
+
+.nav li{
+    list-style: none;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.nav li a{
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+    transition: ease .5s;
+}
+
+.nav li a:hover{
+    color: #ff0062;
+}
+
+.nav #icon{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none;
+}
+
+/* Banner */
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/bg1.jpg);
+    background-size: cover;
+}
+
+.banner .content{
+    max-width: 900;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.spring{
+    color: #ff0062;
+}
+
+.banner .content p{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.btn{
+    font-size: 20px;
+    color: #ffffff;
+    background: rgb(255,0,39);
+    background: linear-gradient(90deg, rgba(255,0,39,1) 0%, rgba(0,16,94,1) 100%);
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: ease .5s;
+}
+
+.btn:hover{
+    letter-spacing: 3px;
+}
+
+.link{
+    color: #ffffff;
+    text-decoration: none;
+    transition: ease .5s;
+}
+
+.link:hover{
+    color: #00af6c;
+}
+
+/* About Us */
+.row{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    width: 48%;
+    position: relative;
+}
+
+.row .col50 .imgContent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.row .col50 .imgContent img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Gallery */
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery .content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.gallery .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #ffffff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.gallery .content .box .imgContent{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.gallery .content .box .imgContent img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.gallery .content .box .imgContent img:hover{
+    transform: scale(1.1);
+}
+
+.gallery .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.gallery .content .box .text h3{
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+
+/* Clients */
+.clients .content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.clients .content .box{
+    width: 250px;
+    margin: 15px;
+}
+
+.clients .content .box .imgContent{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.clients .content .box .imgContent img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: ease .5s;
+}
+
+.clients .content .box .imgContent img:hover{
+    transform: scale(1.1);
+}
+
+.clients .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.clients .content .box .text h3{
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Testimonials */
+.testimonials{
+    background: url(../images/bg2.jpg);
+    background-size: cover;
+}
+
+.white p{
+    color: #ffffff;
+}
+
+.testimonials .content{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.testimonials .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;;
+    transition: ease .5s;
+}
+
+.testimonials .content .box:hover{
+    transform: scale(1.1);
+}
+
+.testimonials .content .box .imgContent{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials .content .box .imgContent img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.testimonials .content .box .text{
+    text-align: center;
+}
+
+.testimonials .content .box .text p{
+    color: #000000;
+    font-style: italic;
+}
+
+.testimonials .content .box .text h3{
+    margin-top: 20px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Contact Us */
+.contact{
+    background: url(../images/bg3.jpg);
+    background-size: cover;
+}
+
+.contactForm{
+    max-width: 500px;
+    margin-top: 50px;
+    padding: 75px 50px;
+    background: #ffffff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.contactForm h3{
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 10px;
+    color: #000000;
+    outline: none;
+    font-size: 15px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactForm .inputBox input:focus,
+.contactForm .inputBox textarea:focus{
+    border: 2px solid #ff0062;
+}
+
+.contactForm .inputBox input[type="submit"]{
+    max-width: 250px;
+    font-size: 20px;
+    background: rgb(255,0,39);
+    background: linear-gradient(90deg, rgba(255,0,39,1) 0%, rgba(0,16,94,1) 100%);
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    letter-spacing: 3px;
+}
+
+/* Footer */
+.footer{
+    padding: 8px 40px;
+    text-align: center;
+}
+
+.copyright p{
+    color: #000000;
+}
+
+/*Media Queries */
+@media screen and (max-width: 991px){
+    .header{
+        padding: 10px 20px;
+    }
+
+    .nav #icon{
+        display: block;
+    }
+
+    .nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0,16,94);
+        background: linear-gradient(90deg, rgba(0,16,94,1) 0%, rgba(255,0,39,1) 100%);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .nav a{
+        font-size: 20px; 
+    }
+
+    .nav ul.show{
+        left: 0;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .banner .content h2{
+        font-size: 3em;
+        color: #ffffff;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgContent{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .gallery .content{
+        margin-top: 20px;
+    }
+
+    .gallery .content .box{
+        margin: 10px;
+    }
+
+    .gallery .content .box .imgContent{
+        height: 260px;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .testimonials .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contactForm{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 480px){
+        .banner .content h2{
+            font-size: 2.2em;
+            color: #ffffff;
+        }
+    }
+}
