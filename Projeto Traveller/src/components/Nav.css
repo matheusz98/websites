@@ -1,8 +1,7 @@
 :root {
     --white: #ffffff;
-    --secondary: rgba(126, 126, 126, 0.692);
-    --black: #181818;
-    --purple: #4c01af;
+    --black: #000000;
+    --ocean: #1195a7;
     --darkpurple: #2b028a;
 }
 
@@ -15,7 +14,7 @@
     top: 0;
     z-index: 999;
     padding: 0px 20px;
-    background: var(--purple);
+    background: var(--ocean);
     font-size: 1em;
     text-transform: uppercase;
 }
@@ -139,7 +138,7 @@
 }
   
 .fa-times {
-    color: #fff;
+    color: var(--white);
     font-size: 2rem;
 }
   

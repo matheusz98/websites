@@ -1,7 +1,6 @@
 :root {
   --white: #ffffff;
-  --purple: #4c01af;
-  --darkpurple: #2c0094;
+  --black: #000000;
 }
 
 .btn {
@@ -14,8 +13,14 @@
 
 .btn--primary {
   background-color: var(--white);
-  color: #242424;
+  color: var(--black);
   border: 1px solid var(--white);
+  transition: all 0.5s ease-out;
+}
+
+.btn--primary:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .btn--outline {
@@ -26,6 +31,11 @@
   transition: all 0.5s ease-out;
 }
 
+.btn--outline:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 .btn--medium {
   padding: 8px 20px;
   font-size: 18px;
@@ -34,11 +44,4 @@
 .btn--large {
   padding: 12px 26px;
   font-size: 20px;
-}
-
-.btn--large:hover,
-.btn--medium:hover {
-  transition: all 0.3s ease-out;
-  background: var(--white);
-  color: var(--purple);
 }
