@@ -43,13 +43,13 @@ function Nav() {
                         </li>
 
                         <li className="menu-item">
-                            <Link to="/servicos" className="menu-links" onClick={closeMenu}>
+                            <Link to="/services" className="menu-links" onClick={closeMenu}>
                                 Serviços
                             </Link>
                         </li>
 
                         <li className="menu-item">
-                            <Link to="/produtos" className="menu-links" onClick={closeMenu}>
+                            <Link to="/products" className="menu-links" onClick={closeMenu}>
                                 Produtos
                             </Link>
                         </li>

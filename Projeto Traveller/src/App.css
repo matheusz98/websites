@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+:root {
+    --white: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,10 +17,31 @@ img {
     max-width: 100%;
 }
 
-.home, .servicos, .produtos, .login {
+.home, .services, .products, .login {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
+}
+
+.services {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    font-size: 3em;
+    color: var(--white);
+}
+  
+.products {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    font-size: 3em;
+    color: var(--white);
+}
+  
+.login {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);    
+    font-size: 3em;
+    color: var(--white);
 }

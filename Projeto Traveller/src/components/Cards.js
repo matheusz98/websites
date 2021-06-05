@@ -13,7 +13,7 @@ function Cards() {
                             src="images/banner.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
                     </ul>
                     <ul className="cards-items">
@@ -21,21 +21,21 @@ function Cards() {
                             src="images/1.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
 
                         <CardItem 
                             src="images/2.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
 
                         <CardItem 
                             src="images/3.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
                     </ul>
 
@@ -44,21 +44,21 @@ function Cards() {
                             src="images/4.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
 
                         <CardItem 
                             src="images/5.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
 
                         <CardItem 
                             src="images/6.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
                     </ul>
 
@@ -67,21 +67,21 @@ function Cards() {
                             src="images/7.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
 
                         <CardItem 
                             src="images/8.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
 
                         <CardItem 
                             src="images/9.jpg"
                             text="Lorem ipsum dolor sit amet"
                             label="Aventura"
-                            path="/servicos"
+                            path="/services"
                         />
                     </ul>
                 </div>
