@@ -9,6 +9,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 .home, .servicos, .produtos, .login {
     height: 100vh;
     display: flex;
