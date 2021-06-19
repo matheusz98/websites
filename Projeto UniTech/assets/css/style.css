@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+:root {
+    --white: #ffffff;
+    --sky: #00aeff;
+    --blue: #092e7e;
+    --darkblue: #072483;
+    --black: #000000;
+    --gray: #686868;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Menu/Banner */
+
+nav{
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    padding: 30px 10px;
+    transition: all 0.5s ease-out;
+}
+
+nav.sticky{
+    padding: 10px 10px;
+    background: var(--white);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+nav.sticky a {
+    color: var(--black);
+}
+
+nav.sticky .bar {
+    background: var(--black);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.logo img {
+    width: 50px;
+    margin: 0px 10px;
+}
+
+nav ul{
+    position: relative;
+    display: flex;
+}
+
+nav ul li a{
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px;
+    font-weight: 300;
+    color: var(--white);
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    margin: auto;
+    background: var(--sky);
+    transition: all 0.5s ease-out;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.banner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    background-image: linear-gradient(rgba(0, 10, 51, 0.7), rgba(0, 10, 51, 0.7)), url(../img/banner_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2em;
+    color: var(--white);
+}
+
+.banner p {
+    color: var(--white);
+    margin: 20px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 20px;
+    border: 1px solid var(--white);
+    position: relative;
+    font-size: 15px;
+    color: var(--white);
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    letter-spacing: 1px;
+}
+
+/* Courses */
+
+.courses {
+    width: 80%;
+    padding: 20px 0px;
+    margin: auto;
+    text-align: center;
+}
+
+.courses h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.courses p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+    padding: 10px;
+} 
+
+.courses-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.course {
+    border-radius: 10px;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.course h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.course p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+    padding: 10px;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-out;
+}
+ 
+.course:hover{
+    background: var(--black);
+    color: var(--white);
+}
+
+.course:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+/* Branches */
+
+.branches {
+    width: 80%;
+    padding: 20px 0px;
+    margin: auto;
+    text-align: center;
+}
+
+.branches h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.branches p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+    padding: 10px;
+}
+
+.branches-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.branch {
+    position: relative;
+    margin: 30px 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.branch img {
+    width: 100%;
+    display: block;
+}
+
+.name {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: transparent;
+    transition: all 0.5 ease-out;
+}
+
+.name:hover {
+    background: rgba(22, 80, 155, 0.493);
+}
+
+.name h3 {
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-size: 2em;
+    color: var(--white);
+    font-weight: 300;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.name:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+}
+
+/* Facilities */
+
+.facilities {
+    width: 80%;
+    padding: 20px 0px;
+    margin: auto;
+    text-align: center;
+}
+
+.facilities h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.facilities p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+    padding: 10px;
+} 
+
+
+.facilities-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+    padding: 50px 0px;
+}
+
+.facility {
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.facility img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facility:hover{
+    background: var(--black);
+    color: var(--white);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+/* Testimonials */
+
+.testimonials {
+    width: 80%;
+    padding: 20px 0px;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonials h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.testimonials p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+    padding: 10px;
+} 
+
+.testimonials-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.testimonial {
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.testimonial h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.testimonial p {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--gray);
+    padding: 10px;
+}
+
+.testimonial:hover{
+    background: var(--black);
+    color: var(--white);
+}
+
+.testimonial:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.testimonial .fas {
+    color: var(--sky);
+}
+
+/* Contact */
+
+.contact {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/classroom_2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.contact input {
+    width: 280px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.contact button {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+footer .icons {
+    font-size: 30px;
+    padding: 15px 20px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+footer .fa {
+    transition: all 0.5s ease-out;
+}
+
+footer .fa:hover {
+    color: var(--sky);
+}
+
+footer p {
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 890px) {
+    .facilities-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .facility {
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+    .menu{
+        width: 100%;
+        height: 100vh;
+        top: 85px;
+        left: -100%;
+        display: block;
+        align-items: center;
+        position: fixed;
+        padding: 50px 50px;
+        z-index: 999;
+        background: var(--white);
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+    .menu a {
+        color: var(--black);
+    }
+
+    nav.sticky .menu {
+        top: 70px;
+    }
+
+    nav ul li a{
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 20px;
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
+    .toggle .bar{
+        width: 25px;
+        height: 3px;
+        background: var(--white);
+        margin: 5px auto;
+        transition: all 0.5s ease;
+    }
+
+    .toggle{
+        top: 35px;
+        right: 5%;
+        position: absolute;
+    }
+
+    nav.sticky .toggle {
+        top: 20px;
+    }
+
+    .toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .courses-content {
+        flex-direction: column;
+    }
+
+    .branches-content {
+        flex-direction: column;
+    }
+
+    .testimonials-content {
+        flex-direction: column;
+        justify-content: center;  
+    }
+
+}
+
+@media (max-width: 830px) {
+    .contact h2 {
+        font-size: 1.5em;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 690px) {
+    .banner {
+        padding: 0px 10px;
+    }
+
+    .banner h1 {
+        font-size: 1.5em;
+    }
+
+    .banner p {
+        font-size: 1em;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .courses h2 {
+        font-size: 1.5em;
+    }
+
+    .branches h2 {
+        font-size: 1.5em;
+    }
+
+    .facilities h2 {
+        font-size: 1.5em;
+    }
+
+    .testimonials h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 460px) {
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
