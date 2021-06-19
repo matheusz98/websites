@@ -110,6 +110,21 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
+.banner-about {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 10, 51, 0.7), rgba(0, 10, 51, 0.7)), url(../img/banner_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1.5em;
+    color: var(--white);
+    text-align: center;
+}
+
 .banner h1 {
     font-size: 2em;
     color: var(--white);
@@ -135,6 +150,26 @@ nav ul li a:hover::after{
 
 .btn:hover {
     background: var(--blue);
+    border: 1px solid var(--blue);
+    letter-spacing: 1px;
+}
+
+.btn-alt {
+    display: inline-block;
+    padding: 15px 20px;
+    border: 1px solid var(--black);
+    position: relative;
+    font-size: 15px;
+    color: var(--black);
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.btn-alt:hover {
+    background: var(--blue);
+    color: var(--white);
     border: 1px solid var(--blue);
     letter-spacing: 1px;
 }
@@ -170,6 +205,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     margin: 0px 10px;
     cursor: pointer;
+    overflow: hidden;
     transition: all 0.5s ease-out;
 }
 
@@ -187,8 +223,13 @@ nav ul li a:hover::after{
 
 .course img {
     width: 100%;
+    padding-bottom: 10px;
     border-radius: 10px;
     transition: all 0.5s ease-out;
+}
+
+.course img:hover {
+    transform: scale(1.1);
 }
  
 .course:hover{
@@ -313,7 +354,13 @@ nav ul li a:hover::after{
 
 .facility img {
     width: 100%;
+    padding: 10px 0px;
     border-radius: 10px;
+    transition: all 0.5s ease-out;
+}
+
+.facility img:hover {
+    transform: scale(1.1);
 }
 
 .facility:hover{
@@ -457,10 +504,45 @@ footer p {
     font-size: 1em;
 }
 
+/* About us */
 
+.about-us {
+    width: 80%;
+    padding: 50px 0px;
+    margin: auto;
+    text-align: left;
+}
 
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
 
+.about {
+    overflow: hidden;
+}
 
+.about h2 {
+    margin: 10px 0px;
+}
+
+.about p {
+    margin: 10px 0px;
+}
+
+.about img {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.about img:hover {
+    transform: scale(1.1);
+}
 
 
 
@@ -581,13 +663,40 @@ footer p {
         flex-direction: column;
     }
 
+    .course {
+        margin: 30px 0px;
+    }
+
     .branches-content {
         flex-direction: column;
+    }
+
+    .facility {
+        margin-bottom: 30px;
     }
 
     .testimonials-content {
         flex-direction: column;
         justify-content: center;  
+    }
+
+    .testimonial {
+        margin-bottom: 30px;
+    }
+
+    .about-us {
+        text-align: center;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about img {
+        margin: 20px 0px;
     }
 
 }
@@ -636,6 +745,10 @@ footer p {
 
     .testimonials h2 {
         font-size: 1.5em;
+    }
+
+    .banner-about {
+        font-size: 1em;
     }
 }
 
