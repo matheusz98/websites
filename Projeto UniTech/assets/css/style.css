@@ -2,6 +2,7 @@
 
 :root {
     --white: #ffffff;
+    --lightgray: #cfcfcf;
     --sky: #00aeff;
     --blue: #092e7e;
     --darkblue: #072483;
@@ -117,6 +118,21 @@ nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgba(0, 10, 51, 0.7), rgba(0, 10, 51, 0.7)), url(../img/banner_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1.5em;
+    color: var(--white);
+    text-align: center;
+}
+
+.banner-courses {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 10, 51, 0.7), rgba(0, 10, 51, 0.7)), url(../img/banner_3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -544,9 +560,86 @@ footer p {
     transform: scale(1.1);
 }
 
+/* Courses page */
 
+.courses-page {
+    width: 80%;
+    padding: 50px 0px;
+    margin: auto;
+}
 
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
 
+.left {
+    flex-basis: 60%;
+}
+
+.left img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.left h2 {
+    margin: 20px 0px;
+}
+
+.right {
+    flex-basis: 35%;
+}
+
+.right h3 {
+    background: var(--blue);
+    color: var(--white);
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0px;
+    color: var(--gray);
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.right div:hover {
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.sugestion {
+    margin: 50px 0px;
+    padding: 10px 20px;
+    border: 1px solid var(--gray);
+}
+
+.sugestion h3 {
+    text-align: center;
+}
+
+.sugestion-form input, .sugestion-form textarea {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: var(--lightgray);
+}
+
+.sugestion-form button {
+    margin: 10px 0px;
+}
 
 
 
@@ -699,6 +792,14 @@ footer p {
         margin: 20px 0px;
     }
 
+    .courses-container {
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .left {
+        text-align: center;
+    }
 }
 
 @media (max-width: 830px) {
@@ -723,6 +824,10 @@ footer p {
     .banner p {
         font-size: 1em;
         margin: 5px;
+    }
+
+    .banner-courses {
+        font-size: 1em;
     }
 }
 
