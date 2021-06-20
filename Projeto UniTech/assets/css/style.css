@@ -38,12 +38,12 @@ nav{
     align-items: center;
     position: fixed;
     z-index: 1000;
-    padding: 30px 10px;
+    padding: 30px 30px;
     transition: all 0.5s ease-out;
 }
 
 nav.sticky{
-    padding: 10px 10px;
+    padding: 10px 30px;
     background: var(--white);
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
@@ -133,6 +133,21 @@ nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgba(0, 10, 51, 0.7), rgba(0, 10, 51, 0.7)), url(../img/banner_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1.5em;
+    color: var(--white);
+    text-align: center;
+}
+
+.banner-contact {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 10, 51, 0.7), rgba(0, 10, 51, 0.7)), url(../img/banner_4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -641,34 +656,60 @@ footer p {
     margin: 10px 0px;
 }
 
+/* Contact page */
 
+.map {
+    width: 80%;
+    padding: 50px 0px;
+    margin: auto;
+}
 
+.map iframe {
+    width: 100%;
+}
 
+.contact-page {
+    width: 80%;
+    margin: auto;
+}
 
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
 
+.contact-content {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+}
 
+.contact-content div {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
 
+.contact-content div .fa {
+    color: var(--sky);
+    font-size: 2em;
+    margin: 10px;
+}
 
+.contact-content div h5 {
+    color: var(--gray);
+    font-size: 1em;
+    font-weight: 300;
+    margin: 5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contact-content input, .contact-content textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 15px 0px;
+    border: 1px solid var(--gray);
+    outline: none;
+}
 
 @media (max-width: 890px) {
     .facilities-content {
@@ -793,12 +834,17 @@ footer p {
     }
 
     .courses-container {
-    flex-direction: column;
-    justify-content: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .left {
         text-align: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -827,6 +873,10 @@ footer p {
     }
 
     .banner-courses {
+        font-size: 1em;
+    }
+
+    .banner-contact {
         font-size: 1em;
     }
 }
