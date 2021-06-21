@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --header-height: 4.5rem;
+    --hue: 310;
+    --base-color: hsl(var(--hue) 36% 57%);
+    --base-color-second: hsl(var(--hue) 65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+html {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+body {
+    background: var(--body-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    -webkit-font-smoothing: auto;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+nav {
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin-top: var(--header-height);
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.31rem;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.logo span {
+    color: var(--base-color);
+}
+
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.button {
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: var(--base-color);
+    color: var(--text-color-light);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.5s;
+}
+
+.button:hover {
+    background: var(--base-color-alt);
+}
+
+#home {
+    overflow: hidden;
+}
+
+#home .container {
+    margin: 0;
+}
+
+#home .image {
+    position: relative;
+}
+
+#home .image::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+    background: var(--base-color-second);
+}
+
+#home .image img {
+    position: relative;
+    right: 2.93rem;
+}
+
+#home .image img,
+#home .image::before {
+    border-radius: 0.25rem;
+}
+
+#home .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+
+#home .text h1 {
+    margin-bottom: 1rem;
+}
+
+#home .text p {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.divider-1 {
+    height: 1px;
+    background: linear-gradient(
+        270deg,
+        hsla(var(--hue), 36%, 57%, 1) 0%,
+        hsla(var(--hue), 65%, 88%, 0.34) 100%
+    );
+}
