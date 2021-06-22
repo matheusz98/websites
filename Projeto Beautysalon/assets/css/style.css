@@ -2,7 +2,7 @@
 
 :root {
     --header-height: 4.5rem;
-    --hue: 310;
+    --hue: 300;
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
     --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -25,6 +25,7 @@ html {
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -38,10 +39,11 @@ img {
     height: auto;
 }
 
-h1 {
+.title {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875rem;
     font-weight: 700;
+    color: #000000;
     -webkit-font-smoothing: auto;
 }
 
@@ -52,9 +54,26 @@ h1 {
     top: 0;
     left: 0;
     z-index: 100;
+    background: var(--body-color);
     margin-bottom: 2rem;
     border-bottom: 1px solid #e4e4e4;
 }
+
+#header.scroll {
+    /* background: var(--base-color); */
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+    transition: 0.5s;
+}
+
+/*
+    #header.scroll .logo span {
+        color: white;
+    }
+
+    #header.scroll .icon-menu {
+        color: white;
+    }
+*/
 
 nav {
     width: 100%;
@@ -64,8 +83,89 @@ nav {
     align-items: center;
 }
 
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    transition: color 0.5s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: var(--base-color);
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+    background: var(--base-color);
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav .menu {
+    top: -20rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+nav .menu ul {
+    display: none;
+}
+
+nav.show .menu {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--body-color);
+    visibility: visible;
+    opacity: 1;
+}
+
+nav.show .menu ul {
+    display: grid;
+}
+
+nav.show ul.grid {
+    gap: 4rem;
+}
+
+.toggle {
+    font-size: 1.5rem;
+    color: var(--base-color);
+    cursor: pointer;
+}
+
+nav .icon-close {
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+nav.show div.icon-close {
+    top: 1.5rem;
+    visibility: visible;
+    opacity: 1;
+}
+
 main {
-    margin-top: var(--header-height);
+    margin-top: calc(var(--header-height) + 2rem);
 }
 
 .logo {
@@ -86,6 +186,18 @@ main {
 
 .section {
     padding: 5rem 0;
+}
+
+.section .title {
+    margin-bottom: 1rem;
+}
+
+.section header {
+    margin-bottom: 4rem;
+}
+
+.section header strong {
+    color: var(--base-color);
 }
 
 .grid {
@@ -162,7 +274,77 @@ main {
     height: 1px;
     background: linear-gradient(
         270deg,
-        hsla(var(--hue), 36%, 57%, 1) 0%,
-        hsla(var(--hue), 65%, 88%, 0.34) 100%
+        hsla(var(--hue), 36%, 57%, 1),
+        hsla(var(--hue), 65%, 88%, 0.34)
     );
+}
+
+.divider-2 {
+    height: 1px;
+    background: linear-gradient(
+        270deg,
+        hsla(var(--hue), 65%, 88%, 0.34),
+        hsla(var(--hue), 36%, 57%, 1)
+    );
+}
+
+#about {
+    background: #ffffff;
+}
+
+#about .container {
+    margin: 0;
+}
+
+#about .image {
+    position: relative;
+}
+
+#about .image::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -8.3%;
+    left: -33%;
+    z-index: 0;
+    background: var(--base-color-second);
+}
+
+#about .image img {
+    position: relative;
+}
+
+#about .image img,
+#about .image::before {
+    border-radius: 0.25rem;
+}
+
+#about .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.cards.grid {
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: .25rem .25rem 0 0;
+    text-align: center;
+}
+
+.card i {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+}
+
+.card .title {
+    margin-bottom: .75rem;
+    font-size: 1.5rem;
 }
