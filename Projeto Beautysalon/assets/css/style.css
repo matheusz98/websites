@@ -179,6 +179,10 @@ main {
     color: var(--base-color);
 }
 
+.logo-alt span {
+    color: var(--body-color);
+}
+
 .container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -435,4 +439,55 @@ main {
 
 #contact ul li i {
     color: var(--base-color);
+}
+
+footer {
+    background: var(--base-color);
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    margin-bottom: 0.75rem;
+    color: var(--text-color-light);
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+footer .social a {
+    display: inline-block;
+    margin-right: 2rem;
+    transition: 0.5s;
+}
+
+footer .social a:hover {
+    transform: translateY(-10px);
+}
+
+.back-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5rem;
+    background: var(--base-color);
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    clip-path: circle();
+    line-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(200%);
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
