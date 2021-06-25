@@ -10,6 +10,12 @@
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
+
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
 }
 
 * {
@@ -22,7 +28,7 @@
 }
 
 html {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--body-font);
     font-size: 1rem;
     font-weight: 400;
     scroll-behavior: smooth;
@@ -31,7 +37,7 @@ html {
 body {
     background: var(--body-color);
     color: var(--text-color);
-    -webkit-font-smoothing: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -40,8 +46,8 @@ img {
 }
 
 .title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.875rem;
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
     font-weight: 700;
     color: #000000;
     -webkit-font-smoothing: auto;
@@ -92,7 +98,8 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: var(--base-color);
 }
 
@@ -107,7 +114,8 @@ nav ul li a::after {
     transition: width 0.5s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
     width: 100%;
 }
 
@@ -164,12 +172,8 @@ nav.show div.icon-close {
     opacity: 1;
 }
 
-main {
-    margin-top: calc(var(--header-height) + 2rem);
-}
-
 .logo {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--title-font);
     font-size: 1.31rem;
     font-weight: 700;
     color: var(--title-color);
@@ -189,11 +193,15 @@ main {
 }
 
 .section {
-    padding: 5rem 0;
+    padding: calc(5rem + var(--header-height)) 0;
 }
 
 .section .title {
     margin-bottom: 1rem;
+}
+
+.section .subtitle {
+    font-size: var(--subtitle-font-size);
 }
 
 .section header {
@@ -445,6 +453,10 @@ footer {
     background: var(--base-color);
 }
 
+footer.section {
+    padding: 4rem 0;
+}
+
 footer .logo {
     display: inline-block;
     margin-bottom: 1.5rem;
@@ -460,8 +472,12 @@ footer i {
     color: var(--text-color-light);
 }
 
+footer .social {
+    width: fit-content;
+    grid-auto-flow: column;
+}
+
 footer .social a {
-    display: inline-block;
     margin-right: 2rem;
     transition: 0.5s;
 }
@@ -490,4 +506,123 @@ footer .social a:hover {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .section {
+        padding: 10rem 0;
+    }
+
+    .section header,
+    #testimonials header {
+        max-width: 32rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .button {
+        height: 3.125rem;
+    }
+
+    nav .menu {
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    nav .menu ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav .menu ul li a.title {
+        font-family: var(--body-font);
+        font-size: 1rem;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    nav .menu ul li a.title.active {
+        font-weight: bold;
+        -webkit-font-smoothing: auto;
+    }
+
+    nav .icon-menu {
+        display: none;
+    }
+
+    main {
+        margin-top: var(--header-height);
+    }
+
+    #home .container {
+        justify-content: space-between;
+        grid-auto-flow: column;
+        margin: 0 auto;
+    }
+
+    #home .image {
+        order: 1;
+    }
+
+    #home .text {
+        max-width: 24rem;
+        order: 0;
+        text-align: left;
+    }
+
+    #about .container {
+        grid-auto-flow: column;
+        margin: 0 auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #testimonials .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact .container {
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact .text {
+        max-width: 25rem;
+    }
+
+    footer.section {
+        padding: 3.75rem 0;
+    }
+
+    footer .container {
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .logo {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        --title-font-size: 2.25rem;
+    }
 }
