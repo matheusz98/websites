@@ -196,3 +196,56 @@ nav ul li a.link-contact:hover {
 .about-img img {
     width: 100%;
 }
+
+/* Testimonials */
+.testimonials {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.testimonials h4 {
+    padding-top: 5rem;
+    text-transform: uppercase;
+    color: var(--Grayishblue);
+    letter-spacing: 2px;
+}
+
+.testimonials-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 8rem 0;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-family: var(--body);
+    font-size: 1rem;
+    color: var(--Verydarkgrayishblue);
+    padding: 3.5rem 0;
+}
+
+.testimonial h5 {
+    font-weight: 900;
+}
+
+.testimonial h6 {
+    font-weight: 900;
+    color: var(--Darkgrayishblue);
+}
