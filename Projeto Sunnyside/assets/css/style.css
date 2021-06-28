@@ -33,6 +33,7 @@ h1,h2,h3,h4,h5,h6 {
 
 body {
     font-size: 1.8rem;
+    overflow-x: hidden;
 }
 
 /* Header, Nav, Menu, Hero */
@@ -98,4 +99,100 @@ nav ul li a.link-contact:hover {
     text-transform: uppercase;
     letter-spacing: .3rem;
     margin-bottom: 2.5rem;
+}
+
+/* About */
+.about-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 0 5rem;
+}
+
+.text-box h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--Verydarkdesaturatedblue);
+    padding-bottom: 1.5rem;
+}
+
+.text-box p {
+    font-family: var(--body);
+    font-size: 1rem;
+    color: var(--Darkgrayishblue);
+    padding-bottom: 1.5rem;
+}
+
+.text-box.graphic {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20rem;
+    background: url('../images/desktop/image-graphic-design.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.text-box.graphic h3 {
+    font-weight: 900;
+    color: var(--Verydarkdesaturatedblue);
+}
+
+.text-box.graphic p {
+    color: var(--Verydarkdesaturatedblue);
+}
+
+.text-box.photography {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20rem;
+    background: url('../images/desktop/image-photography.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.text-box.photography h3 {
+    font-weight: 900;
+    color: var(--Verydarkdesaturatedblue);
+}
+
+.text-box.photography p {
+    color: var(--Verydarkdesaturatedblue);
+}
+
+.about-btn {
+    font-family: var(--title);
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--Verydarkdesaturatedblue);
+    text-transform: uppercase;
+}
+
+.about-btn {
+    font-family: var(--title);
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--Verydarkdesaturatedblue);
+    text-transform: uppercase;
+}
+
+
+.about-img {
+    display: flex;
+}
+
+.about-img img {
+    width: 100%;
 }
