@@ -267,3 +267,38 @@ nav ul li a.link-contact:hover {
 .gallery-img {
     width: 100%;
 }
+
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    background: var(--Darkmoderatecyan);
+}
+
+.footer-logo {
+    padding-bottom: 1.5rem;
+}
+
+.footer-menu a {
+    font-family: var(--body);
+    font-size: 1.2rem;
+    color: var(--Darkdesaturatedcyan);
+    padding: 0 1.3rem;
+    transition: 0.5s;
+}
+
+.footer-menu a:hover {
+    color: var(--White);
+}
+
+.social {
+    padding-top: 2rem;
+}
+
+.social a {
+    padding: 0 1.2rem;
+}
