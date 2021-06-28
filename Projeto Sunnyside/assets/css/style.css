@@ -249,3 +249,21 @@ nav ul li a.link-contact:hover {
     font-weight: 900;
     color: var(--Darkgrayishblue);
 }
+
+/* Gallery */
+.gallery {
+    width: 100%;
+}
+
+.gallery-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gallery-img {
+    display: flex;
+}
+
+.gallery-img {
+    width: 100%;
+}
