@@ -12,7 +12,7 @@
 :root {
     --white: #ffffff;
     --black: #000000;
-    --lightgray: #dab8b8;
+    --winter: #dab8b8;
     --gray: #4e4b4b;
     --text: #636060;
     --blue: #11b3cf;
@@ -120,7 +120,7 @@ header {
     font-family: var(--main);
     font-size: 2rem;
     font-weight: 90;
-    color: var(--lightgray);
+    color: var(--winter);
     text-align: center;
 }
 
@@ -318,9 +318,46 @@ header {
     text-align: center;
 }
 
+/* About */
+.about .container {
+    margin: 5rem 0;
+}
+
+.about-content {
+    width: 50%;
+    margin: 0 1rem;
+}
+
+.about-content h2 {
+    font-family: var(--title);
+    font-size: 3rem;
+    color: var(--gray);
+}
+
+.about-content p {
+    color: var(--text);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.about-content .btn {
+    text-transform: capitalize;
+}
 
 
+.img-content {
+    width: 50%;
+}
 
+.about .about-imgs {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.about-imgs img {
+    max-width: 18.75rem;
+}
 
 
 
