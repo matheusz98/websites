@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    outline: none;
 }
 
 :root {
@@ -13,7 +14,7 @@
     --black: #000000;
     --lightgray: #dab8b8;
     --gray: #4e4b4b;
-    --grey: #636060;
+    --text: #636060;
     --blue: #11b3cf;
     --bluedark: #0e7ab9;
     --blueblack: #020420;
@@ -208,7 +209,7 @@ header {
 .content p {
     padding-bottom: 1rem;
     font-size: 1rem;
-    color: var(--grey);
+    color: var(--text);
     text-align: center;
 }
 
@@ -224,15 +225,98 @@ header {
     text-transform: capitalize;
 }
 
+/* Reservation */
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 
+.reservation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/reservation.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.reservation img {
+    width: 2rem;
+}
 
+.reception {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 5rem;
+}
 
+.reception h2 {
+    padding-left: 0.5rem;
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+}
 
+.reservation-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
 
+.btn img {
+    width: 1rem;
+}
 
+.reservation-form .btn{
+    padding: 1rem 1.5rem;
+    border: none;
+}
 
+.field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 1rem;
+}
 
+.field img {
+    width: 3rem;
+}
+
+.field h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.field input[type=date], select, input[type=text] {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-sizing: border-box;
+}
+
+.field input[type=text] {
+    text-align: center;
+}
 
 
 

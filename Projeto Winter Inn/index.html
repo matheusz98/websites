@@ -63,6 +63,65 @@
         </article>
     </section>
 
+    <!-- Reservation -->
+    <section class="reservation">
+        <div class="reception">
+            <img src="assets/images/icons/reception.svg" alt="Reception">
+            <h2>Make your reservation</h2>
+        </div>
+
+        <form action="" class="reservation-form">
+            <div class="field">
+                <img src="assets/images/icons/calendar.svg" alt="Check-in">
+                <h3>Check-in</h3>
+                <label for="checkin" class="sr-only">Check-in</label>
+                <input type="date">
+            </div>
+
+            <div class="field">
+                <img src="assets/images/icons/calendar.svg" alt="Check-out">
+                <h3>Check-out</h3>
+                <label for="checkout" class="sr-only">Check-out</label>
+                <input type="date">
+            </div>
+
+            <div class="field">
+                <img src="assets/images/icons/adult.svg" alt="Adults">
+                <h3>Adults</h3>
+                <label for="adults" class="sr-only">Adults</label>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <img src="assets/images/icons/child.svg" alt="Kids">
+                <h3>Kids</h3>
+                <label for="kids" class="sr-only">Kids</label>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <img src="assets/images/icons/discount.svg" alt="Discount">
+                <h3>Discount Coupon</h3>
+                <label for="checkout" class="sr-only">Discount Coupon</label>
+                <input type="text" placeholder="#####" maxlength="5">
+            </div>
+            <button type="submit" class="btn"><img src="assets/images/icons/search.svg" alt="Search"> Search</button>
+        </form>
+    </section>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
