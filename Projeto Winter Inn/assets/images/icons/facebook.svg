@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="350" height="350" viewBox="0 0 350 350" xml:space="preserve">
+<desc>Created with Fabric.js 1.7.22</desc>
+<defs>
+</defs>
+<g id="icon" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-1.9444444444444287 -1.9444444444444287) scale(3.89 3.89)" >
+	<path d="M 84.144 90 h -24.56 c -0.553 0 -1 -0.447 -1 -1 V 54.922 c 0 -0.553 0.447 -1 1 -1 h 10.56 l 1.454 -11.281 H 59.584 c -0.553 0 -1 -0.448 -1 -1 v -8.479 c 0 -3.692 0.9 -7.466 7.582 -7.466 l 6.032 -0.002 v -9.985 c -1.797 -0.178 -5.316 -0.417 -9.248 -0.417 c -10.069 0 -16.081 6.189 -16.081 16.555 v 9.794 c 0 0.552 -0.447 1 -1 1 H 35.401 v 11.281 h 10.468 c 0.553 0 1 0.447 1 1 V 89 c 0 0.553 -0.447 1 -1 1 H 5.857 C 2.628 90 0 87.372 0 84.143 V 5.857 C 0 2.627 2.628 0 5.857 0 h 78.286 C 87.373 0 90 2.627 90 5.857 v 78.286 C 90 87.372 87.373 90 84.144 90 z M 60.584 88 h 23.56 C 86.27 88 88 86.27 88 84.143 V 5.857 C 88 3.73 86.27 2 84.144 2 H 5.857 C 3.73 2 2 3.73 2 5.857 v 78.286 C 2 86.27 3.73 88 5.857 88 h 39.012 V 55.922 H 34.401 c -0.552 0 -1 -0.447 -1 -1 V 41.641 c 0 -0.552 0.448 -1 1 -1 h 10.468 v -8.794 c 0 -11.445 6.929 -18.555 18.081 -18.555 c 4.827 0 9.078 0.358 10.38 0.532 c 0.497 0.066 0.868 0.49 0.868 0.991 v 11.878 c 0 0.552 -0.447 1 -1 1 l -7.032 0.003 c -4.692 0 -5.582 1.921 -5.582 5.466 v 7.479 h 12.151 c 0.287 0 0.562 0.124 0.751 0.34 c 0.189 0.216 0.277 0.503 0.241 0.788 L 72.015 55.05 c -0.064 0.499 -0.489 0.872 -0.992 0.872 H 60.584 V 88 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(8,163,164); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+</g>
+</svg>

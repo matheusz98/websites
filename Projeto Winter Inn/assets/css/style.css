@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --lightgray: #dab8b8;
+    --gray: #4e4b4b;
+    --blue: #11b3cf;
+    --bluedark: #0e7ab9;
+    --blueblack: #020420;
+    --main: 'Pacifico', cursive;
+    --title: 'Fraunces', serif;
+    --body: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--body);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 1rem 2rem;
+    z-index: 1;
+    color: var(--white);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--main);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 3.5rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+.nav-links li a {
+    color: var(--white);
+    padding: 0 1rem;
+    transition: 0.5s ease-out;
+}
+
+.nav-links li a:hover {
+    letter-spacing: 1px;
+}
+
+.btn {
+    padding: 1rem;
+    background: var(--bluedark);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.btn:hover {
+    background: var(--blueblack);
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(1, 8, 37, 0.7), rgba(1, 8, 37, 0.7)), url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.snow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    background: url('../images/snow-img/1.png'), url('../images/snow-img/2.png'), url('../images/snow-img/3.png');
+    animation: snow 20s linear infinite;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--main);
+    font-size: 2rem;
+    font-weight: 90;
+    color: var(--lightgray);
+    text-align: center;
+}
+
+.btn-header {
+    position: absolute;
+    animation: arrow 3.5s infinite;
+}
+
+.btn-header img {
+    width: 5rem;
+}
+
+/* Animations */
+@keyframes arrow {
+    0% {
+        bottom: 0%;
+    }
+
+    50% {
+        bottom: 20%;
+    }
+
+    100% {
+        bottom: 0%;
+    }
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 50rem 100rem, 40rem, 40rem, 30rem, 30rem;
+    }
+}
+
+
+/* Media Queries */
+@media (max-width: 860px) {
+    nav {
+        padding: 0;
+    }
+
+    .logo {
+        top: 18px;
+        left: 30px;
+        position: absolute;
+    }
+
+    .nav-links {
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -100rem;
+        padding-top: 5rem;
+        background: var(--blueblack);
+        transition: 0.5s ease-out;
+    }
+
+    .nav-links.active {
+        margin-top: 0;
+    }
+
+    .nav-links li {
+        margin: 1.5rem auto;
+    }
+
+    .toggle .bar{
+        width: 25px;
+        height: 3px;
+        background: var(--white);
+        margin: 5px auto;
+        transition: all 0.5s ease;
+    }
+
+    .toggle{
+        top: 35px;
+        right: 5%;
+        position: absolute;
+    }
+
+    .toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 660px) {
+    .header-content {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+}
