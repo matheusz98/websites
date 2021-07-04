@@ -440,12 +440,12 @@ header {
     margin: 2rem auto;
 }
 
-.services-title {
+.section-title {
     margin: 2rem 0;
     text-align: center;
 }
 
-.services-title h2 {
+.section-title h2 {
     font-family: var(--title);
     font-size: 3rem;
     font-weight: 900;
@@ -453,7 +453,7 @@ header {
     padding-bottom: 1rem;
 }
 
-.services-title p {
+.section-title p {
     color: var(--text);
     font-size: 1rem;
 }
@@ -494,29 +494,51 @@ header {
     padding-bottom: 1rem;
 }
 
+/* Newsletter */
+.newsletter {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
 
+.newsletter-container {
+    margin-left: 2rem;
+}
 
+.newsletter-container h2 {
+    font-family: var(--title);
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--winter);
+}
 
+.newsletter-container p {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+    color: var(--white);
+}
 
+.newsletter-form {
+    margin: 1rem 0;
+}
 
+.newsletter-form input[type=email] {
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.newsletter-form .btn {
+    margin: 0;
+    border: none;
+}
 
 
 
