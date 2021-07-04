@@ -117,6 +117,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 1rem;
     font-family: var(--main);
     font-size: 2rem;
     font-weight: 90;
@@ -214,7 +215,7 @@ header {
 }
 
 .line {
-    width: 15rem;
+    width: 50%;
     height: 0.4rem;
     background: var(--blue);
     margin: 1rem auto;
@@ -253,6 +254,7 @@ header {
 
 .reservation img {
     width: 2rem;
+    padding: 0.5rem;
 }
 
 .reception {
@@ -263,12 +265,15 @@ header {
 }
 
 .reception h2 {
-    padding-left: 0.5rem;
     font-family: var(--title);
     font-weight: 900;
     font-size: 3rem;
     color: var(--white);
     text-align: center;
+}
+
+.reception img {
+    width: 2rem;
 }
 
 .reservation-form {
@@ -501,14 +506,11 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 0 1rem;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg2.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-}
-
-.newsletter-container {
-    margin-left: 2rem;
 }
 
 .newsletter-container h2 {
@@ -631,10 +633,35 @@ footer .footer-right img {
 
 
 
+@media (max-width: 980px) {
+    footer {
+        flex-direction: column;
+        padding: 5rem 2rem;
+    }
 
+    .footer-left .footer-logo {
+        justify-content: center;
+    }
 
-/* Media Queries */
-@media (max-width: 860px) {
+    .footer-links ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center
+    }
+
+    .footer-links li {
+        padding: 1rem;
+    }
+
+    .address p {
+        padding-left: 0.5rem;
+    }
+}
+
+@media (max-width: 930px) {
     nav {
         padding: 0;
     }
@@ -654,7 +681,7 @@ footer .footer-right img {
         margin-top: -100rem;
         padding-top: 5rem;
         background: var(--blueblack);
-        transition: 0.5s ease-out;
+        transition: 0.5s ease;
     }
 
     .nav-links.active {
@@ -697,14 +724,93 @@ footer .footer-right img {
     }
 }
 
+/* Media Queries */
+@media (max-width: 860px) {
+    .newsletter-container h2 {
+        font-size: 2rem;
+    }
+
+    .newsletter-container p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .soon {
+        width: 80%;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content {
+        margin: 1rem 0;
+    }
+
+    .about-content {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .img-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 680px) {
+    .reception h2 {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 660px) {
     .header-content {
         font-size: 1.5rem;
     }
+
+    .img-content {
+        width: 80%;
+    }
+
+    .about .about-imgs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-imgs img {
+        max-width: 100%;
+    }
+
+    .box-title {
+        font-size: 1.5rem;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 560px) {
+    .newsletter-form input[type=email] {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 390px) {
     .logo {
         font-size: 1.5rem;
+    }
+
+    .newsletter-form input[type=email] {
+        width: 10rem;
+    }
+
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12.5rem, auto));
+        grid-gap: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
