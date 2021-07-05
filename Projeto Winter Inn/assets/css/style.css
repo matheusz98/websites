@@ -12,6 +12,7 @@
 :root {
     --white: #ffffff;
     --black: #000000;
+    --darkmode: #1d1d1d;
     --winter: #dab8b8;
     --gray: #4e4b4b;
     --text: #636060;
@@ -191,17 +192,22 @@ header {
 
 .content {
     margin: 0 1rem;
+    overflow: hidden;
 }
 
 .content img {
     width: 100%;
     border-radius: 1rem;
     cursor: pointer;
-    transition: 0.5s ease-out;
+    transition: 0.5s;
+}
+
+.content img:hover {
+    transform: scale(1.1);
 }
 
 .content h3 {
-    padding: 0.8rem 0;
+    padding: 1rem 0;
     font-family: var(--title);
     font-weight: 900;
     color: var(--gray);
@@ -215,7 +221,7 @@ header {
 }
 
 .line {
-    width: 50%;
+    width: 15%;
     height: 0.4rem;
     background: var(--blue);
     margin: 1rem auto;
@@ -351,6 +357,7 @@ header {
 
 .img-content {
     width: 50%;
+    overflow: hidden;
 }
 
 .about .about-imgs {
@@ -572,6 +579,12 @@ footer .footer-right img {
     align-items: center;
     font-family: var(--main);
     font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
 }
 
 .footer-left .footer-logo img {
@@ -593,6 +606,11 @@ footer .footer-right img {
     font-size: 1.2rem;
     font-weight: 300;
     color: var(--white);
+    transition: 0.5s;
+}
+
+.footer-links a:hover {
+    letter-spacing: 1px;
 }
 
 .address {
@@ -606,32 +624,50 @@ footer .footer-right img {
     padding-left: 1rem;
 }
 
+.address a {
+    transition: 0.5s;
+}
+
+.address a:hover {
+    transform: translateY(-10px);
+}
+
 .social-icons {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
 }
 
+.social-icons a {
+    transition: 0.5s;
+}
 
+.social-icons a:hover {
+    transform: translateY(-10px);
+}
 
+.back-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
+    background: var(--bluedark);
+    clip-path: circle();
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(200%);
+}
 
+.back-to-top img {
+    width: 2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
 
 @media (max-width: 980px) {
     footer {
