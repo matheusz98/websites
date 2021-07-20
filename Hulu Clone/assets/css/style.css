@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --hover: #ccc;
+    --main: #00ed82;
+    --button: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+header {
+    height: 33.125rem;
+    background: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+    padding: 0.125rem 0.25rem;
+}
+
+header nav .btn-login {
+    background: none;
+    color: var(--white);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header .logo {
+    width: 16.875rem;
+    margin: 1.25rem 0;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.875rem;
+}
+
+header .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+header .subtitle {
+    font-size: 1.125rem;
+    margin: 1.563rem 0;
+}
+
+header::after {
+    content: '';
+    width: 100%;
+    height: 11.25rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.76) 15.54%,rgba(0, 0, 0, 0.192) 60.23%, rgba(0, 0, 0, 8e-5) 100%);
+}
+
+a {
+    color: var(--white);
+    transition: 0.5s;
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+h3 {
+    font-size: 1.563rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 0.938rem;
+    color: var(--main);
+    text-transform: uppercase;
+}
+
+.btn {
+    min-width: 8.438rem;
+    display: inline-block;
+    padding: 1.25rem 1.875rem;
+    background: var(--white);
+    font-size: 0.938rem;
+    font-weight: 600;
+    color: var(--button);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-signup:hover {
+    opacity: 0.8;
+}
+
+.trial-text {
+    font-size: 0.625rem;
+    color: var(--hover);
+    margin-top: 1.25rem;
+}
+
+/* Bundle */
+.bundle {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 2.5rem;
+    align-items: center;
+    background: linear-gradient(318.68deg, #0f495c 0%, #0d3640 49.72%, #08141f 100%);
+    padding: 1.875rem 2.5rem;
+}
+
+.bundle > div:last-of-type {
+    justify-self: end;
+    align-self: end;
+}
+
+.bundle > div:last-of-type .link {
+    text-align: center;
+}
+
+.btn-outline {
+    background: none;
+    color: var(--white);
+    border: 2px solid var(--white);
+    transition: 0.5s;
+}
+
+.btn-outline:hover {
+    color: var(--white);
+    border-color: var(--hover);
+}
+
+.link {
+    display: block;
+    margin-top: 0.313rem;
+    font-size: 0.75rem;
+    color: var(--hover);
+    text-decoration: underline;
+}
+
+/* dps
+.text-xl {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.btn-dark {
+  background: #000;
+  color: #fff;
+}
+*/
