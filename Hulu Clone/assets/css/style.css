@@ -6,6 +6,7 @@
     --hover: #ccc;
     --main: #00ed82;
     --button: #333;
+    --live: #151515;
 }
 
 * {
@@ -256,7 +257,37 @@ h4 {
     margin-bottom: 0.625rem;
 }
 
+/* Live */
+.live {
+    background: var(--live);
+    padding: 2.5rem;
+}
 
+.live-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6.25rem;
+    border: 4px solid var(--main);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.live a {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 1.25rem;
+}
+
+
+
+
+.live-text {
+    font-size: 4.375rem;
+    font-weight: 700;
+}
 
 /* dps
 .btn-dark {
