@@ -281,13 +281,60 @@ h4 {
     margin-top: 1.25rem;
 }
 
-
-
-
 .live-text {
     font-size: 4.375rem;
     font-weight: 700;
 }
+
+/* Sports */
+.sports {
+    height: 50rem;
+    position: relative;
+    background: url(../images/live-sports.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sports-content {
+    max-width: 34.375rem;
+    top: 10rem;
+    left: 6.25rem;
+    position: absolute;
+}
+
+.sports-text {
+    font-size: 4.375rem;
+    font-weight: 700;
+}
+
+.sports-logos {
+    width: 18.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.sports-logos > div {
+    width: 3.75rem;
+    height: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/network-logo-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sports-logos img {
+    width: 2.5rem;
+}
+
+
+
+
 
 /* dps
 .btn-dark {
