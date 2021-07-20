@@ -7,6 +7,8 @@
     --main: #00ed82;
     --button: #333;
     --live: #151515;
+    --footer: #ebedf2;
+    --footer-text: #333;
 }
 
 * {
@@ -332,7 +334,45 @@ h4 {
     width: 2.5rem;
 }
 
+/* Footer */
+footer {
+    background: var(--footer);
+    color: var(--footer-text);
+}
 
+footer a {
+    color: var(--footer-text);
+}
+
+.footer-content {
+    max-width: 68.75rem;
+    margin: auto;
+    padding: 2.5rem;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-items .head {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.313rem;
+}
+
+.divider {
+    width: 100%;
+    height: 3px;
+    border-top: 1px solid var(--hover);
+    margin: 1.875rem 0;
+}
+
+.social-icons img {
+    width: 1.563rem;
+    height: 1.563rem;
+    margin-right: 1.563rem;
+}
 
 
 
