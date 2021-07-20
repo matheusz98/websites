@@ -23,7 +23,8 @@ html {
 body {
     background: var(--black);
     color: var(--white);
-    overflow: hidden;
+    line-height: 1.7;
+    overflow-x: hidden;
 }
 
 img {
@@ -123,6 +124,7 @@ h4 {
     border: none;
     border-radius: 5px;
     letter-spacing: 1px;
+    line-height: 0.938rem;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -176,12 +178,87 @@ h4 {
     text-decoration: underline;
 }
 
-/* dps
-.text-xl {
-  font-size: 70px;
-  font-weight: bold;
+/* Categories */
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5.625rem 2.5rem;
+    text-align: center;
 }
 
+.categories .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+.categories .items > div {
+    width: 18.75rem;
+    height: 31.25rem;
+    position: relative;
+}
+
+.categories .item-gradient {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(156.82deg, rgba(0, 0, 0, 0.6) 4.58%, rgba(0, 0, 0, 0) 69.61%), linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.categories .item-text {
+    top: 1.25rem;
+    left: 1.25rem;
+    position: absolute;
+    text-align: left;
+}
+
+.categories .item-1 {
+    background: url(../images/cover-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.categories .item-2 {
+    background: url(../images/cover-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.categories .item-3 {
+    background: url(../images/cover-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.categories .item-4 {
+    background: url(../images/cover-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.categories-title {
+    font-size: 4.375rem;
+    font-weight: 700;
+}
+
+.sub-text {
+    max-width: 53.125rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+}
+
+
+
+/* dps
 .btn-dark {
   background: #000;
   color: #fff;
