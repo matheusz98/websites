@@ -456,6 +456,76 @@ textarea {
     border: 2px solid var(--main);
 }
 
+/* Newsletter */
+.newsletter-content {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3.125rem auto 0;
+}
+
+.newsletter-content input {
+    width: 20.625rem;
+    height: 3.125rem;
+    padding: 0 1.563rem;
+    background: var(--white);
+    border: 0px;
+    border-radius: 5px;
+    font-size: 0.938rem;
+    color: var(--main);
+}
+
+.newsletter-content input::placeholder {
+    color: var(--main);
+}
+
+.newsletter a.btn {
+    padding: 0.938rem 1.875rem;
+    margin-left: 0.625rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 880px) {
     .contact-box {
         grid-template-columns: 1fr;
