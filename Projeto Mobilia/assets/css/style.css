@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
+:root {
+    --main: #ce0c4d;
+    --white: #ffffff;
+    --black: #0c0c0c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 5.313rem;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 3;
+    background: var(--white);
+    transition: all 0.5s ease-in-out;
+}
+
+header.sticky {
+    height: 4.375rem;
+    box-shadow: 0px 15px 30px rgba(25, 38, 15, 0.1);
+}
+
+header.sticky nav{
+    height: 4.375rem;
+    padding: 0.938rem 0;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 71.25rem;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    height: 5.313rem;
+    padding: 1.25rem 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+.title-color {
+    color: var(--main);
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 1.563rem;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu ul li a {
+    position: relative;
+    font-size: 0.938rem;
+    color: var(--black);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu ul li a:hover,
+.menu ul li.active a {
+    color: var(--main);
+}
+
+.menu ul li a.btn {
+    color: var(--white);
+}
+
+.menu ul li a.btn:hover {
+    color: var(--main);
+}
+
+.menu ul li.active::after {
+    content: '';
+    width: 100%;
+    height: 0.188rem;
+    top: auto;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    margin: auto;
+    background: var(--main);
+    border-radius: 5px;
+}
+
+.btn {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    padding: 0.75rem 1.875rem;
+    background: var(--main);
+    font-size: 0.938rem;
+    color: var(--white);
+    letter-spacing: 1px;
+    border: 1px solid var(--main);
+    border-radius: 5px;
+    box-shadow: 0px 15px 40px rgba(170, 9, 49, 0.4);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--main);
+    box-shadow: none;
+}
+
+.toggle {
+    width: 1.563rem;
+    display: none;
+    cursor: pointer;
+}
+
+.toggle img {
+    width: 100%;
+}
+
+.toggle-open.open {
+    display: none;
+}
+
+.toggle-close {
+    display: none;
+}
+
+.toggle-close.close {
+    display: block;
+}
