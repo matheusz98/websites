@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    background: var(--content);
     overflow-x: hidden;
 }
 
@@ -176,7 +177,6 @@ nav {
     align-items: center;
     position: relative;
     padding-top: 5rem;
-    background: var(--content);
 }
 
 .home img {
@@ -186,6 +186,7 @@ nav {
     right: 0;
     position: absolute;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .home-content .content {
@@ -208,4 +209,43 @@ h1 {
 
 .content p {
     margin-bottom: 3.125rem;
+}
+
+/* About us */
+.about {
+    padding: 5rem 0;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    width: 45%;
+}
+
+.about-img img {
+    border-radius: 5px;
+}
+
+.about-text {
+    width: 50%;
+    padding-left: 4.10rem;
+}
+
+.about-text p {
+    margin-bottom: 0.938rem;
+}
+
+.about-text a.btn {
+    margin-top: 3.125rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 1.563rem;
 }
