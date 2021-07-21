@@ -4,6 +4,7 @@
 :root {
     --main: #ce0c4d;
     --white: #ffffff;
+    --content: #f1e7e7;
     --black: #0c0c0c;
 }
 
@@ -23,6 +24,10 @@ html {
 
 body {
     overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* Header */
@@ -47,7 +52,7 @@ header.sticky nav{
     padding: 0.938rem 0;
 }
 
-.header-content {
+.container {
     width: 100%;
     max-width: 71.25rem;
     margin: 0 auto;
@@ -56,14 +61,11 @@ header.sticky nav{
 nav {
     width: 100%;
     height: 5.313rem;
-    padding: 1.25rem 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.25rem 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .logo {
@@ -163,4 +165,47 @@ nav {
 
 .toggle-close.close {
     display: block;
+}
+
+/* Home */
+.home {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 5rem;
+    background: var(--content);
+}
+
+.home img {
+    width: 45%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+.home-content .content {
+    width: 50%;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938rem;
+    font-weight: 300;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 1.563rem;
+}
+
+.content p {
+    margin-bottom: 3.125rem;
 }
