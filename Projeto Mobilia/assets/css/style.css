@@ -367,3 +367,102 @@ h3 {
 .glide img{
     border-radius: 5px;
 }
+
+/* Contact */
+.contact {
+    padding: 6.25rem 0;
+}
+
+.contact-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-box {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--white);
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.contact-img {
+    height: 100%;
+    background: url(../images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-form {
+    padding: 1.563rem 2.5rem;
+}
+
+.contact-form h2 {
+    position: relative;
+    padding: 0 0 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact-form h2:after {
+    content: '';
+    width: 3.125rem;
+    height: 0.313rem;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    background: var(--main);
+    border-radius: 3px;
+    transform: translateX(-50%);
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.field {
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    background: var(--content);
+    border: 2px solid var(--black);
+    outline: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.field:hover {
+    background: var(--white);
+}
+
+textarea {
+    min-height: 9.375rem;
+    resize: none;
+}
+
+.field:focus {
+    background: var(--white);
+    border: 2px solid var(--main);
+}
+
+@media (max-width: 880px) {
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-img {
+        height: 12.5rem;
+    }
+}
+
