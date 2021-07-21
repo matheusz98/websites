@@ -312,3 +312,25 @@ h3 {
 .product-info h3 span {
     color: var(--main);
 }
+
+/* Perks */
+.perks-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.perks-item {
+    width: 25%;
+    text-align: center;
+}
+
+.perks img{
+    width: 25%;
+    margin: 0 1.875rem;  
+}
+
+.perks img:last-child {
+    margin-right: 0;
+}
