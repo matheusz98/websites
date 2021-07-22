@@ -83,7 +83,7 @@ nav {
 .menu ul li {
     display: inline-block;
     position: relative;
-    margin: 0 1.563rem;
+    margin: 0 0.938rem;
 }
 
 .menu ul li:last-child {
@@ -252,7 +252,7 @@ h2 {
 
 /* Products */
 .products {
-    padding-top: 6.25rem;
+    margin-top: 6.25rem;
 }
 
 .title {
@@ -351,7 +351,7 @@ h3 {
 
 /* Gallery */
 .gallery {
-    padding-top: 6.25rem;
+    margin-top: 6.25rem;
 }
 
 .gallery-container {
@@ -370,7 +370,7 @@ h3 {
 
 /* Contact */
 .contact {
-    padding: 6.25rem 0;
+    margin: 6.25rem 0;
 }
 
 .contact-container {
@@ -486,10 +486,103 @@ textarea {
     margin-left: 0.625rem;
 }
 
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 6.25rem;
+    padding: 3.125rem 6.25rem;
+    background: var(--main);
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.section {
+    margin-right: 1.875rem;
+}
 
+.section.aboutus {
+    width: 40%;
+}
 
+.footer-container h2 {
+    font-size: 1.25rem;
+    color: var(--white);
+    margin-bottom: 0.938rem;
+}
+
+footer p {
+    color: var(--white);
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 1.25rem;
+}
+
+.social-icons li a {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.625rem;
+    border-radius: 5px;
+}
+
+.quick-links {
+    width: 25%;
+    position: relative;
+}
+
+.quick-links ul li a {
+    display: inline-block;
+    color: var(--white);
+    margin-bottom: 0.625rem;
+}
+
+.contactus {
+    width: calc(35% - 3.75rem);
+    margin-right: 0;
+}
+
+.contact-info {
+    position: relative;
+}
+
+.contact-info li {
+    display: flex;
+    margin-bottom: 0.938rem;
+    color: var(--white);
+}
+
+.contact-info li img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.contact-info li a {
+    color: var(--white);
+}
+
+.contact-info li span:nth-child(1) {
+    margin-right: 0.625rem;
+}
+
+.copyright {
+    width: 100%;
+    background: var(--content);
+    color: var(--black);
+    padding: 0.625rem 6.25rem;
+    text-align: center;
+}
 
 
 
