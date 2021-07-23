@@ -1,0 +1,205 @@
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset end */
+
+/* Body */
+body {
+    background: $bg-color;
+    color: $text-color;
+    font-family: $font;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        transition: $transition;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    i {
+        color: $primary-color;
+        transition: $transition;
+        cursor: pointer;
+    }
+
+    img {
+        width: $max;
+    }
+}
+/* Body end */
+
+/* Header */
+.header {
+    @include container;
+    @include display-between;
+
+    @include responsive {
+        padding: 1.1rem;
+    }
+
+    &-title {
+        font-size: $large-font;
+        color: $primary-color;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+    /* Navbar */
+    &-navbar {
+        ul {
+            @include display-center;
+            height: $max;
+        }
+
+        @include responsive {
+            display: none;
+        }
+
+        li {
+            margin: 0 1rem;
+            font-size: $small-font;
+            text-transform: $uppercase;
+
+            .active {
+                color: $secondary-color;
+            }
+        }
+
+        a {
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+    /* Navbar end */
+
+    /* Social media */
+    &-social-media {
+        ul {
+            height: $max;
+            @include display-center;
+        }
+
+        @include responsive {
+            display: none;
+        }
+
+        li {
+            margin: 0 1rem;
+        }
+
+        i {
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+    /* Social media end */
+}
+/* Header end */
+
+/* Gallery */
+.gallery {
+    @include container;
+    @include display-gallery;
+
+    @include responsive {
+        flex-direction: column;
+    }
+
+    &-card {
+        @include display-center;
+        width: 30%;
+        height: 400px;
+        margin-bottom: 3rem;
+        flex-direction: column;
+        color: $primary-color;
+
+        @include responsive {
+            width: 80%;
+            margin-bottom: 1.5rem;
+        }
+
+        &-title {
+            font-size: $medium-font;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        &-btn {
+            padding: 0.8rem 2rem;
+            font-weight: 400;
+            color: $primary-color;
+            text-transform: $uppercase;
+            letter-spacing: 1px;
+            border: 2px solid $primary-color;
+            text-align: center;
+
+            &:hover {
+                 background: $secondary-color;
+                 color: $primary-color;
+            }
+        }
+    }
+
+    #card-1 {
+        @include bg-img('animals.jpg');
+    }
+
+    #card-2 {
+        @include bg-img('architecture.jpg');
+    }
+
+    #card-3 {
+        @include bg-img('cities.jpg');
+    }
+
+    #card-4 {
+        @include bg-img('decorations.jpg');
+    }
+
+    #card-5 {
+        @include bg-img('sports.jpg');
+    }
+
+    #card-6 {
+        @include bg-img('nature.jpg');
+    }
+
+    #card-7 {
+        @include bg-img('landscape.jpg');
+    }
+
+    #card-8 {
+        @include bg-img('people.jpg');
+    }
+
+    #card-9 {
+        @include bg-img('recipes.jpg');
+    }
+}
+/* Gallery end */
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-bottom: 2rem;
+
+    span {
+        font-weight: 700;
+        color: $secondary-color;
+    }
+}

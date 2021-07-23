@@ -1,0 +1,45 @@
+@mixin container {
+    max-width: $container;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+}
+
+@mixin display-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin display-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+@mixin bg-img($img) {
+    background-image: url('../assets/images/#{$img}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: $transition;
+
+    &:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/#{$img}');
+        filter: grayscale(0%);
+    }
+}
+
+@mixin responsive {
+    @media (max-width: 760px) {
+        @content
+    }
+}
