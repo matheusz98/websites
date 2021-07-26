@@ -98,7 +98,7 @@ header {
         align-items: center;
         gap: 1.875rem;
         padding: 0 1.875rem;
-        @media (min-width: 991px) {
+        @media (min-width: 768px) {
             flex-direction: row;
         }
 
@@ -107,7 +107,7 @@ header {
             flex-direction: column;
             flex: 1;
             order: 2;
-            @media (min-width: 991px) {
+            @media (min-width: 768px) {
                 
             }
 
@@ -116,7 +116,7 @@ header {
                 color: $white;
                 text-align: center;
                 margin-bottom: 1.875rem;
-                @media (min-width: 991px) {
+                @media (min-width: 768px) {
                     text-align: left;
                 }
                 
@@ -128,7 +128,7 @@ header {
             .buttons {
                 @include align-center;
                 flex-direction: column;
-                @media (min-width: 991px) {
+                @media (min-width: 768px) {
                     flex-direction: row;
                 }
 
@@ -136,7 +136,7 @@ header {
                     width: 12.5rem;
                     text-align: center;
                     margin-bottom: 0.938rem;
-                    @media (min-width: 991px) {
+                    @media (min-width: 768px) {
                         margin-right: 0.938rem;
                     }
                 }
@@ -148,7 +148,7 @@ header {
             width: 80%;
             flex: 1;
             order: 1;
-            @media (min-width: 991px) {
+            @media (min-width: 768px) {
                 width: 30%;
                 order: 2;
             }
@@ -156,3 +156,104 @@ header {
     }
 }
 /* Hero end */
+
+/* About us */
+.about {
+    padding: 1.875rem 1.25rem;
+    @media (min-width: 768px) {
+        padding: 2.5rem 1.25rem;
+    }
+
+    img {
+        width: 80%;
+        @media (min-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        font-size: $extra-large-font;
+        text-align: center;
+    }
+
+    .about-container {
+        @include container;
+        @include center;
+    
+        .about-content {
+            @include flex;
+            gap: 1.875rem;
+            flex-direction: column;
+            @media (min-width: 768px) {
+                flex-direction: row;
+            }
+        }
+    }
+    
+    .about-container-second {
+        @include container;
+        @include center;
+        gap: 1.875rem;
+        flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    .about-left, .about-right {
+        flex: 1;
+    }
+
+    .about-left {
+        @include align-center;
+        gap: 0;
+        flex-direction: column;
+        margin-top: 1.875rem;
+    }
+}
+
+.about-first,
+.about-third {
+
+    .about-left {
+        h3 {
+            text-align: center;
+        }
+    }
+    .about-right {
+        @include center;
+        @media (min-width: 768px) {
+            align-items: left;
+        }
+    }
+}
+
+.about-second {
+    .about-left {
+        @include center;
+        order: 2;
+        @media (min-width: 768px) {
+            order: 1;
+            text-align: center;
+        }
+    }
+
+    .about-right {
+        order: 1;
+        @media (min-width: 768px) {
+            order: 2;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
+.about-second,
+.about-third {
+    p {
+        margin-bottom: 1.25rem;
+    }
+}
+/* About us end */
