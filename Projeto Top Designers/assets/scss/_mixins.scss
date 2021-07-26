@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+@mixin flex {
+    display: flex;
+}
+
 @mixin align-center {
     display: flex;
     align-items: center;
@@ -11,5 +15,11 @@
 @mixin space-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }

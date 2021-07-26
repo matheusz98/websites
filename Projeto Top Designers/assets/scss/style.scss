@@ -50,3 +50,109 @@ header {
     /* Navbar end */
 }
 /* Header end */
+
+/* Hero */
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.875rem 2.5rem;
+    background: $btn;
+    color: $white;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+        background: $btn-alt;
+        border-color: $white;
+    }
+}
+
+.btn-alt {
+    background: transparent;
+    border-color: $white;
+
+    &:hover {
+        background: $btn-alt;
+        border-color: transparent;
+    }
+}
+/* Buttons end */
+
+.hero {
+    @include center;
+    background: url('../images/svg/hero.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 9.375rem 0;
+
+
+    &-container {
+        @include container;
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+        padding: 0 1.875rem;
+        @media (min-width: 991px) {
+            flex-direction: row;
+        }
+
+        .left-content {
+            @include center;
+            flex-direction: column;
+            flex: 1;
+            order: 2;
+            @media (min-width: 991px) {
+                
+            }
+
+            h2 {
+                font-size: $extra-large-font;
+                color: $white;
+                text-align: center;
+                margin-bottom: 1.875rem;
+                @media (min-width: 991px) {
+                    text-align: left;
+                }
+                
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            .buttons {
+                @include align-center;
+                flex-direction: column;
+                @media (min-width: 991px) {
+                    flex-direction: row;
+                }
+
+                .btn {
+                    width: 12.5rem;
+                    text-align: center;
+                    margin-bottom: 0.938rem;
+                    @media (min-width: 991px) {
+                        margin-right: 0.938rem;
+                    }
+                }
+            }
+        }
+
+        img {
+            @include flex;
+            width: 80%;
+            flex: 1;
+            order: 1;
+            @media (min-width: 991px) {
+                width: 30%;
+                order: 2;
+            }
+        }
+    }
+}
+/* Hero end */
