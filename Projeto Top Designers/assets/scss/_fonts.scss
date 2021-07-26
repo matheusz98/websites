@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Font Sizes */
+$very-small-font: 0.938rem;
+$small-font: 1.125rem;
+$medium-font: 1.563rem;
+$large-font: 1.875rem;
+$extra-large-font: 2.188rem;
+
+/* Titles */
+h2 {
+    font-size: $large-font;
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: 3.125rem;
+}
+
+h3 {
+    font-size: $medium-font;
+    color: $grey;
+    margin-bottom: 1.25rem;
+}
+
+h4 {
+    font-size: $small-font;
+    color: $primary-color;
+    margin-bottom: 0.625rem;
+}

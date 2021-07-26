@@ -1,0 +1,15 @@
+@mixin container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
