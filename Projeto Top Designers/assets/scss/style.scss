@@ -529,3 +529,69 @@ header {
     }
 }
 /* Projects end */
+
+/* Testimonials */
+.testimonials {
+    @include padding;
+    background: $testimonials;
+
+    h2 {
+        text-align: center;
+    }
+
+    .owl-carousel {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &-container {
+        @include container;
+
+        .testimonials-content {
+            @include flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            @media (min-width: 768px) {
+                flex-direction: row;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            img {
+                width: 7.5rem !important;
+                height: 7.5rem;
+                border: 3px solid $white;
+                border-radius: 50%;
+                margin: 0 0 1.25rem 0;
+                @media (min-width: 768px) {
+                    margin: 0 1.25rem 0 0;
+                }
+            }
+
+            h2 {
+                font-size: $medium-font;
+                color: $black;
+                margin: 0 0 0.625rem 0;
+                @media (min-width: 768px) {
+                    text-align: left;
+                }
+            }
+
+            h4 {
+                font-size: $small-font;
+                font-weight: 300;
+                color: $grey;
+                margin: 0 0 0.625rem 0;
+            }
+
+            p {
+                font-family: sans-serif;
+                font-style: italic;
+                font-weight: 300;
+                color: $black;
+            }
+        }
+    }
+}
+/* Testimonials end */
