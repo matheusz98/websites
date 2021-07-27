@@ -112,7 +112,7 @@ header {
             }
 
             h2 {
-                font-size: $extra-large-font;
+                font-size: $large-font;
                 color: $white;
                 text-align: center;
                 margin-bottom: 1.875rem;
@@ -169,7 +169,6 @@ header {
     }
 
     h2 {
-        font-size: $extra-large-font;
         text-align: center;
     }
 
@@ -312,3 +311,102 @@ header {
     } 
 }
 /* Services end */
+
+/* Qualities */
+.qualities {
+    background: $qualities;
+    color: $white;
+    text-align: center;
+
+    h2, h3 {
+        color: $white;
+    }
+
+    &-container {
+        @include container;
+        @include padding;
+
+        .qualities-content {
+            @include flex;
+            max-width: 600px;
+            flex-direction: column;
+            margin: 1.875rem auto;
+            gap: 1.875rem;
+            @media (min-width: 991px) {
+                max-width: 100%;
+                flex-direction: row;
+            }
+
+            .col {
+                @include align-center;
+                flex-direction: column;
+                flex: 1;
+                background: $qualities-content;
+                padding: 1.875rem;
+                border-radius: 15px;
+                box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
+                text-align: center;
+                cursor: pointer;
+                transition: $transition;
+
+                h3 {
+                    margin: 0.938rem 0;
+                }
+
+                p {
+                    color: $white;
+                    margin-bottom: 0.938rem 0;
+                }
+
+                &:hover {
+                    background: $qualities-hover;
+                    transform: scale(1.1);
+
+                    span {
+                        border-bottom: 2px solid $white;
+                    }
+                }
+
+                span {
+                    max-width: 100%;
+                    margin-top: auto;
+                    padding-bottom: 0.313rem;
+                }
+
+                img {
+                    width: 20%;
+                    @media (min-width: 768px) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        .analytics {
+            @include align-center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 5rem;
+            gap: 1.875rem;
+            @media (min-width: 768px) {
+                flex-direction: row;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            .number {
+                font-size: $extra-large-font;
+                font-weight: 700;
+                margin-bottom: 0.625rem;
+            }
+
+            .title {
+                font-size: $very-small-font;
+            }
+        }
+    }
+}
+/* Qualities end */
