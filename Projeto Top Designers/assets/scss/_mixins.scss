@@ -25,9 +25,25 @@
     flex-direction: column;
 }
 
+@mixin center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin grid {
+    display: grid;
+}
+
 @mixin padding {
     padding: 1.875rem 1.25rem;
     @media (min-width: 768px) {
         padding: 3.125rem 1.25rem;
     }
+}
+
+@mixin max {
+    width: 100%;
+    height: 100%;
 }

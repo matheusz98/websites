@@ -267,9 +267,9 @@ header {
         }
 
         .services-content {
+            @include grid;
             max-width: 600px;
             margin: 0 auto;
-            display: grid;
             grid-template-columns: 1fr;
             gap: 1.875rem;
             row-gap: 3.125rem;
@@ -410,3 +410,122 @@ header {
     }
 }
 /* Qualities end */
+
+/* Projects */
+.projects {
+    @include padding;
+    
+    h2 {
+        text-align: center;
+    }
+
+    &-container {
+        @include container;
+
+        .projects-content {
+            @include grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: 7.813rem;
+            gap: 0.938rem;
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (min-width: 991px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+            .col {
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    @include max;
+                    display: block;
+                    position: relative;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+
+                .bg {
+                    @include max;
+                    top: 0;
+                    position: absolute;
+                    border-radius: 15px;
+                    transition: $transition;
+                }
+
+                .text {
+                    @include max;
+                    @include center-column;
+                    top: 0;
+                    position: absolute;
+                    opacity: 0;
+                    color: $white;
+                    transition: $transition;
+
+                    p {
+                        color: $white;
+                    }
+
+                    p:nth-child(1) {
+                        font-size: $small-font;
+                        font-weight: 600;
+                        margin-bottom: 0.313rem;
+                    }
+    
+                    p:nth-child(2) {
+                        margin-bottom: 0.313rem;
+                    }
+
+                    .icons {
+                        @include flex;
+                    }
+    
+                    i {
+                       font-size: $small-font;
+                       background: $primary-color;
+                       color: $white;
+                       padding: 0.625rem;
+                       margin: 0 0.313rem;
+                       border-radius: 50%;
+                       cursor: pointer;
+                    }
+                }
+
+            &:hover {
+                .bg {
+                    background: $project-hover;
+                }
+
+                .text {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .proj-1 {
+            grid-row: span 3;
+        }
+
+        .proj-2,
+        .proj-6,
+        .proj-7,
+        .proj-8,
+        .proj-10 {
+            grid-row: span 2;
+        }
+
+        .proj-3,
+        .proj-4,
+        .proj-5,
+        .proj-9 {
+            grid-row: span 5;
+        }
+
+        .proj-11 {
+            grid-row: span 4;
+        }
+    }
+}
+/* Projects end */
