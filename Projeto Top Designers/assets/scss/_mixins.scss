@@ -24,3 +24,10 @@
     align-items: center;
     flex-direction: column;
 }
+
+@mixin padding {
+    padding: 1.875rem 1.25rem;
+    @media (min-width: 768px) {
+        padding: 3.125rem 1.25rem;
+    }
+}

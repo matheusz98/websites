@@ -159,10 +159,7 @@ header {
 
 /* About us */
 .about {
-    padding: 1.875rem 1.25rem;
-    @media (min-width: 768px) {
-        padding: 2.5rem 1.25rem;
-    }
+    @include padding;
 
     img {
         width: 80%;
@@ -200,11 +197,11 @@ header {
         }
     }
 
-    .about-left, .about-right {
+    .left, .right {
         flex: 1;
     }
 
-    .about-left {
+    .left {
         @include align-center;
         gap: 0;
         flex-direction: column;
@@ -215,12 +212,12 @@ header {
 .about-first,
 .about-third {
 
-    .about-left {
+    .left {
         h3 {
             text-align: center;
         }
     }
-    .about-right {
+    .right {
         @include center;
         @media (min-width: 768px) {
             align-items: left;
@@ -229,7 +226,7 @@ header {
 }
 
 .about-second {
-    .about-left {
+    .left {
         @include center;
         order: 2;
         @media (min-width: 768px) {
@@ -238,7 +235,7 @@ header {
         }
     }
 
-    .about-right {
+    .right {
         order: 1;
         @media (min-width: 768px) {
             order: 2;
@@ -257,3 +254,61 @@ header {
     }
 }
 /* About us end */
+
+/* Services */
+.services {
+    @include padding;
+    
+    .services-container {
+        @include container;
+        max-width: 900px;
+
+        h2 {
+            text-align: center;
+        }
+
+        .services-content {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.875rem;
+            row-gap: 3.125rem;
+            @media (min-width: 768px) {
+                max-width: 100%;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        
+            .services-item {
+                @include flex;
+                position: relative;
+                overflow: hidden;
+                padding: 1.875rem;
+                background: $white;
+                box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
+                transition: $transition;
+                cursor: pointer;
+
+                h3 {
+                    font-size: $small-font;
+                }
+
+                img {
+                    @include align-center;
+                    width: 15%;
+                    position: absolute;
+                    left: -10px;
+                }
+
+                .right {
+                    margin-left: 3.125rem;
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    } 
+}
+/* Services end */
