@@ -674,3 +674,55 @@ header {
     }
 }
 /* Team end */
+
+/* Clients */
+.clients {
+    @include padding;
+    background: $clients;
+    box-shadow: inset 0 0 15px 0 rgba(0,0,0,0.1);
+
+     &-container {
+         @include container;
+
+         h2 {
+             text-align: center;
+         }
+
+         .clients-content {
+            @include flex;
+            flex-wrap: wrap;
+
+            .col {
+                @include center-column;
+                max-height: 11.25rem;
+                flex-basis: 100%;
+                padding: 4rem;
+                background: $clients-card;
+                border: 1px solid $white;
+                cursor: pointer;
+                @media (min-width: 768px) {
+                    flex-basis: 50%;
+                }
+                @media (min-width: 991px) {
+                    flex-basis: 25%;
+                }
+
+                img {
+                    max-width: 30%;
+                    height: auto;
+                    transition: $transition;
+                    @media (min-width: 991px) {
+                        max-width: 50%;
+                    }
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+         }
+     }
+}
+/* Clients end */
