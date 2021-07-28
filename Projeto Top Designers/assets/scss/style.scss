@@ -835,3 +835,47 @@ header {
     display: none;
 }
 /* Modal end */
+
+/* Footer */
+.footer {
+    @include padding;
+    background: $footer;
+    color: $white;
+
+    &-container {
+        @include container;
+        @include center-column;
+
+        .footer-links,
+        .social-icons {
+            @include flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            ul {
+                margin-bottom: 1.875rem; 
+            }
+
+            li {
+                padding: 0.938rem;
+                margin-bottom: 0.938rem;
+            }
+
+            a {
+                font-size: $small-font;
+                font-weight: 500;
+                color: $white;
+            }
+
+            i {
+                font-size: $large-font;
+            }
+        }
+
+        p {
+            color: $white;
+            text-align: center;
+        }
+    }
+}
+/* Footer end */
