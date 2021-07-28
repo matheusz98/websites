@@ -624,9 +624,13 @@ header {
                 }
 
                 img {
-                    width: 100%;
+                    margin: 0 auto;
+                    width: 50%;
                     display: block;
                     border-radius: 50%;
+                    @media (min-width: 991px) {
+                        width: 100%;
+                    }
                 }
 
                 .bg {
@@ -726,3 +730,108 @@ header {
      }
 }
 /* Clients end */
+
+/* Contact */
+.contact {
+    @include padding;
+
+    &-container {
+        @include container;
+
+        h2, p {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 3.75rem;
+        }
+
+        .contact-form {
+            .form-content {
+                @include flex;
+                flex-direction: column;
+                @media (min-width: 768px) {
+                    flex-direction: row;
+                    gap: 1.875rem;
+                }
+            }
+
+            input, button {
+                display: block;
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 0.625rem;
+                border: 1px solid $grey;
+                border-radius: 10px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            input {
+                margin-bottom: 0.938rem;
+            }
+
+            textarea {
+                height: 100%;
+                padding: 1.25rem 0;
+                resize: none;
+            }
+
+            form {
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            .btn {
+                margin-top: 0.938rem;
+                font-weight: 400;
+            }
+
+            .form-button {
+                @include justify-center;
+            }
+        }
+    }
+}
+/* Contact end */
+
+/* Modal */
+.modal-wrapper {
+    @include max;
+    @include justify-center;
+    top: 0;
+    z-index: 4;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+
+    .modal {
+        background: $white;
+        padding: 3.125rem;
+        border-radius: 10px;
+        text-align: center;
+
+        img {
+            width: 12.5rem;
+            height: auto;
+            margin-bottom: 0.938rem;
+        }
+
+        p:nth-child(2) {
+            font-size: $medium-font;
+            margin-bottom: 0.625rem;
+        }
+
+        .btn {
+            margin-top: 1.25rem;
+        }
+    }
+}
+
+.none {
+    display: none;
+}
+/* Modal end */
