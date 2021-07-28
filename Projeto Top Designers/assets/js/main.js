@@ -44,3 +44,25 @@ submit.addEventListener('click', (e) => {
 close.addEventListener('click', () => {
     modal.classList.toggle('none');
 });
+
+// Mobile menu
+const openMenu = document.querySelector('.fa-bars');
+const closeMenu = document.querySelector('.fa-times-circle');
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileNav = document.querySelector('.mobile-nav');
+
+openMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('none');
+    mobileNav.classList.remove('close-menu');
+    mobileNav.classList.toggle('open-menu');
+    openMenu.classList.toggle('none');
+});
+
+closeMenu.addEventListener('click', () => {
+    setTimeout(() => {
+        mobileMenu.classList.toggle('none');
+        openMenu.classList.toggle('none');
+    }, 500);
+    mobileNav.classList.toggle('open-menu');
+    mobileNav.classList.toggle('close-menu');
+});

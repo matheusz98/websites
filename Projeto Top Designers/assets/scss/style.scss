@@ -29,6 +29,17 @@ header {
         @include align-center;
         padding: 1.563rem 0.625rem;
 
+        i {
+            flex: 1;
+            z-index: 6;
+            font-size: $medium-font;
+            text-align: right;
+            cursor: pointer;
+            @media (min-width: 991px) {
+                display: none !important;
+            }
+        }
+
         ul {
             display: none;
             flex: 1;
@@ -50,6 +61,77 @@ header {
     /* Navbar end */
 }
 /* Header end */
+
+/* Mobile menu */
+.mobile-menu {
+    @include max;
+    position: fixed;
+    right: 0;
+    z-index: 4;
+    background: rgba(0,0,0,0.7);
+
+    i {
+        top: 1.60rem;
+        right: 0.625rem;
+        position: absolute;
+        font-size: $medium-font;
+        color: $white;
+        z-index: 8;
+        cursor: pointer;
+    }
+
+    ul {
+        width: 18.75rem;
+        height: 100%;
+        top: 5rem;
+        left: 0;
+        position: absolute;
+        padding: 1.25rem;
+        background: $mobile;
+
+        a {
+            font-size: $large-font;
+            font-weight: 500;
+            color: $white;
+        }
+
+        li {
+            padding: 0.625rem 0;
+        }
+    }
+}
+
+/* Open/Close menu */
+@keyframes open-menu {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes close-menu {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-300px);
+    }
+}
+
+.open-menu {
+    animation: open-menu 0.5s ease;
+}
+
+.close-menu {
+    animation: close-menu 0.5s ease;
+}
+/* Open/Close menu end */
+
+/* Mobile menu end */
 
 /* Hero */
 
