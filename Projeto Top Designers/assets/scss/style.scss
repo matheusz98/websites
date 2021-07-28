@@ -595,3 +595,82 @@ header {
     }
 }
 /* Testimonials end */
+
+/* Team */
+.team {
+    @include padding;
+
+    &-container {
+        @include container;
+
+        h2 {
+            text-align: center;
+        }
+
+        .team-content {
+            @include justify-center;
+            flex-wrap: wrap;
+            gap: 1.875rem;
+
+            .col {
+                position: relative;
+                flex-basis: 80%;
+                cursor: pointer;
+                @media (min-width: 768px) {
+                    flex-basis: 43%;
+                }
+                @media (min-width: 991px) {
+                    flex-basis: 20%;
+                }
+
+                img {
+                    width: 100%;
+                    display: block;
+                    border-radius: 50%;
+                }
+
+                .bg {
+                @include max;
+                top: 0;
+                position: absolute;
+                border-radius: 50%;
+                transition: $transition;
+                }
+
+                .info {
+                    @include max;
+                    @include center-column;
+                    top: 0;
+                    position: absolute;
+                    margin-top: 1.25rem;
+                    opacity: 0;
+                    transition: $transition;
+
+                    p:nth-child(1) {
+                        font-weight: 700;
+                        color: $white;
+                        margin-bottom: 0.625rem;
+                    }
+
+                    p:nth-child(2) {
+                        font-size: $small-font;
+                        font-style: italic;
+                        color: $white;
+                    }
+                }
+
+                &:hover {
+                    .bg {
+                        background: $project-hover;
+                    }
+
+                    .info {
+                        margin-top: 0;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Team end */
