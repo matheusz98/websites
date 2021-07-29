@@ -66,3 +66,41 @@ closeMenu.addEventListener('click', () => {
     mobileNav.classList.toggle('open-menu');
     mobileNav.classList.toggle('close-menu');
 });
+
+// Back to top
+const btn = $('.scrolltop');
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 500) {
+	  btn.addClass('show');
+	} else {
+	  btn.removeClass('show');
+	}
+  });
+  btn.on('click', function(e) {
+	e.preventDefault();
+	$('html, body').animate({scrollTop:0}, '500');
+});
+
+// Scroll Reveal
+const sr = ScrollReveal({
+	origin: 'top',
+	distance: '20px',
+	duration: 1500,
+	reset: false
+});
+
+
+ScrollReveal().reveal('.left-content', { origin: 'left' });
+ScrollReveal().reveal('.hero-img', { origin: 'right' });
+ScrollReveal().reveal('#about .left', { origin: 'left' });
+ScrollReveal().reveal('#about .right', { origin: 'right' });
+ScrollReveal().reveal('.section-title', { origin: 'bottom' });
+ScrollReveal().reveal('.services-content, .item-1, .services-content, .item-3, .services-content, .item-5', { origin: 'right' });
+ScrollReveal().reveal('.services-content, .item-2, .services-content, .item-4, .services-content, .item-6', { origin: 'left' });
+ScrollReveal().reveal('#qualities .col', { origin: 'bottom' });
+ScrollReveal().reveal('#projects .col', { origin: 'bottom' });
+ScrollReveal().reveal('.testimonials-container', { origin: 'bottom' });
+ScrollReveal().reveal('#team .col', { origin: 'bottom' });
+ScrollReveal().reveal('.clients-content', { origin: 'bottom' });
+ScrollReveal().reveal('.contact-form', { origin: 'bottom' });
+ScrollReveal().reveal('.footer-container', { origin: 'bottom' });
