@@ -1,0 +1,16 @@
+@import "../variables";
+@import "../fonts";
+
+.interactive {
+    padding: 5rem 2rem;
+    text-align: center;
+
+    &-content {
+        padding: 0 4rem;
+
+        h2 {
+            padding: 3rem 0 2rem;
+            line-height: 1.3;
+        }
+    }
+}

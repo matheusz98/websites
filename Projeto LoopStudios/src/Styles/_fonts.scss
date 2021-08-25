@@ -1,11 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import "./globals";
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Josefin Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
 p {
-    font-family: 'Alata', sans-serif;
-    font-size: 15px;
+    font-family: "Alata", sans-serif;
+    font-size: 1.5rem;
+    color: $very-dark-gray;
 }

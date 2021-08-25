@@ -1,0 +1,52 @@
+@import '../variables';
+@import '../fonts';
+@import '../mixins';
+
+.creations-mobile {
+    padding: 0 2rem 5rem;
+
+    h2 {
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    &-cards {
+        position: relative;
+
+        h3 {
+            width: 150px;
+            position: absolute;
+            bottom: 0;
+            padding: 0 0 2rem 2rem;
+            font-size: 2.5rem;
+            color: $white;
+            text-align: center;
+            line-height: 1.3;
+        }
+    }
+
+    .btn-content {
+        padding: 3rem 0;
+        text-align: center;
+
+        &-btn {
+            padding: 1rem 8rem;
+            border: 2px solid $black;
+            color: $black;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                background: $black;
+                color: $white;
+            }
+        }
+    }
+}
