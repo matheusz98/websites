@@ -9,7 +9,7 @@ const Header = () => {
           <img src={logo} alt="LoopStudios logo" />
         </div>
 
-        <nav>
+        <nav className="navbar">
           <ul>
             <li>
               <button>About</button>

@@ -3,3 +3,14 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+@import '../variables';
+@import '../fonts';
+@import '../mixins';
+
+.showcase {
+    height: 100vh;
+    background: url('../../images/mobile/image-hero.jpg');
+    @include background;
+
+    &-overlay {
+        @include align-center;
+        height: 100vh;
+        padding: 0 2rem;
+
+        h1 {
+            font-size: 4rem;
+            color: $white;
+            line-height: 1.1;
+            border: .2rem solid $white;
+            padding: 2rem;
+        }
+    }
+}
