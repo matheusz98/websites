@@ -2,6 +2,14 @@ import "../../Styles/Header/Header.css";
 import logo from "../../images/logo.svg";
 
 const Header = () => {
+  const openMenu = () => {
+    const menuBtn = document.querySelector(".menu-btn");
+    const navBar = document.querySelector(".navbar");
+
+    navBar.classList.toggle("open");
+    menuBtn.classList.toggle("rotate");
+  };
+
   return (
     <>
       <header className="header">
@@ -29,7 +37,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="menu-btn">
+        <div className="menu-btn" onClick={() => openMenu()}>
           <div className="bar bar-1"></div>
           <div className="bar bar-2"></div>
           <div className="bar bar-3"></div>
