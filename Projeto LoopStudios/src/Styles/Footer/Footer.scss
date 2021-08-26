@@ -1,0 +1,37 @@
+@import '../variables';
+@import '../fonts';
+@import '../mixins';
+
+.footer {
+    background: $black;
+    color: $white;
+    padding: 5rem 0;
+    text-align: center;
+
+    &-logo img {
+        margin-bottom: 2rem;
+    }
+
+    &-links {
+        margin-bottom: 3rem;
+
+        li {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-socials {
+        @include justify-center;
+
+        li {
+            font-size: 2.5rem;
+            margin-bottom: 0;
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+    }
+
+    &-copyright {
+        margin-top: 1rem;
+    }
+}
