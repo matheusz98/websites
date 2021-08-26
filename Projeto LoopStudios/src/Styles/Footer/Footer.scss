@@ -28,10 +28,39 @@
             margin-bottom: 0;
             margin-right: 2rem;
             cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 
     &-copyright {
         margin-top: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        @include space-between;
+        padding: 5rem;
+        text-align: initial;
+
+        &-links {
+            display: flex;
+
+            li {
+                margin: 0 2rem 0 0;
+
+                button {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &-socials {
+            display: flex;
+        }
     }
 }

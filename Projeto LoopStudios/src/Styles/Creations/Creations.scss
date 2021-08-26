@@ -1,6 +1,6 @@
-@import '../variables';
-@import '../fonts';
-@import '../mixins';
+@import "../variables";
+@import "../fonts";
+@import "../mixins";
 
 .creations-mobile {
     padding: 0 2rem 5rem;
@@ -14,10 +14,13 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
+        place-items: center;
     }
 
     &-cards {
         position: relative;
+        cursor: pointer;
+        transition: 0.5s;
 
         h3 {
             width: 150px;
@@ -28,6 +31,10 @@
             color: $white;
             text-align: center;
             line-height: 1.3;
+        }
+
+        &:hover {
+            opacity: 0.7;
         }
     }
 
@@ -47,6 +54,89 @@
                 background: $black;
                 color: $white;
             }
+        }
+    }
+}
+
+.creations-desktop {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .creations-mobile {
+        display: none;
+    }
+
+    .creations-desktop {
+        display: block;
+        padding: 5rem 2rem;
+
+        .title {
+            @include space-between;
+            max-width: 1000px;
+            margin: auto;
+            padding: 3rem 0;
+
+            .btn-content {
+                text-align: center;
+
+                &-btn {
+                    padding: 1rem 5rem;
+                    border: 2px solid $black;
+                    color: $black;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        section {
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: auto;
+        }
+
+        &-cards {
+            position: relative;
+            cursor: pointer;
+            transition: 0.5s;
+    
+            h3 {
+                width: 150px;
+                position: absolute;
+                bottom: 0;
+                padding: 0 0 2rem 2rem;
+                font-size: 2.5rem;
+                color: $white;
+                text-align: center;
+                line-height: 1.3;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .creations-desktop {
+        margin-top: 5rem;
+
+        .title {
+            max-width: 1100px;
+        }
+
+        section {
+            max-width: 1100px;
         }
     }
 }

@@ -1,5 +1,5 @@
 import "../../Styles/Interactive/Interactive.css";
-import interactive from "../../images/mobile/image-interactive.jpg";
+import interactive from "../../images/desktop/image-interactive.jpg";
 
 const Interactive = () => {
   return (

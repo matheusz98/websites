@@ -5,7 +5,7 @@ const Showcase = () => {
     <>
       <section className="showcase">
         <div className="showcase-overlay">
-          <h1>Immersive Experiences That Delivers</h1>
+          <h1>Immersive Experiences That Deliver</h1>
         </div>
       </section>
     </>

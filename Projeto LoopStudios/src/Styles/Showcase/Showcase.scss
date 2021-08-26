@@ -13,11 +13,26 @@
         padding: 0 2rem;
 
         h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             color: $white;
             line-height: 1.1;
             border: .2rem solid $white;
             padding: 2rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .showcase {
+        @include background;
+        background: url('../../images/desktop/image-hero.jpg');
+
+        &-overlay {
+            h1 {
+                width: 700px;
+                font-size: 6.5rem;
+                margin-top: 10rem;
+            }
         }
     }
 }

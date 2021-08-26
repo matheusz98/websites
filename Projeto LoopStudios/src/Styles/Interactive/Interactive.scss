@@ -14,3 +14,20 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .interactive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+
+        &-content {
+            width: 80rem;
+            right: 0;
+            bottom: 5rem;
+            padding: 5rem;
+            position: absolute;
+            background: $white;
+        }
+    }
+}
