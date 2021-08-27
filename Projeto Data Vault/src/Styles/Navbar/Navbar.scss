@@ -1,0 +1,137 @@
+@import "../mixins";
+@import "../variables";
+
+.navbar {
+    @include justify-center;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: $navbar;
+    font-size: 1.2rem;
+
+    &-container {
+        @include container;
+        @include space-between;
+        height: 5rem;
+    }
+
+    &-logo {
+        @include align-center;
+        justify-self: start;
+        font-size: 1.8rem;
+        color: $secondary;
+        cursor: pointer;
+
+        &-icon {
+            margin-right: 0.5rem;
+        }
+    }
+
+    &-menu {
+        @include justify-center;
+        text-align: center;
+    }
+
+    &-item {
+        height: 5rem;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            border-bottom: 2px solid $main;
+        }
+    }
+
+    &-links {
+        @include align-center;
+        height: 100%;
+        color: $secondary;
+        padding: 0.5rem 1rem;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .fa-bars {
+        color: $secondary;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        .NavBarItems {
+            position: relative;
+        }
+
+        &-menu {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 5rem;
+            left: -100%;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .active {
+            left: 0;
+            z-index: 1;
+            opacity: 1;
+            background: $navbar;
+            transition: 0.5s;
+        }
+
+        &-links {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            text-align: center;
+
+            &:hover {
+                color: $main;
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
+        }
+
+        &-item {
+            width: 100%;
+
+            &:hover {
+                border: none;
+            }
+        }
+
+        &-logo {
+            top: 0;
+            left: 0;
+            position: absolute;
+            transform: translate(25%, 50%);
+        }
+
+        .menu-icon {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-100%, 60%);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        .fa-times {
+            color: $secondary;
+            font-size: 2rem;
+        }
+
+        &-btn {
+            @include justify-center;
+            width: 100%;
+            height: 7.5rem;
+        }
+    }
+}
