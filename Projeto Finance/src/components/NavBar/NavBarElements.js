@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   position: sticky;
+  margin-top: -5rem;
   background: #000000;
   font-size: 1rem;
 
