@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#0c0c0c")};
   color: #ffffff;
 
   @media (max-width: 768px) {
@@ -65,7 +65,7 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   font-size: 3rem;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#0c0c0c")};
   line-height: 1.1;
   margin-bottom: 1.5rem;
 
@@ -78,7 +78,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#ffffff")};
+  color: ${({ darkText }) => (darkText ? "#0c0c0c" : "#ffffff")};
   margin-bottom: 2.188rem;
 `;
 

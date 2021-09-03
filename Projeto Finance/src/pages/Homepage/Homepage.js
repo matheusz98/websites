@@ -6,6 +6,7 @@ import {
 } from "../../components/Info/Data";
 import Info from "../../components/Info/Info";
 import NavBar from "../../components/NavBar/NavBar";
+import Services from "../../components/Services/Services";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Hero from "../Hero/Hero";
 
@@ -23,6 +24,7 @@ const Homepage = () => {
       <Hero />
       <Info {...homeObjOne} />
       <Info {...homeObjTwo} />
+      <Services />
       <Info {...homeObjThree} />
     </>
   );

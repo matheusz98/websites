@@ -12,7 +12,7 @@ export const SidebarContainer = styled.aside `
     top: 0;
     left: 0;
     z-index: 999;
-    background: #0d0d0d;
+    background: #0c0c0c;
     transition: 0.3s all ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
@@ -69,7 +69,7 @@ export const SidebarBtnWrap = styled.div `
 export const SidebarRoute = styled(LinkRouter) `
     background: #01fe95;
     font-size: 0.938rem;
-    color: #010606;
+    color: #0c0c0c;
     padding: 0.938rem 4rem;
     border-radius: 50px;
     white-space: nowrap;
@@ -79,6 +79,6 @@ export const SidebarRoute = styled(LinkRouter) `
     &:hover {
         transition: 0.3s all ease-in-out;
         background: #ffffff;
-        color: #010606;
+        color: #0c0c0c;
     }
 `

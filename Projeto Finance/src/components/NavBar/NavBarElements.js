@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   z-index: 10;
   position: sticky;
   margin-top: -5rem;
-  background: #000000;
+  background: #0c0c0c;
   font-size: 1rem;
 
   @media (max-width: 960px) {
@@ -99,7 +99,7 @@ export const NavbarBtn = styled.nav`
 
 export const NavbarBtnLink = styled(LinkRouter)`
   font-size: 0.938rem;
-  color: #010606;
+  color: #0c0c0c;
   background: #01fe95;
   border-radius: 3.125rem;
   padding: 0.625rem 1.375rem;
@@ -109,7 +109,7 @@ export const NavbarBtnLink = styled(LinkRouter)`
 
   &:hover {
     background: #ffffff;
-    color: #010606;
+    color: #0c0c0c;
     transition: 0.3s all ease-in-out;
   }
 `;
