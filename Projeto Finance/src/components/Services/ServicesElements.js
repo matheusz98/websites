@@ -7,7 +7,6 @@ export const ServicesContainer = styled.div`
   align-items: center;
   flex-direction: column;
   background: #0c0c0c;
-  padding: 5rem 0;
 
   @media (max-width: 768px) {
     height: 1100px;
@@ -34,6 +33,8 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: 1fr;
     padding: 1.25rem;
   }
+
+  
 `;
 
 export const ServicesCard = styled.div`
@@ -64,7 +65,7 @@ export const ServicesIcon = styled.img`
 export const ServicesH1 = styled.h1`
   font-size: 2.5rem;
   color: #ffffff;
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 
   @media (max-width: 480px) {
     font-size: 2rem;

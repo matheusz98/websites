@@ -4,6 +4,7 @@ import {
   homeObjTwo,
   homeObjThree,
 } from "../../components/Info/Data";
+import Footer from "../../components/Footer/Footer";
 import Info from "../../components/Info/Info";
 import NavBar from "../../components/NavBar/NavBar";
 import Services from "../../components/Services/Services";
@@ -26,6 +27,7 @@ const Homepage = () => {
       <Info {...homeObjTwo} />
       <Services />
       <Info {...homeObjThree} />
+      <Footer />
     </>
   );
 };
