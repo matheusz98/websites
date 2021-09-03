@@ -65,7 +65,7 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   font-size: 3rem;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "f7f8fa" : "010606")};
+  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
   line-height: 1.1;
   margin-bottom: 1.5rem;
 
