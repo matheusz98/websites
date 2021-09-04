@@ -1,7 +1,11 @@
+import SigninComponent from "../../components/Signin/SigninComponent";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
+
 const Signin = () => {
   return (
     <>
-      <h1>Hello World!</h1>
+      <ScrollToTop />
+      <SigninComponent />
     </>
   );
 };

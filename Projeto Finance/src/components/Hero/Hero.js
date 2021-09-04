@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "../../components/Button/ButtonElements";
+import { Button } from "../Button/ButtonElements";
 import Video from "../../videos/video.mp4";
 
 import {
@@ -22,7 +22,7 @@ const Hero = () => {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
@@ -39,6 +39,11 @@ const Hero = () => {
             onMouseLeave={onHover}
             primary="true"
             dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
             Get Started {hover ? <ArrowFoward /> : <ArrowRight />}
           </Button>

@@ -9,7 +9,7 @@ import Info from "../../components/Info/Info";
 import NavBar from "../../components/NavBar/NavBar";
 import Services from "../../components/Services/Services";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import Hero from "../Hero/Hero";
+import Hero from "../../components/Hero/Hero";
 
 const Homepage = () => {
   const [isOpen, setIsOpen] = useState(false);
