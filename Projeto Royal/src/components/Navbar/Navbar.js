@@ -2,11 +2,11 @@ import { menuData } from "../../data/MenuData";
 import { Button } from '../../components/Button/Button';
 import { Nav, Logo, MenuBars, NavMenu, NavMenuLinks, NavBtn } from "./NavbarStyle";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <Logo to="/">ROYAL</Logo>
-      <MenuBars />
+      <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
           <NavMenuLinks to={item.link} key={index}>
