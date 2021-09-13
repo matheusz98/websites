@@ -14,12 +14,14 @@ const NavLink = css`
 
 export const Nav = styled.div`
   width: 100%;
-  height: 60px;
+  height: ${({ scrollNav }) => (scrollNav ? '60px' : '80px')};
+  background: ${({ scrollNav }) => (scrollNav ? '#15ab97' : 'transparent')};
   display: flex;
   justify-content: space-between;
   position: fixed;
   z-index: 100;
   padding: 1rem 2rem;
+  transition: 0.5s;
 `;
 
 export const Logo = styled(Link)`

@@ -7,7 +7,7 @@ export const DropdownContainer = styled.div`
   height: 100%;
   display: grid;
   align-items: center;
-  top: ${({ isOpen }) => (isOpen ? "1" : "0")};
+  top: ${({ isOpen }) => (isOpen ? "1" : "-100%")};
   left: 0;
   position: fixed;
   z-index: 999;
@@ -60,5 +60,4 @@ export const DropdownLink = styled(Link)`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
 `;
