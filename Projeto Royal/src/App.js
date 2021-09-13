@@ -8,6 +8,7 @@ import { InfoData, InfoDataTwo, HomeData } from './data/InfoData';
 import GlobalStyle from "./globalStyles";
 import { SliderData } from "./data/SliderData";
 import InfoHomes from "./components/InfoHomes/InfoHomes";
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ function App() {
       <Info { ...InfoData} />
       <InfoHomes { ...HomeData} />
       <Info { ...InfoDataTwo} />
+      <Footer />
     </Router>
   );
 }
