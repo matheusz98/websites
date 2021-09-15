@@ -1,13 +1,12 @@
 @import "../../styles/variables.scss";
 
 .button {
-    background: $light;
+    background: $lightLine;
     padding: $spacing-sm $spacing-lg;
     font-size: 1.1rem;
     color: $dark;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: $letter-spacing;
-    border: 1px solid $dark;
     cursor: pointer;
     border-radius: $border-radius;
     transition: 0.3s;

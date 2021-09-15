@@ -21,9 +21,9 @@ const Header = () => {
   };
 
   const menuToggle = !menuOpen ? (
-    <CgMenuRight onClick={handleMenuToggle} />
+    <CgMenuRight onClick={handleMenuToggle} className={styles.icon}/>
   ) : (
-    <CgClose onClick={handleMenuToggle} />
+    <CgClose onClick={handleMenuToggle} className={styles.icon}/>
   );
 
   return (

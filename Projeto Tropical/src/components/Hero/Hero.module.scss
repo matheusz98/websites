@@ -1,0 +1,128 @@
+@import "../../styles/variables.scss";
+
+.container {
+    height: 100vh;
+    min-height: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    object-fit: cover;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba($dark, 0.3);
+    padding-top: $header-height;
+
+    &_content {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 1.5rem;
+        background: rgba($dark, 0.5);
+        backdrop-filter: blur(2px);
+        padding: $spacing-lg;
+        border-radius: $border-radius;
+        text-align: left;
+        letter-spacing: letter-spacing;
+        text-transform: uppercase;
+
+        @media (min-width: 768px) {
+            text-align: center;
+        }
+
+        &_title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: $white;
+            margin-bottom: $spacing-sm;
+
+            @media (min-width: 768px) {
+                font-size: 3.8rem;
+            }
+
+            @media (min-width: 600px) {
+                font-size: 3rem;
+            }
+        }
+
+        &_tagline {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $light;
+            font-style: italic;
+            margin-bottom: $spacing-md;
+
+            @media (min-width: 768px) {
+                font-size: 2rem;
+            }
+
+            @media (min-width: 600px) {
+                font-size: 1.8rem;
+            }
+        }
+
+        &_description {
+            width: 100%;
+            font-size: 1rem;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: $light;
+            margin-bottom: $spacing-lg;
+
+            @media (min-width: 768px) {
+                width: 60%;
+                margin: 0 auto $spacing-lg auto;
+            }
+
+            @media (min-width: 600px) {
+                width: 80%;
+                font-size: 1.1rem;
+            }
+        }
+
+        &_cta {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+
+            button {
+                width: 100%;
+            }
+
+            button:not(:last-child) {
+                margin-bottom: $spacing-sm;
+            }
+
+            @media (min-width: 768px) {
+                align-items: center;
+
+                button {
+                    width: auto;
+                }
+
+                margin: 0 auto;
+                flex-direction: row;
+
+                button:not(:last-child) {
+                    margin-bottom: 0;
+                    margin-right: $spacing-sm;
+                }
+            }
+        }
+    }
+}

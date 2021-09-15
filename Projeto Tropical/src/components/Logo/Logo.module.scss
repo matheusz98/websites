@@ -12,7 +12,9 @@
     span {
         color: $white;
         font-size: 2rem;
-        font-weight: 900;
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
         margin-left: $spacing-sm;
         letter-spacing: $letter-spacing;
     }
