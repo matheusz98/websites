@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap");
+
+// Colors
+$light: #dbe6ed;
+$light2: #efe9e6;
+$lightLine: #dbe6ed;
+
+$dark: #0c0c0c;
+$dark2: #08332f;
+$darkLine: #055449;
+
+$aqua: #229b91;
+$white: #ffffff;
+$black: #030502;
+
+// Border-radius
+$border-radius: 12px;
+
+// Lettter spacing
+$letter-spacing: 0.5px;
+
+// Spacing
+$spacing-sm: 0.75rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 4rem;
+
+// Heights
+$header-height: 90px;
+
+// box shadow
+$boxShadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.05);

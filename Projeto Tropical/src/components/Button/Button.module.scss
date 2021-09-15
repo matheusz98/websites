@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.button {
+    background: $light;
+    padding: $spacing-sm $spacing-lg;
+    font-size: 1.1rem;
+    color: $dark;
+    font-weight: 700;
+    letter-spacing: $letter-spacing;
+    border: 1px solid $dark;
+    cursor: pointer;
+    border-radius: $border-radius;
+    transition: 0.3s;
+
+    &:hover {
+        background: rgba($light, 0.8);
+    }
+
+    &.outline {
+        background: transparent;
+        color: $light;
+        border: 1px solid $light;
+
+        &:hover {
+            hover {
+                background: rgba($light, 0.2);
+            }
+        }
+    }
+}

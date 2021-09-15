@@ -1,0 +1,84 @@
+@import '../../styles/variables.scss';
+
+.nav {
+    height: 100%;
+    display: none;
+    align-items: center;
+
+    ul {
+        height: 100%;
+        display: flex;
+        margin-right: $spacing-lg;
+
+        li {
+            height: 100%;
+            &:not(:last-child) {
+                margin-right: $spacing-md;
+            }
+
+            a {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                font-size: 1.1rem;
+                color: $white;
+                letter-spacing: $letter-spacing;
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 3px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: $white;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.menu_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: center;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-lg;
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: $spacing-md;
+            }
+
+            a {
+                color: $white;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $aqua;
+                }
+            }
+        }
+    }
+}
