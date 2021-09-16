@@ -1,45 +1,45 @@
 @import "../../styles/variables.scss";
 
 .container {
+    background: $light;
     position: relative;
     z-index: 10;
     margin: 0 auto;
-    background: $light;
 }
 
 .locations {
     width: 100%;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6.25rem 0;
 
     &.page {
-        padding-top: calc(6.25rem + #{$header-height});
+        padding-top: calc(100px + #{$header-height});
     }
 
     &_content {
+        margin: 0 1.5rem;
         width: 1000px;
         display: flex;
         flex-direction: column;
-        margin: 0 1.5rem;
 
         &_title {
-            font-size: 2rem;
-            font-weight: 900;
             color: $dark;
-            position: relative;
+            font-size: 2rem;
             letter-spacing: $letter-spacing;
+            font-weight: 900;
+            position: relative;
             margin-bottom: $spacing-xl;
 
             &::after {
                 content: "";
-                width: calc(100% - 265px);
-                height: 2px;
-                display: inline;
-                top: 15px;
-                right: 0;
                 position: absolute;
+                display: inline;
+                top: 20px;
+                right: 0;
+                width: 20%;
+                height: 2px;
                 background: $aqua;
             }
         }
@@ -51,21 +51,22 @@
             gap: $spacing-md;
             margin-bottom: $spacing-xl;
 
-            @media (min-width: 1024px) {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
             @media (min-width: 600px) {
                 grid-template-columns: repeat(2, 1fr);
                 grid-auto-rows: 250px;
             }
 
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
             .gallery_item {
+                cursor: pointer;
                 position: relative;
-                box-shadow: $box-shadow;
-                border: 2px solid $aqua;
                 border-radius: $border-radius;
-                transition: 0.3s;
+                border: 2px solid $white;
+                transition: 0.3s ease all;
+                box-shadow: $boxShadow;
 
                 &:hover {
                     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.2),
@@ -77,61 +78,60 @@
                 }
 
                 &_img {
-                    width: 100%;
-                    height: 75%;
-                    top: 0;
-                    left: 0;
-                    position: absolute;
                     border-top-left-radius: $border-radius;
                     border-top-right-radius: $border-radius;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 75%;
                     object-fit: cover;
                 }
-
                 .overlay {
-                    width: 100%;
-                    height: 75%;
-                    top: 0;
-                    left: 0;
-                    position: absolute;
-                    background: rgba($dark, 0.4);
                     border-top-left-radius: $border-radius;
                     border-top-right-radius: $border-radius;
-                    transition: 0.3s;
-                }
-
-                &_content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     width: 100%;
-                    height: 25%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    height: 75%;
+                    background: rgba($dark, 0.4);
+                    transition: 0.3s ease all;
+                }
+                &_content {
                     position: absolute;
                     bottom: 0;
                     left: 0;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 25%;
                     background: $white;
                     border-bottom-left-radius: $border-radius;
                     border-bottom-right-radius: $border-radius;
 
-                    &_icon {
-                        font-size: 1.1rem;
+                    svg {
                         color: $aqua;
+                        font-size: 1.1rem;
                     }
 
                     &_location {
+                        margin-left: 6px;
                         font-size: 1.2rem;
                         color: $dark;
-                        margin-left: 5px;
                         letter-spacing: $letter-spacing;
                     }
                 }
 
                 &_tag {
-                    font-size: 0.8rem;
+                    position: absolute;
+                    background: $white;
                     top: -12px;
                     left: $spacing-sm;
-                    position: absolute;
                     padding: 6px 8px;
                     border-radius: $border-radius;
+                    font-size: 0.8rem;
                     letter-spacing: $letter-spacing;
                 }
             }
@@ -143,23 +143,24 @@
             align-items: center;
 
             a {
+                letter-spacing: $letter-spacing;
+                padding: $spacing-sm $spacing-md;
+                text-decoration: none;
+                border-radius: $border-radius;
+                color: $dark;
+                transition: 0.3s ease all;
                 display: flex;
                 align-items: center;
                 font-size: 1.1rem;
-                color: $dark;
-                padding: $spacing-sm $spacing-md;
-                border-radius: $border-radius;
-                letter-spacing: $letter-spacing;
-                transition: 0.3s;
 
-                &_icon {
+                svg {
                     font-size: 1.2rem;
-                    padding-top: 2px;
                     margin-left: $spacing-sm;
+                    padding-top: 2px;
                 }
 
                 &:hover {
-                    background: rgba($dark, 0.5);
+                    background: rgba($dark, 0.05);
                 }
             }
         }

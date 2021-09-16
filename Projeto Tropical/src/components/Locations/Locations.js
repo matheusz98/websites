@@ -11,7 +11,7 @@ const Locations = ({ page }) => {
   return (
     <div className={styles.container}>
       <div className={`${styles.locations} ${page ? styles.page : ""}`}>
-        <div className={styles.location_content}>
+        <div className={styles.locations_content}>
           <h2 className={styles.locations_content_title}>
             Discover your tropic
           </h2>
@@ -21,9 +21,7 @@ const Locations = ({ page }) => {
                 <img src={img} alt={alt} className={styles.gallery_item_img} />
                 <div className={styles.overlay} />
                 <div className={styles.gallery_item_content}>
-                  <span className={styles.gallery_item_content_icon}>
-                    <IoLocationOutline />
-                  </span>
+                  <IoLocationOutline />
                   <h2 className={styles.gallery_item_content_location}>
                     {location}
                   </h2>
@@ -37,10 +35,7 @@ const Locations = ({ page }) => {
           {!page && (
             <div className={styles.locations_content_viewmore}>
               <Link to="/locations">
-                View More{" "}
-                <span className={styles.locations_content_viewmore_icon}>
-                  <BsArrowRight />
-                </span>
+                View More <BsArrowRight />
               </Link>
             </div>
           )}
