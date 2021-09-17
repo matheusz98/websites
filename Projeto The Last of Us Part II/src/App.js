@@ -1,17 +1,16 @@
 import "./styles/app.scss";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import { InfoAbout } from "./data/DataAbout";
 
 function App() {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route>
-          <Hero />
-        </Route>
-      </Switch>
+      <Hero />
+      <About {...InfoAbout} />
     </Router>
   );
 }

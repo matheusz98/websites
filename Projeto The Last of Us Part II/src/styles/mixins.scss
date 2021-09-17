@@ -20,3 +20,9 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+@mixin align-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
