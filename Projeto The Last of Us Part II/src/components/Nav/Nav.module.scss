@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.menu {
+    width: 100%;
+    @include align-center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    ul {
+        @include align-center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+
+            a {
+                color: $white;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    color: $gray;
+                }
+            }
+        }
+    }
+}

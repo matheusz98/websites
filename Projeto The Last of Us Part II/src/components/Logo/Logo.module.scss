@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        width: 8rem;
+    }
+}
