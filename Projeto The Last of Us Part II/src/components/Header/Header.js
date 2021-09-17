@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Nav from "../Nav/Nav";
 import Logo from "../Logo/Logo";
 import styles from "./Header.module.scss";
@@ -20,24 +20,8 @@ const Header = () => {
   );
   /* End Open Menu / Close Menu */
 
-  /* Change Header */
-  const [scrollHeader, setScrollHeader] = useState(false);
-
-  const changeHeader = () => {
-    if (window.scrollY >= 80) {
-      setScrollHeader(true);
-    } else {
-      setScrollHeader(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeHeader);
-  }, []);
-  /* End Change Header */
-
   return (
-    <header scrollHeader={scrollHeader} className={styles.header}>
+    <header className={styles.header}>
       <Logo to="/" />
       <div className={styles.header_menu}>
         <div className={styles.header_menu_toggle}>{toggle}</div>

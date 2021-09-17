@@ -3,7 +3,7 @@
 
 .header {
     width: 100%;
-    height: 90px;
+    height: 60px;
     @include space-between;
     position: fixed;
     padding: 0 1.5rem;
@@ -25,7 +25,7 @@
         }
 
         .menu {
-            width: 80vw;
+            width: 80%;
             max-width: 400px;
             height: 100vh;
             @include justify-center;
@@ -43,7 +43,7 @@
             transition: 0.5s ease-in-out;
 
             @media (max-width: 480px) {
-                width: 100vw;
+                width: 100%;
             }
         }
 

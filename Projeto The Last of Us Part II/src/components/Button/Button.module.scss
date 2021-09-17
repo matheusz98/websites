@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.button {
+    background: $black;
+    padding: 0.75rem 1.875rem;
+    font-size: 1.1rem;
+    color: $white;
+    cursor: pointer;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        background: $white;
+        color: $black;
+        letter-spacing: 1px;
+    }
+
+    &.outline {
+        background: transparent;
+        color: $white;
+        border: 2px solid $white;
+
+        &:hover {
+            background: $white;
+            color: $black;
+        }
+    }
+
+    &.big {
+        padding: 1.125rem 3rem;
+
+        @media (max-width: 360px) {
+            padding: 1.1rem 2rem;
+        }
+    }
+
+    &.large_font {
+        font-size: 1.5rem;
+
+        @media (max-width: 360px) {
+            font-size: 1.3rem;
+        }
+    }
+}

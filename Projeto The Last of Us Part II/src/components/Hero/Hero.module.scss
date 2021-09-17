@@ -1,0 +1,83 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.hero {
+    @include justify-center;
+    height: 100vh;
+    position: relative;
+    padding: 0 1.875rem;
+    z-index: 1;
+    background: #0c0c0c;
+
+    @media (min-width: 768px) {
+        @include justify-start;
+    }
+
+    &:before {
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+        z-index: 2;
+    }
+
+    &_bg {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        overflow: hidden;
+
+        .video {
+            width: 100%;
+            height: 100%;
+            background: #232a34;
+            object-fit: cover;
+            -o-object-fit: cover;
+        }
+    }
+
+    &_content {
+        max-width: 1200px;
+        @include justify-center;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        padding: 0.5rem 1.5rem;
+
+        img {
+            max-width: 200px;
+        }
+
+        @media (min-width: 360px) {
+            img {
+                max-width: 250px;
+            }
+        }
+
+        @media (min-width: 480px) {
+            img {
+                max-width: 400px;
+            }
+        }
+
+        h4,
+        h5 {
+            color: $white;
+            font-weight: 400;
+            margin: 1rem 0;
+        }
+
+        &_button {
+            @include justify-center;
+            margin-top: 1rem;
+        }
+    }
+}
