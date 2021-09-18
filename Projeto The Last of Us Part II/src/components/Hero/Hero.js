@@ -20,7 +20,7 @@ const Hero = () => {
         <h4>Sony Interactive Entertainment</h4>
         <h5>PS4, PS5</h5>
         <div className={styles.hero_content_button}>
-          <Button to="about" outline big>
+          <Button to="/about" outline big>
             Press Start to Begin
           </Button>
         </div>

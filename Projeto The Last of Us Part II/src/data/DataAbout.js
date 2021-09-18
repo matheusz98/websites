@@ -6,6 +6,5 @@ export const InfoAbout = {
     paragraphTwo: "Quando um evento violento interrompe a paz, Ellie parte numa jornada incansável para fazer justiça e virar a página. Enquanto vai atrás de cada um dos responsáveis, ela se confronta com as repercussões físicas e emocionais devastadoras das próprias ações.",
     image: Ellie,
     alt: "Ellie",
-    reverse: false,
     delay: 100,
 }

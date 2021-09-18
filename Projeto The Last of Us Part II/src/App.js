@@ -4,6 +4,8 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import { InfoAbout } from "./data/DataAbout";
+import { FeaturesContent } from './data/DataFeatures';
+import Features from "./components/Features/Features";
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <Header />
       <Hero />
       <About {...InfoAbout} />
+      <Features {...FeaturesContent} />
     </Router>
   );
 }
