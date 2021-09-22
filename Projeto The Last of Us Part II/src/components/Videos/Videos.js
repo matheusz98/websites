@@ -21,11 +21,12 @@ const Videos = () => {
         autoplay={{ delay: 5000 }}
         keyboard={true}
         className="mySwiper swiper"
+        id="videos"
       >
         <SwiperSlide className="swiper-slide">
           <iframe
             src="https://www.youtube.com/embed/psit-4r_hys"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -33,9 +34,9 @@ const Videos = () => {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-        <iframe
+          <iframe
             src="https://www.youtube.com/embed/eOiUtRF8k28"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -43,9 +44,9 @@ const Videos = () => {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-        <iframe
+          <iframe
             src="https://www.youtube.com/embed/W2Wnvvj33Wo"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -53,9 +54,9 @@ const Videos = () => {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-        <iframe
+          <iframe
             src="https://www.youtube.com/embed/btmN-bWwv0A"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -63,9 +64,9 @@ const Videos = () => {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-        <iframe
+          <iframe
             src="https://www.youtube.com/embed/II5UsqP2JAk"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -73,9 +74,9 @@ const Videos = () => {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-        <iframe
+          <iframe
             src="https://www.youtube.com/embed/vhII1qlcZ4E"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -83,9 +84,9 @@ const Videos = () => {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-        <iframe
+          <iframe
             src="https://www.youtube.com/embed/2NdGeJNB5eY"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -93,9 +94,9 @@ const Videos = () => {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-        <iframe
+          <iframe
             src="https://www.youtube.com/embed/DTxBAuXUHMU"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -103,9 +104,9 @@ const Videos = () => {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-        <iframe
+          <iframe
             src="https://www.youtube.com/embed/saE6O93x3MA"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
@@ -113,9 +114,9 @@ const Videos = () => {
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
-        <iframe
+          <iframe
             src="https://www.youtube.com/embed/mRj3B3GY9KM"
-            className="iframe" 
+            className="iframe"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen

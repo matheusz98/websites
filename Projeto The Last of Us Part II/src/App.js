@@ -7,6 +7,7 @@ import { InfoAbout } from "./data/DataAbout";
 import { FeaturesContent } from './data/DataFeatures';
 import Features from "./components/Features/Features";
 import Videos from "./components/Videos/Videos";
+import Accolades from "./components/Accolades/Accolades";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About {...InfoAbout} />
       <Features {...FeaturesContent} />
       <Videos />
+      <Accolades />
     </Router>
   );
 }

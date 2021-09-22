@@ -8,15 +8,15 @@
 }
 
 .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .iframe {
-    width: 560px;
-    height: 315px;
-    padding: 1rem;
+  width: 560px;
+  height: 315px;
+  padding: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -28,8 +28,7 @@
   }
 
   .iframe {
-      width: 800px;
-      height: 460px;
+    width: 800px;
+    height: 460px;
   }
 }
-
