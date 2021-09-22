@@ -1,18 +1,17 @@
-@import '../../styles/variables.scss';
-@import '../../styles/mixins.scss';
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 .container {
-    width: 100%;
     @include justify-center;
     flex-direction: column;
-    background: url('../../images/features_mobile.jfif');
+    background: url("../../images/features_mobile.jfif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 3rem 0;
 
     @media (min-width: 768px) {
-        background: url('../../images/features_desktop.jfif');
+        background: url("../../images/features_desktop.jfif");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -32,12 +31,11 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
     padding: 1.25rem;
 
     @media (min-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
     }
 
     @media (min-width: 1024px) {
@@ -45,7 +43,6 @@
     }
 
     &_card {
-        max-width: 400px;
         @include justify-center;
         flex-direction: column;
         color: $white;
@@ -77,6 +74,7 @@
 
         p {
             text-align: left;
+            font-size: 1rem;
         }
     }
 }

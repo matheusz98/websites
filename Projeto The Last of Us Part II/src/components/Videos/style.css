@@ -1,0 +1,35 @@
+.swiper {
+  width: 100%;
+  height: 80vh;
+  background: url("../../images/features_mobile.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iframe {
+    width: 560px;
+    height: 315px;
+    padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .swiper {
+    background: url("../../images/features_desktop.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .iframe {
+      width: 800px;
+      height: 460px;
+  }
+}
+

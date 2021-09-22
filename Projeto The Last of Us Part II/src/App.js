@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import { InfoAbout } from "./data/DataAbout";
 import { FeaturesContent } from './data/DataFeatures';
 import Features from "./components/Features/Features";
+import Videos from "./components/Videos/Videos";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <About {...InfoAbout} />
       <Features {...FeaturesContent} />
+      <Videos />
     </Router>
   );
 }

@@ -10,12 +10,12 @@ export const FeaturesContent = {
     alt1: "Ellie e Dina",
 
     title2: "Jogabilidade tensa e desesperada de ação e sobrevivência",
-    paragraph2: "Com sistemas novos e aprimorados, a jornada de Ellie nesse mundo hostil é questão de vida ou morte. Sinta-a lutar desesperadamente pela sobrevivência com funcionalidades melhoradas, como combate corpo a corpo de alta intensidade, movimento fluido e furtividade dinâmica.",
+    paragraph2: "Com sistemas novos e aprimorados, a jornada de Ellie nesse mundo hostil é questão de vida ou morte. Sinta-a lutar desesperadamente pela sobrevivência com funcionalidades melhoradas.",
     img2: ImageTwo,
-    alt2: "Ellie enfrentando um serafita",
+    alt2: "Ellie atravessando a floresta",
 
     title3: "Um mundo belo e perigoso",
-    paragraph3: "Acompanhe Ellie na jornada pelas montanhas e florestas pacíficas de Jackson até uma exuberante Seattle em ruínas, coberta de mato. Encontre novos grupos de sobreviventes, ambientes estranhos e traiçoeiros e infectados com evoluções terríveis. Ganhando vida com a versão mais recente do motor gráfico da Naughty Dog, o mundo e os personagens letais estão mais realistas e detalhados do que nunca.",
+    paragraph3: "Acompanhe Ellie na jornada pelas montanhas e florestas pacíficas de Jackson até uma exuberante Seattle em ruínas, coberta de mato. Encontre novos grupos de sobreviventes e infectados com evoluções terríveis.",
     img3: ImageThree,
-    alt3: "Ellie atravessando a floresta",
+    alt3: "Ellie enfrentando um serafita",
 }
