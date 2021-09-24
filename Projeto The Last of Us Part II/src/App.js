@@ -8,6 +8,7 @@ import { FeaturesContent } from './data/DataFeatures';
 import Features from "./components/Features/Features";
 import Videos from "./components/Videos/Videos";
 import Accolades from "./components/Accolades/Accolades";
+import Gallery from './components/Gallery/Gallery';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Features {...FeaturesContent} />
       <Videos />
       <Accolades />
+      <Gallery />
     </Router>
   );
 }
