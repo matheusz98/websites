@@ -1,0 +1,168 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.container {
+  width: 100%;
+  @include justify-center;
+  position: relative;
+  background: $blue;
+}
+
+.footer {
+  width: 1100px;
+  margin: 0 1.5rem;
+  padding: 5rem 0 1.25rem 0;
+
+  .logo {
+    width: 30%;
+    cursor: pointer;
+    margin: 1rem;
+  }
+
+  &_content {
+    width: 100%;
+    min-height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &_col {
+      height: 100%;
+
+      &_headline {
+        font-size: 1.5rem;
+        color: $white;
+        margin-bottom: 1rem;
+      }
+
+      &_links {
+        li {
+          margin-bottom: 0.625rem;
+
+          a {
+            width: 100%;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &_newsletter {
+    @include align-center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    &_headline {
+      font-size: 1.5rem;
+      color: $white;
+      margin-bottom: 1.25rem;
+    }
+
+    span {
+      font-size: 1.1rem;
+      color: $white;
+      margin-bottom: 1.5rem;
+    }
+
+    &_form {
+      @include align-center;
+      flex-direction: column;
+
+      button {
+        width: 100%;
+      }
+
+      @media (min-width: 768px) {
+        button {
+          width: auto;
+        }
+
+        flex-direction: row;
+      }
+
+      .input {
+        font-size: 1.1rem;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        padding: 1rem 1.5rem;
+
+        @media (min-width: 768px) {
+          width: 300px;
+          margin-bottom: 0;
+          margin-right: 0.625rem;
+        }
+      }
+    }
+  }
+
+  &_base {
+    @include justify-center;
+    flex-direction: column-reverse;
+    color: $white;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    a,
+    ul {
+      &:not(:first-child) {
+        margin: 1.5rem;
+        text-align: center;
+
+        @media (min-width: 768px) {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width: 768px) {
+        flex: 1;
+      }
+    }
+
+    &_year {
+      @include justify-center;
+      font-size: 1rem;
+    }
+
+    &_socials {
+      @include justify-center;
+      flex-wrap: wrap;
+
+      li {
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+
+          @media (min-width: 768px) {
+            margin-right: 0.625rem;
+          }
+        }
+
+        a {
+          font-size: 2rem;
+          margin: 0 1rem;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &_copyright {
+    margin-top: 1rem;
+    @include justify-center;
+    text-align: center;
+    color: $white;
+  }
+}

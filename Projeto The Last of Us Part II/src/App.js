@@ -9,6 +9,7 @@ import Features from "./components/Features/Features";
 import Videos from "./components/Videos/Videos";
 import Accolades from "./components/Accolades/Accolades";
 import Gallery from './components/Gallery/Gallery';
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Videos />
       <Accolades />
       <Gallery />
+      <Footer />
     </Router>
   );
 }
