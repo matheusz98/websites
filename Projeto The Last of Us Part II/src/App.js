@@ -1,4 +1,3 @@
-import "./styles/app.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -10,6 +9,7 @@ import Videos from "./components/Videos/Videos";
 import Accolades from "./components/Accolades/Accolades";
 import Gallery from './components/Gallery/Gallery';
 import Footer from "./components/Footer/Footer";
+import "./styles/app.scss";
 
 function App() {
   return (

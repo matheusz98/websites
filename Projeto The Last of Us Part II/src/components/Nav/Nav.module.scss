@@ -13,6 +13,7 @@
         @include align-center;
         flex-direction: column;
         margin-bottom: 2rem;
+        cursor: pointer;
 
         li {
             &:not(:last-child) {

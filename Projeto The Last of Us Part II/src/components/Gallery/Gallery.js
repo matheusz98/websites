@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { images } from "../../data/GalleryData";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import Button from "../Button/Button";
@@ -16,11 +18,15 @@ const Gallery = () => {
     setMoreImages(moreImages + moreImages);
   };
 
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
+
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id="gallery">
         <h2>Galeria</h2>
-        <div className={styles.gallery}>
+        <div data-aos="fade-up" className={styles.gallery}>
           {load.map((src, index) => (
             <img
               src={src}

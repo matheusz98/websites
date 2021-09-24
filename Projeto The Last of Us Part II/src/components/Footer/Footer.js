@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { ReactComponent as PSLogo } from "../../images/playstation_logo.svg";
 import { ReactComponent as SIELogo } from "../../images/sie.svg";
 import { footerData, socials } from "../../data/FooterData";
@@ -5,9 +8,13 @@ import styles from "./Footer.module.scss";
 import Button from "../Button/Button";
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
+  
   return (
     <div className={styles.container}>
-      <footer className={styles.footer}>
+      <footer data-aos="fade" className={styles.footer}>
         <div className={styles.footer_content}>
           {footerData.map(({ id, headline, links }) => (
             <div className={styles.footer_content_col} key={id}>

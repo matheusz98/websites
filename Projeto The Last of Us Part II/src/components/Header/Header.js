@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-scroll";
 import Nav from "../Nav/Nav";
 import Logo from "../Logo/Logo";
 import styles from "./Header.module.scss";
@@ -33,7 +34,9 @@ const Header = () => {
 
   return (
     <header className={header ? styles.header : styles.header_active}>
-      <Logo to="/" />
+      <Link to="home" spy={true} smooth={true} duration={800}>
+        <Logo />
+      </Link>
       <div className={styles.header_menu}>
         <div className={styles.header_menu_toggle}>{toggle}</div>
         <aside className={`${styles.menu} ${openMenu && styles.show}`}>

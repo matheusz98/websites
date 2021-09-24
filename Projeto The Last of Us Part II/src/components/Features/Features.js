@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import styles from "./Features.module.scss";
 
 const Features = ({
@@ -14,10 +17,14 @@ const Features = ({
   img3,
   alt3,
 }) => {
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
+
   return (
     <div className={styles.container} id="features">
-      <h2>Uma experiência inovadora</h2>
-      <div className={styles.features_content}>
+      <h2 data-aos="fade">Uma experiência inovadora</h2>
+      <div data-aos="fade-up" className={styles.features_content}>
         <div className={styles.features_content_card}>
           <img src={img1} alt={alt1} />
           <h3>{title1}</h3>
