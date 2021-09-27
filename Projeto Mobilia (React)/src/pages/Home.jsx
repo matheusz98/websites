@@ -1,5 +1,6 @@
 import { useState } from "react";
 import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
 import Gallery from "../components/Gallery/Gallery";
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
@@ -29,6 +30,7 @@ const Home = () => {
       <Products {...productContent} />
       <Services {...servicesContent} />
       <Gallery {...galleryContent} />
+      <Contact />
     </>
   );
 };

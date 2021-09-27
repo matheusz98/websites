@@ -41,14 +41,14 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <Logo to="/" onClick={toggleHome} />
+          <Logo to="home" onClick={toggleHome} />
           <MenuIcon onClick={toggle}>
             {isMenuOpen ? closeIcon : openIcon}
           </MenuIcon>
           <NavMenu>
             <NavItem>
               <NavLink
-                to="/"
+                to="home"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -60,7 +60,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLink
-                to="/about"
+                to="about"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -72,7 +72,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLink
-                to="/products"
+                to="products"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -84,7 +84,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLink
-                to="/gallery"
+                to="gallery"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -96,7 +96,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLink
-                to="/contact"
+                to="contact"
                 smooth={true}
                 duration={500}
                 spy={true}
