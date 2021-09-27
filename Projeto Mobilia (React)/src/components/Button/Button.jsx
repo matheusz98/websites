@@ -9,6 +9,7 @@ export const Button = styled(Link)`
   text-transform: ${({ uppercase }) =>
     uppercase ? "uppercase" : "capitalize"};
   border-radius: 10px;
+  border: 1px solid #ce0c4d;
   text-align: center;
   cursor: pointer;
   transition: 0.3s ease;
@@ -16,6 +17,5 @@ export const Button = styled(Link)`
   &:hover {
     background: ${({ primary }) => (primary ? "transparent" : "#c0c0c0")};
     color: ${({ primary }) => (primary ? "#ce0c4d" : "#ffffff")};
-    border: ${({ primary }) => (primary ? "1px solid #ce0c4d" : "none")};
   }
 `;
