@@ -5,6 +5,9 @@ import ProductThree from "../images/product-3.jpg";
 import ProductFour from "../images/product-4.jpg";
 import ProductFive from "../images/product-5.jpg";
 import ProductSix from "../images/product-6.jpg";
+import SlideOne from "../images/slide-1.jpg";
+import SlideTwo from "../images/slide-2.jpg";
+import SlideThree from "../images/slide-3.jpg";
 
 export const aboutContent = {
   id: "about",
@@ -45,7 +48,8 @@ export const productContent = {
 
 export const servicesContent = {
   id: "services",
-  paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti hic doloribus, explicabo doloremque ducimus provident nulla perferendis nemo. Sint voluptas tempore quasi magnam recusandae, sit vero illo corporis reiciendis.",
+  paragraphOne:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti hic doloribus, explicabo doloremque ducimus provident nulla perferendis nemo. Sint voluptas tempore quasi magnam recusandae, sit vero illo corporis reiciendis.",
   title1: "Entrega em até 24 horas",
   descriptionOne:
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime aperiam nam corporis itaque quisquam, ea aliquam facilis rerum, architecto eaque officia? Beatae quos quam earum nobis nostrum facilis perspiciatis eius.",
@@ -55,4 +59,15 @@ export const servicesContent = {
   title3: "Montagem gratuita",
   descriptionThree:
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam magnam ut consequuntur fuga quae minus amet? Ut ea delectus natus, incidunt consequatur doloribus accusantium nulla quae aspernatur itaque et non.",
+};
+
+export const galleryContent = {
+  id: "gallery",
+  paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti hic doloribus, explicabo doloremque ducimus provident nulla perferendis nemo. Sint voluptas tempore quasi magnam recusandae, sit vero illo corporis reiciendis.",
+  img1: SlideOne,
+  alt1: "Slide one",
+  img2: SlideTwo,
+  alt2: "Slide two",
+  img3: SlideThree,
+  alt3: "Slide three",
 };
