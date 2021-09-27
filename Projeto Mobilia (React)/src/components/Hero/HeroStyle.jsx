@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const HeroContainer = styled.section`
   height: 100%;
   min-height: 100vh;
-  background: #f1e7e7;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,10 +59,6 @@ export const HeroArticle = styled.article`
   }
 
   p {
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    color: #0c0c0c;
     margin-bottom: 3rem;
   }
 
