@@ -3,11 +3,11 @@ import { Link as LinkScroll } from "react-scroll";
 
 export const NavbarItemsContainer = styled.div`
   width: 100%;
-  top: ${({ isOpen }) => (isOpen ? "70px" : "-360px")};
+  top: ${({ isOpen }) => (isOpen ? "60px" : "-360px")};
   left: 0;
   z-index: 2;
   display: block;
-  position: absolute;
+  position: fixed;
   background: #ffffff;
   padding: 1.25rem 0;
   text-align: center;

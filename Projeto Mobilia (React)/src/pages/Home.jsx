@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
 import NavbarItems from "../components/Navbar/NavbarItems";
 
@@ -13,6 +14,7 @@ const Home = () => {
     <>
       <NavbarItems isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
+      <Hero />
     </>
   );
 };

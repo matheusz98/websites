@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-  max-width: 1140px;
-  margin: 0 auto;
+  width: 100%;
   background: #ffffff;
   height: ${({ scrollNav }) => (scrollNav ? "60px" : "80px")};
   top: 0;
@@ -21,6 +20,8 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -37,7 +38,7 @@ export const MenuIcon = styled.div`
     top: 0;
     right: 0;
     position: absolute;
-    transform: translate(-100%, 70%);
+    transform: translate(-100%, 50%);
     font-size: 1.8rem;
     color: #0c0c0c;
     cursor: pointer;
