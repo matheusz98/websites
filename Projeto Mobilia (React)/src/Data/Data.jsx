@@ -42,3 +42,17 @@ export const productContent = {
   alt1: "Produto 6",
   buttonLabel: "Comprar",
 };
+
+export const servicesContent = {
+  id: "services",
+  paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti hic doloribus, explicabo doloremque ducimus provident nulla perferendis nemo. Sint voluptas tempore quasi magnam recusandae, sit vero illo corporis reiciendis.",
+  title1: "Entrega em até 24 horas",
+  descriptionOne:
+    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime aperiam nam corporis itaque quisquam, ea aliquam facilis rerum, architecto eaque officia? Beatae quos quam earum nobis nostrum facilis perspiciatis eius.",
+  title2: "Promoções imperdíveis",
+  descriptionTwo:
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde voluptate nemo perspiciatis quibusdam fugiat dolorem iste et voluptatem, sed quo, dolorum dolore culpa soluta. Culpa, ratione. Dolorum accusamus maxime facere!",
+  title3: "Montagem gratuita",
+  descriptionThree:
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam magnam ut consequuntur fuga quae minus amet? Ut ea delectus natus, incidunt consequatur doloribus accusantium nulla quae aspernatur itaque et non.",
+};

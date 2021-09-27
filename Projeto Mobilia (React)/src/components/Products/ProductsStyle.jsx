@@ -35,11 +35,11 @@ export const ProductsContent = styled.div`
   gap: 1.5rem;
 
   @media (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: 660px) {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -56,12 +56,12 @@ export const Item = styled.div`
     transition: 0.3s ease-in-out;
 
     &:hover {
-       opacity: 0.8;
+      opacity: 0.8;
     }
   }
 
   @media (max-width: 660px) {
-      max-width: 100%;
+    max-width: 100%;
   }
 `;
 
