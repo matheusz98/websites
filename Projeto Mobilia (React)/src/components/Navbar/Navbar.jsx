@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <Logo to="home" onClick={toggleHome} />
+          <Logo to="/" onClick={toggleHome} />
           <MenuIcon onClick={toggle}>
             {isMenuOpen ? closeIcon : openIcon}
           </MenuIcon>

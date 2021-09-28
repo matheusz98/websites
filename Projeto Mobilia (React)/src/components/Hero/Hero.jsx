@@ -1,20 +1,27 @@
+import { useEffect } from "react";
 import {
   HeroContainer,
   HeroImg,
   HeroContentContainer,
   HeroArticle,
 } from "./HeroStyle";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import HeroIMG from "../../images/home.jpg";
 import { Button } from "../Button/Button";
 
 const Hero = () => {
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
+
   return (
     <HeroContainer id="home">
-      <HeroImg>
+      <HeroImg data-aos="fade-left">
         <img src={HeroIMG} alt="Hero BG" />
       </HeroImg>
       <HeroContentContainer>
-        <HeroArticle>
+        <HeroArticle data-aos="fade-right">
           <h1>
             Trazendo <span>elegância</span> sua casa
           </h1>

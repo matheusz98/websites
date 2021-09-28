@@ -13,8 +13,8 @@ const Contact = () => {
       <ContactSection id="contact">
         <ContactContainer>
           <ContactBox>
-            <ContactImg></ContactImg>
-            <ContactForm>
+            <ContactImg data-aos="fade-right"></ContactImg>
+            <ContactForm data-aos="fade-left">
               <h2>
                 Entre em <span>Contato</span>
               </h2>

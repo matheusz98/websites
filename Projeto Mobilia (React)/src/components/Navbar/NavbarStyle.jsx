@@ -76,7 +76,7 @@ export const NavLink = styled(LinkScroll)`
   }
 
   &.active {
-    border-bottom: 2px solid #ce0c4d;
+    border-bottom: 3px solid #ce0c4d;
   }
 `;
 

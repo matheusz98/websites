@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   ServicesSection,
   ServicesContainer,
@@ -5,6 +6,8 @@ import {
   ServicesContent,
   Item,
 } from "./ServicesStyle";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { FaShippingFast, FaShoppingBag, FaCouch } from "react-icons/fa";
 
 const Services = ({
@@ -17,11 +20,15 @@ const Services = ({
   descriptionTwo,
   descriptionThree,
 }) => {
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
+
   return (
     <>
       <ServicesSection id={id}>
         <ServicesContainer>
-          <ServicesTitle>
+          <ServicesTitle data-aos="fade-up">
             <h2>
               Nossos <span>serviços</span>
             </h2>
@@ -29,17 +36,17 @@ const Services = ({
           </ServicesTitle>
 
           <ServicesContent>
-            <Item>
+            <Item data-aos="fade-up">
               <FaShippingFast />
               <h3>{title1}</h3>
               <p>{descriptionOne}</p>
             </Item>
-            <Item>
+            <Item data-aos="fade-down">
               <FaShoppingBag />
               <h3>{title2}</h3>
               <p>{descriptionTwo}</p>
             </Item>
-            <Item>
+            <Item data-aos="fade-up">
               <FaCouch />
               <h3>{title3}</h3>
               <p>{descriptionThree}</p>

@@ -1,17 +1,24 @@
+import { useEffect } from "react";
 import {
   NewsletterSection,
   NewsletterContainer,
   NewsletterTitle,
   NewsletterContent,
 } from "./NewsletterStyle";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Button } from "../Button/Button";
 
 const Newsletter = () => {
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
+
   return (
     <>
       <NewsletterSection>
         <NewsletterContainer>
-          <NewsletterTitle>
+          <NewsletterTitle data-aos="fade-in">
             <h2>
               Assine nossa <span>Newsletter</span>!
             </h2>
@@ -21,7 +28,7 @@ const Newsletter = () => {
             </p>
           </NewsletterTitle>
 
-          <NewsletterContent>
+          <NewsletterContent data-aos="fade-up">
             <label for="email">Endereço de e-mail</label>
             <input type="email" placeholder="Endereço de e-mail" />
             <Button primary white >

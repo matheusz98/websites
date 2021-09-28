@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   ProductsSection,
   ProductsContainer,
@@ -7,6 +8,8 @@ import {
   ProductsInfo,
 } from "./ProductsStyle";
 import { Button } from "../Button/Button";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Products = ({
   id,
@@ -32,11 +35,15 @@ const Products = ({
   alt6,
   buttonLabel,
 }) => {
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
+
   return (
     <>
       <ProductsSection id={id}>
         <ProductsContainer>
-          <ProductsSectionTitle>
+          <ProductsSectionTitle data-aos="fade-in">
             <h2>
               Nossos <span>produtos</span>
             </h2>
@@ -44,7 +51,7 @@ const Products = ({
           </ProductsSectionTitle>
 
           <ProductsContent>
-            <Item>
+            <Item data-aos="fade-up">
               <img src={img1} alt={alt1} />
               <ProductsInfo>
                 <h3>{productTitle1}</h3>
@@ -54,7 +61,7 @@ const Products = ({
                 </Button>
               </ProductsInfo>
             </Item>
-            <Item>
+            <Item data-aos="fade-up">
               <img src={img2} alt={alt2} />
               <ProductsInfo>
                 <h3>{productTitle2}</h3>
@@ -64,7 +71,7 @@ const Products = ({
                 </Button>
               </ProductsInfo>
             </Item>
-            <Item>
+            <Item data-aos="fade-up">
               <img src={img3} alt={alt3} />
               <ProductsInfo>
                 <h3>{productTitle3}</h3>
@@ -74,7 +81,7 @@ const Products = ({
                 </Button>
               </ProductsInfo>
             </Item>
-            <Item>
+            <Item data-aos="fade-up">
               <img src={img4} alt={alt4} />
               <ProductsInfo>
                 <h3>{productTitle4}</h3>
@@ -84,7 +91,7 @@ const Products = ({
                 </Button>
               </ProductsInfo>
             </Item>
-            <Item>
+            <Item data-aos="fade-up">
               <img src={img5} alt={alt5} />
               <ProductsInfo>
                 <h3>{productTitle5}</h3>
@@ -94,7 +101,7 @@ const Products = ({
                 </Button>
               </ProductsInfo>
             </Item>
-            <Item>
+            <Item data-aos="fade-up">
               <img src={img6} alt={alt6} />
               <ProductsInfo>
                 <h3>{productTitle6}</h3>
