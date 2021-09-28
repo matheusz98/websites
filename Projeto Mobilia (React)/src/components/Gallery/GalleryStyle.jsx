@@ -4,6 +4,13 @@ export const GallerySection = styled.section`
   margin: 6.25rem 0;
 `;
 
+export const GalleryContainer = styled.div`
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 2rem;
+`;
+
 export const GalleryTitle = styled.div`
   text-align: center;
 

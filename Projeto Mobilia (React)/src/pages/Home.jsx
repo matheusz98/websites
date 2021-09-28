@@ -5,6 +5,7 @@ import Gallery from "../components/Gallery/Gallery";
 import Hero from "../components/Hero/Hero";
 import Navbar from "../components/Navbar/Navbar";
 import NavbarItems from "../components/Navbar/NavbarItems";
+import Newsletter from "../components/Newsletter/Newsletter";
 import Products from "../components/Products/Products";
 import Services from "../components/Services/Services";
 import {
@@ -31,6 +32,7 @@ const Home = () => {
       <Services {...servicesContent} />
       <Gallery {...galleryContent} />
       <Contact />
+      <Newsletter />
     </>
   );
 };
