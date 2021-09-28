@@ -63,7 +63,8 @@ export const servicesContent = {
 
 export const galleryContent = {
   id: "gallery",
-  paragraphOne: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti hic doloribus, explicabo doloremque ducimus provident nulla perferendis nemo. Sint voluptas tempore quasi magnam recusandae, sit vero illo corporis reiciendis.",
+  paragraphOne:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti hic doloribus, explicabo doloremque ducimus provident nulla perferendis nemo. Sint voluptas tempore quasi magnam recusandae, sit vero illo corporis reiciendis.",
   img1: SlideOne,
   alt1: "Slide one",
   img2: SlideTwo,
