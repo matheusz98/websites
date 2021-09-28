@@ -11,7 +11,6 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
         font-family: "Merriweather", serif;
         font-weight: 400;
-        overflow-x: hidden;
     }
     
     img {
@@ -20,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background: #f1e7e7;
+        overflow-x: hidden;
     }
 
     p {
