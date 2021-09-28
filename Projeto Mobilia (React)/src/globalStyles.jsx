@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
         font-family: "Merriweather", serif;
         font-weight: 400;
+        overflow-x: hidden;
     }
     
     img {
