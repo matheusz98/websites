@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import Contact from "./components/Contact/Contact";
 import Feature from "./components/Feature/Feature";
 import Introduction from "./components/Introduction/Introduction";
 import Navbar from "./components/Navbar/Navbar";
@@ -63,6 +64,9 @@ const App = () => {
       <Container>
         <Price />
         <PriceShape />
+      </Container>
+      <Container>
+        <Contact />
       </Container>
     </>
   );
