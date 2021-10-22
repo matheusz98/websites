@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import Contact from "./components/Contact/Contact";
 import Feature from "./components/Feature/Feature";
+import Footer from "./components/Footer/Footer";
 import Introduction from "./components/Introduction/Introduction";
 import Navbar from "./components/Navbar/Navbar";
 import Price from "./components/Price/Price";
@@ -67,6 +68,7 @@ const App = () => {
       </Container>
       <Container>
         <Contact />
+        <Footer />
       </Container>
     </>
   );
