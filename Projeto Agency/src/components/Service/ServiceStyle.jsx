@@ -18,6 +18,8 @@ export const Image = styled.img`
   display: ${(props) => props.open && "none"};
   height: 100%;
   margin-top: 20px;
+  right: 0;
+  position: absolute;
 `;
 
 export const Wrapper = styled.div`
