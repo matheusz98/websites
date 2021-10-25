@@ -12,16 +12,16 @@ export const Nav = styled.nav`
   z-index: 50;
   margin-bottom: -80px;
   font-size: 1.2rem;
-  background: blue;
+  background: transparent;
   transition: 0.3s ease-in-out;
 `;
 
 export const NavbarContainer = styled.div`
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 0 auto;
   padding: 0 50px;
 
