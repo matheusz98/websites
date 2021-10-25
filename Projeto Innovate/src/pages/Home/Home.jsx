@@ -1,3 +1,4 @@
+import Carousel from "../../components/Carousel/Carousel";
 import Content from "../../components/Content/Content";
 import Features from "../../components/Features/Features";
 import Hero from "../../components/Hero/Hero";
@@ -11,6 +12,7 @@ const Home = () => {
       <Content {...contentOne} />
       <Content {...contentTwo} />
       <Content {...contentThree} />
+      <Carousel />
     </>
   );
 };
