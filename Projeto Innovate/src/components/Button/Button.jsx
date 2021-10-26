@@ -29,7 +29,7 @@ export const Button = styled.button`
   }
 
   &:hover:before {
-    height: 500%;
+    height: 600%;
   }
 
   &:hover {

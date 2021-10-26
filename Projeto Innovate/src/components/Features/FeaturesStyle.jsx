@@ -58,7 +58,7 @@ export const FeaturesColumn = styled.div`
   z-index: 1;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0px 0px 8px 2px #000000;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: 0.3s ease-in-out;
 

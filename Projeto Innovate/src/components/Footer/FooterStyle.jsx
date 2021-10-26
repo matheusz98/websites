@@ -27,7 +27,7 @@ export const FooterColumn = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     align-items: center;
   }
 `;
@@ -51,11 +51,6 @@ export const Address = styled.div`
   text-align: center;
   line-height: 2;
   font-weight: 500;
-
-  @media (max-width: 768px) {
-    text-align: left;
-    margin-right: 1rem;
-  }
 `;
 
 export const FooterRow = styled.div`
