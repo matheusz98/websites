@@ -9,7 +9,7 @@ export const data = [
     text: "Pricing",
   },
   {
-    to: "/contact",
-    text: "Contact",
+    to: "/signup",
+    text: "Sign up",
   },
 ];

@@ -75,13 +75,33 @@ export const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
+  background: #7339b9;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 
-  &:hover {
-    background: #7339b9;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0deg);
+    z-index: -1;
+    background: #ffffff;
+    transition: 0.3s ease-in-out;
+  }
 
+  &:hover:before {
+    width: 0%;
+  }
+
+  &:hover {
     h2,
     span {
       color: #ffffff;

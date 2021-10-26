@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
-import Contact from "./pages/Contact/Contact";
 import GlobalStyle from "./globalStyles";
 import Footer from "./components/Footer/Footer";
+import Signup from "./pages/Signup/Signup";
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/pricing" component={Pricing} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/signup" component={Signup} />
       </Switch>
       <Footer />
     </Router>
