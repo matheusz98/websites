@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
 import Contact from "./pages/Contact/Contact";
 import GlobalStyle from "./globalStyles";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/pricing" component={Pricing} />
         <Route path="/contact" component={Contact} />
       </Switch>
+      <Footer />
     </Router>
   );
 };

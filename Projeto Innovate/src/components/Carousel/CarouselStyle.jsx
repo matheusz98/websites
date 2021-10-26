@@ -15,7 +15,7 @@ export const CarouselRow = styled.div`
   margin: 1rem;
 
   @media (max-width: 768px) {
-      justify-content: center;
+    justify-content: center;
   }
 `;
 
@@ -69,13 +69,30 @@ export const SliderContent = styled(Slider)`
 `;
 
 export const ImageWrapper = styled.div`
-  width: 90%;
+  width: 100%;
   height: 430px;
   display: flex !important;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: #7339b9;
+
+    h2,
+    span {
+      color: #ffffff;
+    }
+
+    button {
+      background: #ffffff;
+      color: #7339b9;
+      font-weight: 700;
+    }
+  }
 
   @media (max-width: 480px) {
     border: 1px solid #3b3b3b;
@@ -100,6 +117,7 @@ export const CarouselDescription = styled.span`
   font-size: 1rem;
   margin: 1rem;
   color: #1b1b1b;
+  text-align: center;
 `;
 
 export const CarouselButton = styled.button`
@@ -112,9 +130,11 @@ export const CarouselButton = styled.button`
   font-weight: 300;
   margin: 0 auto;
   border-radius: 0 0 10px 10px;
+  border: 2px solid #7339b9;
   transition: 0.3s ease-in-out;
 
   &:hover {
     background: #aa63ff;
+    letter-spacing: 1px;
   }
 `;
