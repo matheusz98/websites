@@ -1,3 +1,4 @@
+import Category from "./components/Category/Category";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import GlobalStyle from "./globalStyles";
@@ -8,6 +9,7 @@ const App = () => {
       <GlobalStyle />
       <Navbar />
       <Hero />
+      <Category />
     </>
   );
 };

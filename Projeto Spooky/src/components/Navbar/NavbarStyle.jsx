@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   z-index: 50;
   margin-bottom: -80px;
   font-size: 1.2rem;
-  background: ${({ scrollNav }) => (scrollNav ? "transparent" : "#DA723C")};
+  background: ${({ scrollNav }) => (scrollNav ? "#DA723C" : "transparent")};
   transition: 0.3s ease-in-out;
 `;
 
@@ -36,7 +36,7 @@ export const NavbarLogo = styled(LinkScroll)`
   justify-self: flex-start;
   align-items: center;
   font-family: "Halloween";
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #ffffff;
   cursor: pointer;
@@ -155,7 +155,7 @@ export const NavbarLinks = styled(LinkScroll)`
 export const NavbarButton = styled.button`
   background: transparent;
   padding: 0.75rem 1.5rem;
-  border-radius: 50px;
+  border-radius: 3rem;
   border: 2px solid #ffffff;
   font-size: 1.1rem;
   color: #ffffff;
@@ -163,8 +163,7 @@ export const NavbarButton = styled.button`
   transition: 0.3s ease-in-out;
 
   &:hover {
-    background: #a83dff;
-    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 2rem #7923db;
   }
 `;
 

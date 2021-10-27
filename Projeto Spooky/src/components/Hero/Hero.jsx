@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { heroData } from "../../data/heroData";
 import "swiper/swiper-bundle.css";
