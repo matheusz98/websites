@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CategoryContainer = styled.div`
+export const CategoryContainer = styled.section`
   max-width: 1100px;
   margin: 0 auto;
   padding: 7rem 2rem;

@@ -150,6 +150,10 @@ export const NavbarLinks = styled(LinkScroll)`
       width: 30%;
     }
   }
+
+  &.active {
+    border-bottom: 3px solid #782c9b;
+  }
 `;
 
 export const NavbarButton = styled.button`

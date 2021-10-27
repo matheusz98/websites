@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <Nav scrollNav={scrollNav}>
       <NavbarContainer>
-        <NavbarLogo to="home" onClick={toggle}>
+        <NavbarLogo to="home" onClick={show ? toggle : ""}>
           <NavbarIcon src="./assets/images/favicon.png" alt="Logo" />
           SPOOKY
         </NavbarLogo>

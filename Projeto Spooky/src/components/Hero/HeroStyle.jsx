@@ -76,6 +76,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   margin-bottom: 1.25rem;
+  padding-right: 3rem;
 
   @media (max-width: 768px) {
     padding: 0 1.25rem;
