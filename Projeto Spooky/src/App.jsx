@@ -1,13 +1,14 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import GlobalStyle from "./globalStyles";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <GlobalStyle />
       <Navbar />
-    </Router>
+      <Hero />
+    </>
   );
 };
 

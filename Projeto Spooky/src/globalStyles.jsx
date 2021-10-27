@@ -28,7 +28,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: blue;
+        background: rgb(255,201,150);
+        background: linear-gradient(90deg, rgba(255,201,150,1) 0%, rgba(159,95,128,1) 50%, rgba(255,132,116,1) 100%);
     }
 `;
 
