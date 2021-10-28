@@ -11,6 +11,7 @@ import {
   NavbarButton,
   NavbarImg,
 } from "./NavbarStyle";
+import { Button } from "../Button/Button";
 import { GiPumpkinMask } from "react-icons/gi";
 import { FaSkull } from "react-icons/fa";
 import NavImg from "../../img/nav-img.png";
@@ -62,7 +63,7 @@ const Navbar = () => {
               </NavbarLinks>
             </NavbarItem>
           ))}
-          <NavbarButton onClick={toggle}>Contact</NavbarButton>
+          <Button onClick={toggle}>Contact</Button>
           <NavbarImg src={NavImg} alt="Navbar Img"></NavbarImg>
         </NavbarMenu>
       </NavbarContainer>

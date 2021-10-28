@@ -3,6 +3,7 @@ import { heroData } from "../../data/heroData";
 import "swiper/swiper-bundle.css";
 import "swiper";
 import "./swiper.css";
+import { Button } from "../Button/Button";
 import {
   HeroContainer,
   HeroContent,
@@ -16,7 +17,6 @@ import {
   Heading,
   Title,
   Description,
-  HeroButton,
 } from "./HeroStyle";
 
 import SwiperCore, { Navigation, Autoplay, Keyboard } from "swiper";
@@ -51,7 +51,7 @@ const Hero = () => {
                   <Heading>{item.heading}</Heading>
                   <Title>{item.title}</Title>
                   <Description>{item.description}</Description>
-                  <HeroButton>Book Now</HeroButton>
+                  <Button>Book Now</Button>
                 </HeroTextWrapper>
               </ContentColumn>
             </HeroContent>

@@ -1,3 +1,4 @@
+import { Button } from "../Button/Button";
 import {
   AboutContainer,
   AboutContent,
@@ -5,7 +6,6 @@ import {
   AboutText,
   AboutTitle,
   AboutDescription,
-  AboutButton,
   AboutImg,
   Img,
 } from "./AboutStyle";
@@ -18,7 +18,7 @@ const About = ({ img, title, description }) => {
           <AboutText>
             <AboutTitle>{title}</AboutTitle>
             <AboutDescription>{description}</AboutDescription>
-            <AboutButton>Learn More</AboutButton>
+            <Button>Learn More</Button>
           </AboutText>
         </AboutColumn>
         <AboutColumn>

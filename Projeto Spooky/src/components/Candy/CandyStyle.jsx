@@ -4,7 +4,11 @@ import { FaBroom } from "react-icons/fa";
 export const CandyContainer = styled.section`
   max-width: 1100px;
   margin: 0 auto;
-  padding: 7rem 2rem;
+  padding: 4.5rem 0 2rem;
+
+  @media (max-width: 768px) {
+    padding: 7rem 0.625rem 2rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -41,12 +45,7 @@ export const CandyCard = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
-  background: rgb(170, 43, 29);
-  background: linear-gradient(
-    90deg,
-    rgba(170, 43, 29, 0.8) 0%,
-    rgba(204, 86, 30, 0.5) 100%
-  );
+  background: linear-gradient(136deg, #d37e4c 0%, #df8942 100%);
   color: #ffffff;
   text-align: center;
   padding: 3rem;

@@ -172,21 +172,6 @@ export const NavbarLinks = styled(LinkScroll)`
   }
 `;
 
-export const NavbarButton = styled.button`
-  background: transparent;
-  padding: 0.75rem 1.5rem;
-  border-radius: 3rem;
-  border: 2px solid #ffffff;
-  font-size: 1.1rem;
-  color: #ffffff;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-
-  &:hover {
-    box-shadow: inset 0 0 0 2rem #7923db;
-  }
-`;
-
 export const NavbarImg = styled.img`
   display: none;
 

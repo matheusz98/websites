@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const AboutContainer = styled.section`
   max-width: 1100px;
   margin: 0 auto;
-  padding: 7rem 2rem;
+  padding: 4.5rem 0 2rem;
+
+  @media (max-width: 768px) {
+    padding: 7rem 0.625rem 2rem;
+  }
 `;
 
 export const AboutContent = styled.div`
@@ -46,21 +50,6 @@ export const AboutTitle = styled.h2`
 export const AboutDescription = styled.p`
   color: #ffffff;
   margin-bottom: 2rem;
-`;
-
-export const AboutButton = styled.button`
-  font-size: 1.2rem;
-  padding: 1rem 1.5rem;
-  border-radius: 3rem;
-  background: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-
-  &:hover {
-    box-shadow: inset 0 0 0 2rem #7923db;
-  }
 `;
 
 export const AboutImg = styled.div`

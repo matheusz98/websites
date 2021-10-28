@@ -4,7 +4,9 @@ import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import GlobalStyle from "./globalStyles";
 import { aboutData } from "./data/aboutData";
+import { discountsData } from "./data/discountsData";
 import Candy from "./components/Candy/Candy";
+import Discounts from "./components/Discounts/Discounts";
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
       <Category />
       <About {...aboutData} />
       <Candy />
+      <Discounts {...discountsData} />
     </>
   );
 };
