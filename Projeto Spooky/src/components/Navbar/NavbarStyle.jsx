@@ -107,6 +107,7 @@ export const NavbarLinks = styled(LinkScroll)`
   height: 100%;
   display: flex;
   align-items: center;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   color: #ffffff;
   transition: 0.3s ease-in-out;
