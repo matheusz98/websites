@@ -8,6 +8,7 @@ import { discountsData } from "./data/discountsData";
 import Candy from "./components/Candy/Candy";
 import Discounts from "./components/Discounts/Discounts";
 import New from "./components/New/New";
+import Newsletter from "./components/Newsletter/Newsletter";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Candy />
       <Discounts {...discountsData} />
       <New />
+      <Newsletter />
     </>
   );
 };
