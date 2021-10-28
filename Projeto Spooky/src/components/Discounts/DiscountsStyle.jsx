@@ -4,6 +4,7 @@ export const DiscountsContainer = styled.section`
   max-width: 980px;
   margin: 0 auto;
   padding: 4.5rem 0 2rem;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     padding: 7rem 0.625rem 2rem;

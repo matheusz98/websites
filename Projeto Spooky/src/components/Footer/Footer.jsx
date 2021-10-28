@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   FooterSection,
   FooterContainer,
@@ -19,25 +22,29 @@ import {
 } from "./FooterStyle";
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <FooterSection>
       <FooterContainer>
         <FooterContent>
-          <FooterLogo>
+          <FooterLogo data-aos="fade-up">
             <FooterIcon src="./assets/images/favicon.png" alt="Logo" />
             SPOOKY
           </FooterLogo>
-          <FooterDescription>
+          <FooterDescription data-aos="fade-up">
             Enjoy the scariest night of your life.
           </FooterDescription>
           <FooterSocialMedia>
-            <FacebookIcon />
-            <InstagramIcon />
-            <TwitterIcon />
+            <FacebookIcon data-aos="fade-up" />
+            <InstagramIcon data-aos="fade-up" />
+            <TwitterIcon data-aos="fade-up" />
           </FooterSocialMedia>
         </FooterContent>
 
-        <FooterContent>
+        <FooterContent data-aos="fade-up">
           <FooterTitle>About</FooterTitle>
           <FooterLinks>
             <FooterLinkItem>
@@ -48,7 +55,7 @@ const Footer = () => {
           </FooterLinks>
         </FooterContent>
 
-        <FooterContent>
+        <FooterContent data-aos="fade-up">
           <FooterTitle>Our Services</FooterTitle>
           <FooterLinks>
             <FooterLinkItem>
@@ -59,7 +66,7 @@ const Footer = () => {
           </FooterLinks>
         </FooterContent>
 
-        <FooterContent>
+        <FooterContent data-aos="fade-up">
           <FooterTitle>Our Company</FooterTitle>
           <FooterLinks>
             <FooterLinkItem>
@@ -71,17 +78,19 @@ const Footer = () => {
         </FooterContent>
       </FooterContainer>
 
-      <Copyright>
+      <Copyright data-aos="zoom-in">
         Cinerama &copy; {new Date().getFullYear()} All rights reserved.
       </Copyright>
 
       <FooterImageOne
         src="./assets/images/footer1-img.png"
         alt="Footer Image"
+        data-aos="fade-left"
       />
       <FooterImageTwo
         src="./assets/images/footer2-img.png"
         alt="Footer Image"
+        data-aos="fade-right"
       />
     </FooterSection>
   );

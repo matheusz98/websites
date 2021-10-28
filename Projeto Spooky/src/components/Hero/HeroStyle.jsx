@@ -5,6 +5,7 @@ export const HeroContainer = styled.div`
   max-width: 1100px;
   margin: 0 auto;
   padding: 4.5rem 0 2rem;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     padding: 7rem 0.625rem 2rem;

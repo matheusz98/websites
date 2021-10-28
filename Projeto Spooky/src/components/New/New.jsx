@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { newData } from "../../data/newData";
 import {
   NewContainer,
@@ -16,13 +19,17 @@ import {
 } from "./NewStyle";
 
 const New = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <NewContainer id="new">
-      <Title>New Arrivals</Title>
+      <Title data-aos="fade-up">New Arrivals</Title>
       <NewContentWrapper>
         <NewContent>
           {newData.map((item, index) => (
-            <NewCard key={index}>
+            <NewCard key={index} data-aos="zoom-in">
               <NewTag>New</NewTag>
               <NewImg src={item.img} alt={item.title} />
               <NewTitle>{item.title}</NewTitle>

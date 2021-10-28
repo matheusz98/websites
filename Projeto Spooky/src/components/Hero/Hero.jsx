@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { heroData } from "../../data/heroData";
 import "swiper/swiper-bundle.css";
@@ -24,6 +27,10 @@ import SwiperCore, { Navigation, Autoplay, Keyboard } from "swiper";
 SwiperCore.use([Navigation, Autoplay, Keyboard]);
 
 const Hero = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <HeroContainer id="home">
       <Swiper
@@ -34,7 +41,7 @@ const Hero = () => {
       >
         {heroData.map((item, index) => (
           <SwiperSlide>
-            <HeroContent key={index}>
+            <HeroContent key={index} data-aos="fade-up">
               <ContentColumn>
                 <HeroImgWrapper>
                   <Img src={item.image} alt={item.alt} />

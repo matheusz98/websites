@@ -9,6 +9,7 @@ export const FooterSection = styled.section`
   overflow: hidden;
   color: #ffffff;
   text-align: center;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     padding: 7rem 0.625rem 2rem;
