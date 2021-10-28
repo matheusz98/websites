@@ -7,6 +7,7 @@ import { aboutData } from "./data/aboutData";
 import { discountsData } from "./data/discountsData";
 import Candy from "./components/Candy/Candy";
 import Discounts from "./components/Discounts/Discounts";
+import New from "./components/New/New";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <About {...aboutData} />
       <Candy />
       <Discounts {...discountsData} />
+      <New />
     </>
   );
 };
