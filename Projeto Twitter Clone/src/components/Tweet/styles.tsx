@@ -32,7 +32,7 @@ export const Body = styled.div`
   margin-top: 3px;
 `;
 
-export const Avatar = styled.img`
+export const Avatar = styled.div`
   width: 50px;
   height: 50px;
   flex-shrink: 0;
@@ -40,6 +40,7 @@ export const Avatar = styled.img`
   top: 0;
   left: 0;
   border-radius: 50%;
+  background: var(--gray);
 `;
 
 export const Content = styled.div`

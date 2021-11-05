@@ -15,18 +15,17 @@ import {
   RetweetIcon,
   LikeIcon,
 } from "./styles";
-import ProfileImg from "../../assets/img.jpg";
 
 const Tweet = () => {
   return (
     <Container>
       <Retweeted>
         <RocketseatIcon />
-        Voce retweetou
+        Você retweetou
       </Retweeted>
 
       <Body>
-        <Avatar src={ProfileImg} alt="Foto de perfil" />
+        <Avatar />
 
         <Content>
           <Header>
