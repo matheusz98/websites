@@ -6,9 +6,9 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         text-decoration: none;
-        outline: 0;
-        border: none;
         list-style: none;
+        border: none;
+        outline: none;
     }
 
     body {
@@ -22,7 +22,12 @@ export default createGlobalStyle`
 
     p, span {
         font-family: 'Mulish', sans-serif;
+        font-weight: 400;
         color: var(--text);
+    }
+
+    img {
+        max-width: 100%;
     }
 
     :root {

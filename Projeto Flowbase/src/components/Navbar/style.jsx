@@ -9,6 +9,7 @@ export const Nav = styled.nav`
   position: absolute;
   top: 0;
   z-index: 50;
+  margin-bottom: -80px;
 `;
 
 export const NavbarContainer = styled.div`
@@ -46,7 +47,7 @@ export const MobileIcon = styled.div`
   display: none;
   cursor: pointer;
 
-  @media (max-width: 860px) {
+  @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -82,14 +83,15 @@ export const NavbarMenu = styled.ul`
   align-items: center;
   text-align: center;
 
-  @media (max-width: 860px) {
+  @media (max-width: 768px) {
     width: 100%;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     top: 0;
     left: ${({ open }) => (open ? "0px" : "-500px")};
     opacity: ${({ open }) => (open ? 1 : 0)};
     padding: 100px 0;
+    background: var(--body);
     transition: 0.3s ease-in-out;
   }
 `;
@@ -139,7 +141,7 @@ export const NavbarLinks = styled(LinkScroll)`
 export const NavbarBtn = styled.div`
   display: flex;
   align-items: center;
-  @media (max-width: 860px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -147,7 +149,7 @@ export const NavbarBtn = styled.div`
 export const NavbarBtnLink = styled.div`
   display: none;
 
-  @media (max-width: 860px) {
+  @media (max-width: 768px) {
     display: block;
   }
 `;

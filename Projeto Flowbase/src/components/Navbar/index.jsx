@@ -14,7 +14,6 @@ import {
 import LogoImg from "../../assets/svg/logo.svg";
 import Button from "../Button/Button";
 import { navbarData } from "../../data/navbarData";
-import Hamburger from "hamburger-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
