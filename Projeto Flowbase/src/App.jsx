@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import GlobalStyles from "./GlobalStyles";
 import { aboutDataOne, aboutDataTwo } from "./data/aboutData";
 import Features from "./components/Features";
+import Pricing from "./components/Pricing";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About {...aboutDataOne} />
       <About {...aboutDataTwo} />
       <Features />
+      <Pricing />
     </>
   );
 }
