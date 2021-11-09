@@ -57,7 +57,9 @@ export const HeroDescription = styled.p`
 
 export const Buttons = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2.5rem;
 `;
 

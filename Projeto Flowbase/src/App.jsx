@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import GlobalStyles from "./GlobalStyles";
 import { aboutDataOne, aboutDataTwo } from "./data/aboutData";
+import Features from "./components/Features";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Brands />
       <About {...aboutDataOne} />
       <About {...aboutDataTwo} />
+      <Features />
     </>
   );
 }

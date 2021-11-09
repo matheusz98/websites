@@ -79,6 +79,7 @@ export const AboutLink = styled.a`
 
 export const ImgWrapper = styled.div`
   max-width: 540px;
+  height: 100%;
 `;
 
 export const AboutImg = styled.img``;
