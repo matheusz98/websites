@@ -30,7 +30,6 @@ export const PricingTitle = styled.h2`
   font-size: 60px;
   line-height: 70px;
   letter-spacing: -1.88px;
-
   @media (max-width: 870px) {
     margin-bottom: 30px;
     text-align: center;
@@ -71,6 +70,7 @@ export const PricingContent = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 `;
 
@@ -80,7 +80,7 @@ export const PricingCard = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  padding: 10px;
   background: var(--card);
   border-radius: 10px;
   cursor: pointer;
