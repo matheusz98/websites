@@ -13,7 +13,7 @@ export const HeroContent = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
 
