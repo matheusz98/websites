@@ -18,7 +18,7 @@ const Hero = () => {
           <HeroTitle>Every Creative Music</HeroTitle>
           <HeroText>
             Discover, stream and share a constantly expanding mix of music from
-            emerging and major artists around the world
+            emerging and major artists around the world.
           </HeroText>
           <ButtonContainer>
             <Link to={"/sign-up"}>

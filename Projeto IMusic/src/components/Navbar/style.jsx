@@ -34,6 +34,7 @@ export const NavbarLogo = styled(Link)`
   align-items: center;
   font-size: 2rem;
   color: #ffffff;
+  font-weight: 100;
   z-index: 100;
 `;
 
@@ -125,6 +126,7 @@ export const NavbarLinks = styled(LinkScroll)`
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
+  font-weight: 300;
   color: #ffffff;
 
   &.active {

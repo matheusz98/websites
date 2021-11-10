@@ -2,6 +2,7 @@ import styled from "styled-components";
 import HeroImg from "../../assets/images/hero2.jpg";
 
 export const HeroSection = styled.section`
+  width: auto;
   height: 100vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
     url(${HeroImg});
@@ -9,6 +10,7 @@ export const HeroSection = styled.section`
   background-position: center;
   background-attachment: fixed;
   display: flex;
+  padding: 140px 0;
 
   @media (max-width: 768px) {
     padding-top: 120px;
@@ -17,12 +19,12 @@ export const HeroSection = styled.section`
 
 export const HeroContainer = styled.div`
   max-width: 1100px;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  overflow: hidden;
   margin: 0 auto;
 `;
 
@@ -42,7 +44,8 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroText = styled.p`
-  max-width: 560px;
+  width: auto;
+  max-width: 480px;
   font-size: clamp(1rem, 3vw, 1.3rem);
   color: #ffffff;
   margin: 0 0 2rem;
