@@ -12,10 +12,6 @@ export default createGlobalStyle`
         font-family: 'Poppins', sans-serif;
     }
 
-    body {
-        background: blue;
-    }
-
     img {
         max-width: 100%;
     }

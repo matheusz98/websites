@@ -38,8 +38,12 @@ const Navbar = () => {
   return (
     <Nav scrollNav={scrollNav}>
       <NavbarContainer>
-        <NavbarLogo to="home">
-          <NavbarIcon src={LogoImg} alt="IMusic Logo" onClick={toggle} />
+        <NavbarLogo to="/">
+          <NavbarIcon
+            src={LogoImg}
+            alt="IMusic Logo"
+            onClick={open ? toggle : ""}
+          />
           IMusic
         </NavbarLogo>
         <MobileIcon onClick={toggle} open={open}>
