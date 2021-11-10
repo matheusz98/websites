@@ -1,5 +1,6 @@
 import Content from "../components/Content";
 import Hero from "../components/Hero";
+import Pricing from "../components/Pricing";
 import { contentOne, contentTwo, contentThree } from "../data/homeContent";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Content {...contentOne} />
       <Content {...contentTwo} />
       <Content {...contentThree} />
+      <Pricing />
     </>
   );
 };
