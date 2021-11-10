@@ -1,0 +1,49 @@
+<svg width="355" height="92" viewBox="0 0 355 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<rect x="4" width="347" height="84" rx="10" fill="#18134E"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="99" y="20" width="210" height="44">
+<path d="M147 26V58" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M119 35V49" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M128 29V55" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M101 35V49" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M137 36V48" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M110 22V62" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M157 25V58" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M167 25V59" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M177 30V53" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M187 35V49" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M197 34V50" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M207 33V50" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M217 30V54" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M227 26V58" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M237 34V49" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M247 36V48" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M257 26V58" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M267 29V54" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M277 30V53" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M287 27V57" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M297 23V60" stroke="black" stroke-width="4" stroke-linecap="round"/>
+<path d="M307 22V62" stroke="black" stroke-width="4" stroke-linecap="round"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="350" y="14" width="64" height="270" transform="rotate(90 350 14)" fill="url(#paint0_linear)"/>
+</g>
+<path d="M74 40.2679C75.3333 41.0377 75.3333 42.9623 74 43.7321L50 57.5885C48.6667 58.3583 47 57.396 47 55.8564L47 28.1436C47 26.604 48.6667 25.6417 50 26.4115L74 40.2679Z" fill="#D518F4"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="355" height="92" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear" x1="382" y1="14" x2="382" y2="284" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D518F4"/>
+<stop offset="1" stop-color="#ECC80D"/>
+</linearGradient>
+</defs>
+</svg>
