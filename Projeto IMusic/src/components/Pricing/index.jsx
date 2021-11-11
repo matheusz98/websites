@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import Aos from "aos";
 import { pricingData } from "../../data/pricingData";
 import Tilt from "react-tilt";
 import Button from "../Button/Button";
@@ -17,12 +20,18 @@ import {
 } from "./style";
 
 const Pricing = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <IconContext.Provider value={{ color: "#a9b3c1", size: "1rem" }}>
       <PricingSection id="pricing">
         <PricingContainer>
-          <PricingTitle>Pick Your Best Option</PricingTitle>
-          <PricingText>
+          <PricingTitle data-aos="fade-down">
+            Pick Your Best Option
+          </PricingTitle>
+          <PricingText data-aos="fade-down">
             Listen without limits on your phone, speaker, and other devices at
             the most suitable option for you.
           </PricingText>
@@ -33,7 +42,7 @@ const Pricing = () => {
                 key={index}
                 options={{ max: 15, scale: 1.02, speed: 200 }}
               >
-                <PricingCard key={index}>
+                <PricingCard key={index} data-aos="fade-up">
                   <PricingCardPlan>{card.title}</PricingCardPlan>
                   <PricingCardCost>{card.price}</PricingCardCost>
                   <PricingCardText>{card.numAcc}</PricingCardText>
