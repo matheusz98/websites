@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { footerData, footerSocialData } from "../../data/footerData";
 import Button from "../Button/Button";
 import LogoImg from "../../assets/svg/logo.svg";
@@ -19,9 +22,13 @@ import {
 } from "./style";
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <FooterSection>
-      <FooterContent>
+      <FooterContent data-aos="fade-up">
         <FooterText>
           Stay tuned with the latest updates, news and trends
         </FooterText>
@@ -37,7 +44,7 @@ const Footer = () => {
           <Button>Subscribe</Button>
         </FooterForm>
       </FooterContent>
-      <FooterWrapper>
+      <FooterWrapper data-aos="fade-up">
         {footerData.map((item, index) => (
           <FooterColumn key={index}>
             <FooterText>{item.title}</FooterText>
