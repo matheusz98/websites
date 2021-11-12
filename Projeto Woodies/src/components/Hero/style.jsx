@@ -79,5 +79,9 @@ export const HeroImgWrapper = styled.div`
 `;
 
 export const HeroImg = styled.img`
-  width: 100%;
+  width: 90%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
