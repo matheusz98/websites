@@ -1,22 +1,24 @@
 import styled from "styled-components";
 
 export default styled.button`
-  background: ${({ alt }) => (alt ? "transparent" : "var(--black)")};
+  background: ${({ alt }) => (alt ? "transparent" : "var(--main)")};
   color: ${({ alt }) => (alt ? "var(--black)" : "#ffffff")};
   border: 1px solid ${({ alt }) => (alt ? "var(--black)" : "none")};
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
-  padding: 10px 40px;
+  padding: ${({ big }) => (big ? "20px 50px" : "10px 40px;")};
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 
   &:hover,
   &:focus {
-    box-shadow: ${({ alt }) => (alt ? "inset 0 0 0 2em var(--main)" : "")};
-    color: ${({ alt }) => (alt ? "#ffffff" : "")};
-    border: ${({ alt }) => (alt ? "1px solid #ffffff" : "")};
+    box-shadow: ${({ alt }) =>
+      alt ? "inset 0 0 0 2em var(--main)" : "inset 0 0 0 2em #ffffff"};
+    color: ${({ alt }) => (alt ? "#ffffff" : "var(--black)")};
+    border: ${({ alt }) =>
+      alt ? "1px solid var(--main)" : "1px solid var(--black)"};
     font-weight: ${({ alt }) => (alt ? "300" : "")};
   }
 `;

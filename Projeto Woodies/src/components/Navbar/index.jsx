@@ -21,8 +21,8 @@ const Navbar = () => {
     setOpen(!open);
   };
 
-  const changeNav = () => {
-    if (window.scroll >= 80) {
+  const changeNavBg = () => {
+    if (window.scrollY >= 80) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    window.addEventListener("scroll", changeNavBg);
   }, []);
 
   return (

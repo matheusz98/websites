@@ -25,6 +25,7 @@ export default createGlobalStyle`
         --white: #ffffff;
         --navbar: #ebebeb;
         --black: #3e3f43;
+        --title: #313235;
         --pink: #f9bdbd;
         --beige: #f7dea6;
         --blue: #a8dcec;
