@@ -68,7 +68,7 @@ export const AboutText = styled.p`
 export const ImgWrap = styled.div`
   max-width: ${({ bgColor }) => (bgColor ? "560px" : "287px")};
   background: ${({ bgColor }) => (bgColor ? "var(--beige)" : "var(--blue)")};
-  border-radius: 0 50px 0 50px;
+  border-radius: 0 50% 0 50%;
   margin: 0 auto;
   transition: 0.3s ease-in-out;
   cursor: pointer;

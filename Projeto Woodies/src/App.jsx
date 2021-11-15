@@ -11,6 +11,7 @@ import {
 } from "./data/titleData";
 import Title from "./components/Title";
 import How from "./components/How";
+import Categories from "./components/Categories";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <About {...aboutContentTwo} />
       <Title {...titleContentTwo} />
       <How />
+      <Title {...titleContentThree} />
+      <Categories />
     </>
   );
 }
