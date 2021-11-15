@@ -17,8 +17,7 @@ export default styled.button`
     box-shadow: ${({ alt }) =>
       alt ? "inset 0 0 0 2em var(--main)" : "inset 0 0 0 2em #ffffff"};
     color: ${({ alt }) => (alt ? "#ffffff" : "var(--black)")};
-    border: ${({ alt }) =>
-      alt ? "1px solid var(--main)" : "1px solid var(--black)"};
+    border-color: ${({ alt }) => (alt ? "var(--main)" : "var(--black)")};
     font-weight: ${({ alt }) => (alt ? "300" : "")};
   }
 `;
