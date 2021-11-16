@@ -6,10 +6,7 @@ export const FooterSection = styled.footer`
   padding: 100px 0 20px;
   overflow: hidden;
   text-align: center;
-  background: url(${FooterBG});
-  background-size: 500px;
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  background: var(--footer);
 `;
 
 export const FooterContainer = styled.div`
@@ -17,6 +14,10 @@ export const FooterContainer = styled.div`
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   margin: 0 auto;
+  background: url(${FooterBG});
+  background-size: 560px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(3, 1fr);

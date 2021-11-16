@@ -36,12 +36,16 @@ const Navbar = () => {
   return (
     <Nav scrollNav={scrollNav}>
       <NavbarContainer>
-        <NavbarLogo>
-          <NavbarIcon
-            src={LogoImg}
-            alt="Woodies Logo"
-            onClick={open ? toggle : ""}
-          />
+        <NavbarLogo
+          onClick={open ? toggle : ""}
+          to="home"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+        >
+          <NavbarIcon src={LogoImg} alt="Woodies Logo" />
         </NavbarLogo>
         <MobileIcon onClick={toggle} open={open}>
           <div />

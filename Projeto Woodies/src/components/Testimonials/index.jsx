@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Tilt from "react-tilt";
 import ImgOne from "../../assets/images/testimony-1.png";
 import ImgTwo from "../../assets/images/testimony-2.png";
@@ -33,6 +36,10 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Testimonials = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <TestimonialsSection id="testimony">
       <TestimonialsContainer>
@@ -43,13 +50,21 @@ const Testimonials = () => {
                 className="Tilt"
                 options={{ max: 15, scale: 1.02, speed: 200 }}
               >
-                <TestimonialsImg src={ImgOne} alt="Image One" />
+                <TestimonialsImg
+                  src={ImgOne}
+                  alt="Image One"
+                  data-aos="flip-left"
+                />
               </Tilt>
               <Tilt
                 className="Tilt"
                 options={{ max: 15, scale: 1.02, speed: 200 }}
               >
-                <TestimonialsImg src={ImgTwo} alt="Image Two" />
+                <TestimonialsImg
+                  src={ImgTwo}
+                  alt="Image Two"
+                  data-aos="flip-right"
+                />
               </Tilt>
             </TestimonialsImages>
           </TestimonialsColumn>
@@ -65,6 +80,7 @@ const Testimonials = () => {
               }}
               navigation={true}
               className="mySwiper"
+              data-aos="zoom-in"
             >
               <SwiperSlide className="swiper-slide">
                 <TestimonialsCard>

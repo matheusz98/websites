@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Tilt from "react-tilt";
 import { categoriesData } from "../../data/categoriesData";
 import {
@@ -11,6 +14,10 @@ import {
 } from "./style";
 
 const Categories = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <CategoriesSection id="categories">
       <CategoriesContainer>
@@ -21,7 +28,7 @@ const Categories = () => {
               options={{ max: 15, scale: 1.02, speed: 200 }}
               key={index}
             >
-              <CategoriesCard bgColor={item.bgColor}>
+              <CategoriesCard bgColor={item.bgColor} data-aos="flip-right">
                 <CategoriesTitle>{item.title}</CategoriesTitle>
                 <CategoriesImg src={item.img} alt={item.alt} />
                 <CategoriesButton>Shop Now</CategoriesButton>

@@ -7,6 +7,7 @@ export const HeroSection = styled.section`
   background-size: 370px;
   background-position-y: -60px;
   background-repeat: no-repeat;
+  overflow: hidden;
 `;
 
 export const HeroContainer = styled.div`

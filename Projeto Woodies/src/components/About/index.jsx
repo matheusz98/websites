@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Tilt from "react-tilt";
 import {
   AboutSection,
@@ -13,12 +16,16 @@ import {
 } from "./style";
 
 const About = ({ id, title, text, img, alt, bgColor, imgStart }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <AboutSection id={id}>
       <AboutContainer>
         <AboutContent imgStart={imgStart}>
           <Column1>
-            <AboutTextWrapper bgColor={bgColor}>
+            <AboutTextWrapper bgColor={bgColor} data-aos="zoom-out">
               <AboutTitle>{title}</AboutTitle>
               <AboutText>{text}</AboutText>
             </AboutTextWrapper>
@@ -28,7 +35,7 @@ const About = ({ id, title, text, img, alt, bgColor, imgStart }) => {
               className="Tilt"
               options={{ max: 15, scale: 1.02, speed: 200 }}
             >
-              <ImgWrap bgColor={bgColor}>
+              <ImgWrap bgColor={bgColor} data-aos="zoom-in">
                 <Img src={img} alt={alt} />
               </ImgWrap>
             </Tilt>

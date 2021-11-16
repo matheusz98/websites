@@ -29,6 +29,6 @@ export default createGlobalStyle`
         --pink: #f9bdbd;
         --beige: #f7dea6;
         --blue: #a8dcec;
-        --footer: #e5e5e5;
+        --footer: #eeeeee;
     }
 `;
