@@ -13,6 +13,7 @@ import Title from "./components/Title";
 import How from "./components/How";
 import Categories from "./components/Categories";
 import Testimonials from "./components/Testimonials";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Categories />
       <Title {...titleContentFour} />
       <Testimonials />
+      <Newsletter />
     </>
   );
 }

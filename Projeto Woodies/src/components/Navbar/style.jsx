@@ -12,6 +12,8 @@ export const Nav = styled.nav`
   background: ${({ scrollNav }) =>
     scrollNav ? "var(--navbar)" : "transparent"};
   font-size: 1.2rem;
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "0 0 10px 2px var(--black)" : ""};
   margin-bottom: -80px;
   transition: 0.3s ease-in-out;
 `;

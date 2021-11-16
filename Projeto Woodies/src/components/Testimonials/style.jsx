@@ -38,6 +38,7 @@ export const TestimonialsImages = styled.div`
 export const TestimonialsImg = styled.img`
   border-radius: 30% 0 30% 0;
   padding: 20px 0;
+  cursor: pointer;
 `;
 
 export const TestimonialsCard = styled.div`

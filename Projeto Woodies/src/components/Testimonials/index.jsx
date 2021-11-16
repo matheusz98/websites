@@ -1,9 +1,8 @@
+import Tilt from "react-tilt";
 import ImgOne from "../../assets/images/testimony-1.png";
 import ImgTwo from "../../assets/images/testimony-2.png";
 import PersonImg from "../../assets/images/testimonial.png";
 import Stars from "../../assets/svg/stars.svg";
-import ArrowLeftImg from "../../assets/svg/arrow-left.svg";
-import ArrowRightImg from "../../assets/svg/arrow-right.svg";
 
 import {
   TestimonialsSection,
@@ -40,8 +39,18 @@ const Testimonials = () => {
         <TestimonialsContent>
           <TestimonialsColumn>
             <TestimonialsImages>
-              <TestimonialsImg src={ImgOne} alt="Image One" />
-              <TestimonialsImg src={ImgTwo} alt="Image Two" />
+              <Tilt
+                className="Tilt"
+                options={{ max: 15, scale: 1.02, speed: 200 }}
+              >
+                <TestimonialsImg src={ImgOne} alt="Image One" />
+              </Tilt>
+              <Tilt
+                className="Tilt"
+                options={{ max: 15, scale: 1.02, speed: 200 }}
+              >
+                <TestimonialsImg src={ImgTwo} alt="Image Two" />
+              </Tilt>
             </TestimonialsImages>
           </TestimonialsColumn>
           <TestimonialsColumn>
@@ -55,7 +64,6 @@ const Testimonials = () => {
                 clickable: true,
               }}
               navigation={true}
-              className="mySwiper"
               className="mySwiper"
             >
               <SwiperSlide className="swiper-slide">
