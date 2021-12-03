@@ -9,6 +9,7 @@ export default createGlobalStyle`
         list-style: none;
         border: none;
         outline: none;
+        scroll-behavior: smooth;
     }
 
     body {
