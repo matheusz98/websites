@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Brands from "./components/Brands";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import WhatGPT3 from "./components/WhatGPT3";
 import GlobalStyles from "./GlobalStyles";
 
 const Gradient = styled.div`
@@ -49,6 +50,7 @@ function App() {
         <Hero />
       </Gradient>
       <Brands />
+      <WhatGPT3 />
     </>
   );
 }
