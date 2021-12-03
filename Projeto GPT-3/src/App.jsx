@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import GlobalStyles from "./GlobalStyles";
 
@@ -44,6 +45,7 @@ function App() {
       <GlobalStyles />
       <Gradient>
         <Navbar />
+        <Hero />
       </Gradient>
     </>
   );

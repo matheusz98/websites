@@ -22,7 +22,7 @@ export const NavbarContent = styled.div`
   flex: 1;
 `;
 
-export const NavbarLogo = styled.div`
+export const NavbarLogo = styled.a`
   margin-right: 2rem;
 `;
 

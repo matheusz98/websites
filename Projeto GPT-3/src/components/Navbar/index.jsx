@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContent>
-        <NavbarLogo>
+        <NavbarLogo href="#home">
           <Logo src={LogoImg} alt="GPT-3 Logo" />
         </NavbarLogo>
         <NavbarLinks>
