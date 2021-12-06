@@ -3,6 +3,7 @@ import Brands from "./components/Brands";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Possibility from "./components/Possibility";
 import WhatGPT3 from "./components/WhatGPT3";
 import GlobalStyles from "./GlobalStyles";
 
@@ -53,6 +54,7 @@ function App() {
       <Brands />
       <WhatGPT3 />
       <Features />
+      <Possibility />
     </>
   );
 }
