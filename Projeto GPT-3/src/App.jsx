@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Blog from "./components/Blog";
 import Brands from "./components/Brands";
 import Contact from "./components/Contact";
 import Features from "./components/Features";
@@ -57,6 +58,7 @@ function App() {
       <Features />
       <Possibility />
       <Contact />
+      <Blog />
     </>
   );
 }
