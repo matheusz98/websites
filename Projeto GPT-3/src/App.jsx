@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Brands from "./components/Brands";
+import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import WhatGPT3 from "./components/WhatGPT3";
@@ -51,6 +52,7 @@ function App() {
       </Gradient>
       <Brands />
       <WhatGPT3 />
+      <Features />
     </>
   );
 }
