@@ -14,4 +14,15 @@ export default createGlobalStyle`
     body {
         font-family: 'Montserrat', sans-serif;
     }
+
+    img {
+        max-width: 100%;
+    }
+
+    :root {
+        --white: #ffffff;
+        --orange: #ec421d;
+        --bg: #1c9aa8;
+        --blue: #4b59f7;
+    }
 `;
