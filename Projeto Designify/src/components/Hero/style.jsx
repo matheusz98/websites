@@ -147,6 +147,7 @@ export const HeroButton = styled(motion.button)`
     height: 64px;
     position: fixed;
     bottom: 3rem;
+    right: 3rem;
     background: var(--red);
     padding: 10px;
     border-radius: 50%;
