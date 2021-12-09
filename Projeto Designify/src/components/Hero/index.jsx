@@ -88,7 +88,7 @@ const Hero = () => {
             <ButtonWrapper>
               <HeroButton onClick={toggle} className={inView ? "" : "corner"}>
                 {inView ? (
-                  <>Chat with us! </>
+                  <> Chat with us! </>
                 ) : (
                   <FiMail size="2.3rem" color="white" />
                 )}
