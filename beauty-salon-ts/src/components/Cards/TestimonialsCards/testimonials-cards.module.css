@@ -1,0 +1,37 @@
+.testimonial blockquote {
+  padding: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  user-select: none;
+}
+
+.testimonial blockquote p {
+  position: relative;
+  color: var(--title-color);
+  line-height: 1.625rem;
+  text-indent: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial blockquote p span {
+  font-family: "Georgia", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--base-color);
+  position: absolute;
+  top: -0.8rem;
+  left: -1.85rem;
+}
+
+.testimonial cite {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-style: normal;
+}
+
+.testimonial cite img {
+  width: 32px;
+  height: 32px;
+  clip-path: circle();
+}

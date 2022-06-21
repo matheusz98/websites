@@ -1,0 +1,21 @@
+.title {
+  margin-bottom: 4rem;
+}
+
+.title h2 {
+  font-family: var(--title-font);
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.title .subtitle {
+  font-size: var(--subtitle-font-size);
+  color: var(--title-color);
+  line-height: var(--body-line-height);
+}
+
+.title .subtitle strong {
+  color: var(--base-color);
+}

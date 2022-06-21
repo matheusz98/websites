@@ -1,0 +1,33 @@
+.button {
+  height: 3.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color-light);
+  background-color: var(--base-color);
+  padding: 0.875rem 2rem;
+  border-radius: 0.25rem;
+  gap: 0.625rem;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--base-color-alt);
+}
+
+.button i {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.125rem;
+}
+
+.button i svg {
+  width: 100%;
+  height: 100%;
+}

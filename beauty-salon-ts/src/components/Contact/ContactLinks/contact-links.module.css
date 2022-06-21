@@ -1,0 +1,24 @@
+.link {
+  display: grid;
+  gap: 2rem;
+}
+
+.links li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.links li i {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.125rem;
+  color: var(--base-color);
+}
+
+.links li i svg {
+  width: 100%;
+  height: 100%;
+}

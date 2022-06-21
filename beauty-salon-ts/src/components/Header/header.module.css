@@ -1,0 +1,145 @@
+header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--body-color);
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+header .scroll {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+  transition: 0.5s;
+}
+
+nav {
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a {
+  position: relative;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.scroll {
+  color: var(--base-color);
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  background: var(--base-color);
+  transition: width 0.5s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.scroll::after {
+  width: 100%;
+}
+
+.logo {
+  font-family: var(--title-font);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.logo span {
+  color: var(--base-color);
+}
+
+.menu {
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu ul li a {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav .menu.open {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--body-color);
+  visibility: visible;
+  opacity: 1;
+}
+
+nav .menu.open ul {
+  display: grid;
+  gap: 4rem;
+}
+
+nav .toggle {
+  display: none;
+}
+
+nav .toggle .iconClose {
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+nav .toggle .iconClose.openMenu {
+  top: 1.5rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 960px) {
+  .menu {
+    top: -20rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul li a {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  nav .toggle {
+    font-size: 1.5rem;
+    color: var(--base-color);
+    cursor: pointer;
+    display: flex;
+  }
+}

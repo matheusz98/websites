@@ -1,0 +1,45 @@
+.about {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+@media (min-width: 960px) {
+  .aboutContainer {
+    grid-auto-flow: column;
+    margin: 0 auto;
+  }
+}
+
+.image {
+  position: relative;
+}
+
+.image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+  background: var(--base-color-second);
+  border-radius: 1rem;
+}
+
+.image img {
+  position: relative;
+  border-radius: 1rem;
+}
+
+.text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.text h2 {
+  font-family: var(--title-font);
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  color: #000000;
+  -webkit-font-smoothing: auto;
+}

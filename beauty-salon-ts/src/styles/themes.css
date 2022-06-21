@@ -1,0 +1,23 @@
+:root {
+  --header-height: 4.5rem;
+  --hue: 300;
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: "Poppins", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+}
+
+@media (min-width: 960px) {
+  :root {
+    --title-font-size: 2.25rem;
+  }
+}

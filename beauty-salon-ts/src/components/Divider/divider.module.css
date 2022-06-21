@@ -1,0 +1,17 @@
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    rgba(var(--hue), 185, 157, 1) 0%,
+    rgba(var(--hue), 244, 230, 0.34) 100%
+  );
+}
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--hue), 185, 157, 1) 0%,
+    rgba(var(--hue), 244, 230, 0.34) 100%
+  );
+}

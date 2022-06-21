@@ -1,0 +1,22 @@
+.button {
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.5s;
+}
+
+.button:hover {
+  background: var(--base-color-alt);
+}
+
+@media (min-width: 960px) {
+  .button {
+    height: 3.125rem;
+  }
+}

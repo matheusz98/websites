@@ -1,0 +1,19 @@
+.testimonials {
+  background: #ffffff;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.title h2 {
+  font-family: var(--title-font);
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.title p {
+  line-height: var(--body-line-height);
+}

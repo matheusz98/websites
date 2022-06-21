@@ -1,0 +1,21 @@
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  padding: 0.5rem;
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  clip-path: circle();
+  line-height: 0;
+  transition: 0.3s ease-in-out;
+  box-shadow: var(--shadow-light);
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+}

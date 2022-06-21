@@ -1,0 +1,27 @@
+.contact {
+  display: grid;
+  gap: 4rem;
+}
+
+.contact h2 {
+  font-family: var(--title-font);
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.contact p {
+  line-height: 1.625rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 960px) {
+  .contact {
+    align-items: center;
+  }
+
+  .text {
+    max-width: 25rem;
+  }
+}
